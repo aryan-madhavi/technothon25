@@ -7,7 +7,7 @@ body {
   /* Background styling with blur effect */
   .background {
     position: relative;
-    background: url('/technothon25/resources/Society_Night_Timr_Original.jpg') no-repeat center center/cover;
+    background: url('../assets/bg_nightime.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
