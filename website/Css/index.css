@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(143, 143, 170);
+}
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    height: 600px;
+  }
+.header-spacer{
+    height: 92px;
+}
+.header{
+    background-color: rgb(134, 172, 206);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 8px;
+}
+.header h1{
+    text-align: center;
+    font-family: "EB Garamond", serif;
+    font-style: italic;
+}
