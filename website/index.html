@@ -1,57 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Google fonts start -->
-   <!-- Sankalp:- i like this font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
-    rel="stylesheet">
-    <!-- Google fonts end-->
-  <link rel="stylesheet" href="Css/index.css">
-  <!-- <style>
-      .flex-container {
-        display: flex;
-        justify-content: space-evenly;
-        height: 600px;
-      }
-    </style> -->
-  <title>My Game</title>
+  <title>Login/Signup</title>
+  <link rel="stylesheet" href="css/loginsignup.css">
+  <script type="module" src = "js/firebase_login.js"></script>
 </head>
-
 <body>
+  <div class="background">
+    <div class="overlay"></div>
+    <div class="login-box">
+      <h1>LOGIN</h1>
+      <div id="signupmsg" class="MessageDiv" style="display: none"></div>
+      <form method="post">
+        <input type="text" placeholder="Email" id ="Email" required>
+        <input type="password" placeholder="Password" id="Password"required>
+        <div class="Account">
+          <p>Dont Have Account? </p>
+          <a href="signup.html">Signup</a>
+        </div>
+        <button type="submit" id = "SubmitLoginIn">Let Journey Begin</button>
+      </form>
+    </div>  
+  </div>
 
-    <div class="header">
-      <h1>Exodus to Oblivion</h1>
-      <hr>
-      <div class="Nav-Bar">
-        <ul >
-          <li><a href="">About Us</a></li>
-          <li><a href="">Game</a></li>
-          <li><a href="">Profile</a></li>
-        </ul>
-      </div>
+<!--   
+  <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+  <script src="https://files.bpcontent.cloud/2024/10/25/11/20241025115120-FD5XCJC8.js"></script> -->
 
-    </div>
-
-   
-
-    <div class="flex-container">
-      <!-- GAME -->
-      <iframe src="../game" width="800" height="600px" scrolling="no">
-        Your browser does not support iframes.
-      </iframe>
-      <!-- AI CHATBOT -->
-      <iframe
-        src="https://cdn.botpress.cloud/webchat/v2.2/shareable.html?configUrl=https://files.bpcontent.cloud/2024/10/25/11/20241025115120-0WIAXDJG.json"
-        width="400" height="600px" scrolling="no">
-        Your browser does not support iframes.
-      </iframe>
-    </div>
- 
+  
+  
 </body>
-
 </html>
