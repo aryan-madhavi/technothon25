@@ -11,8 +11,8 @@
   "name":"obj_warp",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Others",
+    "path":"folders/Objects/Others.yy",
   },
   "parentObjectId":{
     "name":"obj_pauser",
@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_warp_transition",
-    "path":"sprites/spr_warp_transition/spr_warp_transition.yy",
+    "name":"spr_warp_transition_3",
+    "path":"sprites/spr_warp_transition_3/spr_warp_transition_3.yy",
   },
   "spriteMaskId":null,
   "visible":true,
