@@ -2,7 +2,7 @@ h_input = keyboard_check(vk_right) - keyboard_check(vk_left);
 v_input = keyboard_check(vk_down) - keyboard_check(vk_up);
 sprint = keyboard_check(vk_shift);
 
-if /*not instance_exists(obj_warp) and */( h_input != 0 or v_input != 0) {
+if not instance_exists(obj_pauser) and ( h_input != 0 or v_input != 0) {
 	if sprint == true { state = STATE_AARIONA.SPRINT; }
 	else { state = STATE_AARIONA.WALK; }
 	dir = point_direction(0,0,h_input,v_input);

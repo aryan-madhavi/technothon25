@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_interact",
   "bboxMode":2,
-  "bbox_bottom":79,
+  "bbox_bottom":99,
   "bbox_left":0,
-  "bbox_right":39,
+  "bbox_right":49,
   "bbox_top":39,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -14,8 +14,8 @@
   "frames":[
     {"$GMSpriteFrame":"","%Name":"7a2f2698-5b12-4c8a-a365-00314b251f9b","name":"7a2f2698-5b12-4c8a-a365-00314b251f9b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":4,
-  "gridY":4,
+  "gridX":50,
+  "gridY":40,
   "height":100,
   "HTile":false,
   "layers":[

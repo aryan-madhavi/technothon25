@@ -8,4 +8,4 @@ else {
 	//len = 0;
 	//peak = 0;
 }
-draw_self();
+//draw_self();

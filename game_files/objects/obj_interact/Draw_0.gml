@@ -1,3 +1,4 @@
+// draw_self();
 draw_set_font(fnt_help_dialog);
 
 draw_set_halign(fa_center);
