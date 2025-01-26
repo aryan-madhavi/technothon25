@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
     rel="stylesheet">
     <!-- Google fonts end-->
-  <link rel="stylesheet" href="Css/index.css">
+  <link rel="stylesheet" href="Css/homepage.css">
   <!-- <style>
       .flex-container {
         display: flex;
@@ -25,14 +25,20 @@
 <body>
 
     <div class="header">
-      <h1>Exodus to Oblivion</h1>
-      <hr>
+      <div class="logo">
+        <img src="assets/logo.png" alt="logo will be added" class="logo-img">
+        <h1>Exodus to Oblivion</h1>
+      </div>
       <div class="Nav-Bar">
         <ul >
-          <li><a href="">About Us</a></li>
-          <li><a href="">Game</a></li>
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
           <li><a href="profile.html">Profile</a></li>
         </ul>
+      </div>
+      <div class="login-and-signup">
+        <button type="button" class="login" onclick="dologin()">Login</button>
+        <button type="button" class="signup" onclick="dosignup()">Sign Up</button>
       </div>
     </div>
 
@@ -52,5 +58,5 @@
     </div>
  
 </body>
-
+<script src="Js/onclick_button.js"></script>
 </html>

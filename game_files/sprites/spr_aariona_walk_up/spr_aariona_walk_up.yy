@@ -46,8 +46,8 @@
   },
   "origin":9,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Aariona",
+    "path":"folders/Sprites/Aariona.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

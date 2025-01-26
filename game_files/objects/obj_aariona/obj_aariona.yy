@@ -9,8 +9,8 @@
   "name":"obj_aariona",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Aariona",
+    "path":"folders/Objects/Aariona.yy",
   },
   "parentObjectId":null,
   "persistent":true,

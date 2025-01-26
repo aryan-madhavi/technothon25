@@ -9,8 +9,8 @@
   "name":"obj_warp_block",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Others",
+    "path":"folders/Objects/Others.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -35,5 +35,5 @@
     "path":"sprites/spr_warp_block/spr_warp_block.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
