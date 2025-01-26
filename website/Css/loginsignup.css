@@ -25,7 +25,7 @@ body {
     background: rgba(0, 0, 0, 0.4); /* Slight dark overlay */
     z-index: 1;
   }
-  
+
   /* Login box styling */
   .login-box {
     position: relative;
@@ -116,3 +116,33 @@ body {
     opacity: 0; 
     animation: fadeOut 7s forwards;
   }
+
+
+
+.password-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.password-toggle input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  cursor: pointer;
+  accent-color: #007bff; 
+}
+
+/* Label styling */
+.password-toggle label {
+  cursor: pointer;
+  user-select: none; 
+  transition: color 0.3s ease;
+}
+
+.password-toggle label:hover {
+  color: #e0e0e0;
+}
