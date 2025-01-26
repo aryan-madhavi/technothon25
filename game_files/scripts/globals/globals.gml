@@ -7,5 +7,4 @@ enum STATE_AARIONA {
 	IDLE,
 	WALK,
 	SPRINT,
-	JUMP
 }
