@@ -16,6 +16,22 @@
       <form method="post">
         <input type="text" placeholder="Email" id ="Email" required>
         <input type="password" placeholder="Password" id="Password"required>
+        <div class="password-toggle">
+          <input type="checkbox" id="toggle-password" onclick="togglepass()">
+          <label for="toggle-password">Show Password</label>
+          <script>
+            function togglepass() {
+              var pass1 = document.getElementById("Password");
+    
+                if (pass1.type === "password") {
+                  pass1.type = "text";
+                } else {
+                  pass1.type = "password";
+                }
+              }
+          </script>
+        </div> 
+
         <div class="Account">
           <p>Dont Have Account? </p>
           <a href="signup.html">Signup</a>
