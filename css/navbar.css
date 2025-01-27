@@ -1,0 +1,76 @@
+/* NavBar Box style */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #4F518C;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 98.8%;
+    z-index: 10;
+    padding: 8px;
+    /* margin-bottom: 50px; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.header h1{
+    color: white;
+    font-size: 30px;
+    font-family: "EB Garamond", serif;
+    font-style: italic;
+}
+.Nav-Bar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.Nav-Bar li {
+    font-size: 25px;
+}
+
+.Nav-Bar a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+.logo{
+    display: flex;
+    gap: 20px;
+}
+.logo-img{
+    width: 25px;
+    height: 25px;
+    border-radius: 25%;
+    padding-top: 9.5%;
+}
+.login-and-signup{
+    display: flex;
+    gap: 15px;
+}
+button{
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 95px;
+}
+.login{
+    border-color: black;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+.signup{
+    border-color: white;
+    background-color: black;
+    color: white;
+    font-weight: bold;    
+}
+.login, .signup {
+    display: inline-block; 
+    cursor: pointer;       
+  }
+  
