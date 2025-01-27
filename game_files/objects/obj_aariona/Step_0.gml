@@ -58,3 +58,9 @@ mask_index = sprite[face];
 sprite_index = sprite[face];
 
 depth = -bbox_bottom;
+
+//Update coords
+global.last_room = room;
+global.xx = x;
+global.yy = y;
+global.face = face;

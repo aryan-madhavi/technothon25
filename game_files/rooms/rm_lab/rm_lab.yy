@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"rm_lab",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/rm_lab/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
@@ -29,7 +29,6 @@
     {"name":"inst_5297A869","path":"rooms/rm_lab/rm_lab.yy",},
     {"name":"inst_7EA3B50F","path":"rooms/rm_lab/rm_lab.yy",},
     {"name":"inst_4B49D238","path":"rooms/rm_lab/rm_lab.yy",},
-    {"name":"inst_4714C48D","path":"rooms/rm_lab/rm_lab.yy",},
     {"name":"inst_15A3F503","path":"rooms/rm_lab/rm_lab.yy",},
     {"name":"inst_3E1B75CC","path":"rooms/rm_lab/rm_lab.yy",},
     {"name":"inst_32FB4D59","path":"rooms/rm_lab/rm_lab.yy",},
@@ -37,9 +36,7 @@
   ],
   "isDnd":false,
   "layers":[
-    {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v1","%Name":"inst_4714C48D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4714C48D","objectId":{"name":"obj_aariona","path":"objects/obj_aariona/obj_aariona.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":296.0,"y":267.0,},
-      ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRInstanceLayer":"","%Name":"Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Decor","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_167BF387","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_167BF387","objectId":{"name":"obj_doors","path":"objects/obj_doors/obj_doors.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":302.0,"y":196.0,},
         {"$GMRInstance":"v1","%Name":"inst_58D11BEB","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_58D11BEB","objectId":{"name":"obj_warp_block","path":"objects/obj_warp_block/obj_warp_block.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.4,"scaleY":1.0,"x":274.0,"y":173.02551,},
