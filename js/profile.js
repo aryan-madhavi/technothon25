@@ -52,7 +52,7 @@ logoutBtn.addEventListener('click', async () => {
   try {
     await signOut(auth);
     alert('You have been logged out!');
-    window.location.href = '../index.html';  // Redirect to the login page
+    window.location.href = '../pages/index.html';  // Redirect to the login page
   } catch (error) {
     console.error('Error logging out:', error);
     alert('There was an error logging you out. Please try again.');
