@@ -59,8 +59,18 @@ sprite_index = sprite[face];
 
 depth = -bbox_bottom;
 
-//Update coords
+//Update Coords for Pause Menu
 global.last_room = room;
 global.xx = x;
 global.yy = y;
 global.face = face;
+
+//Update Recordings
+if (x != xprevious or y != yprevious) {
+	for (_i = array_size-1; _i > 0; _i--) {
+		pos_x[_i] = pos_x[_i-1];
+		pos_y[_i] = pos_y[_i-1];
+	}
+	pos_x[0] = x;
+	pos_y[0] = y;
+}
