@@ -78,7 +78,7 @@ Signup.addEventListener('click', (event) => {
     .then(() => {
       // Show success message and redirect to login page
       alert("Account created successfully!");
-      window.location.href = "../index.html";
+      window.location.href = "../pages/login.html";
     })
     .catch((error) => {
       console.error("Error writing to Firestore:", error);

@@ -1,6 +1,10 @@
-function dologin() {
+function dologin(){
     //alert("Login clicked!");
-    window.location.href = "../pages/index.html";
+    window.location.href = "../pages/login.html";
+}
+function getstarted(){
+    //alert("Login clicked!");
+    window.location.href = "../pages/login.html";
 }
 
 function dosignup() {

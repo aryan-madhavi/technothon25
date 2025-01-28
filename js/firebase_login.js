@@ -59,7 +59,7 @@ signin.addEventListener('click', async (event) => {
     Showmsg('Login Successful', 'signupmsg');
 
     // Redirect to another page
-    window.location.href = 'pages/homepage.html';
+    window.location.href = 'pages/gamepage.html';
   } catch (error) {
     console.error("Sign-in error:", error);
 
