@@ -70,8 +70,17 @@ button{
     color: white;
     font-weight: bold;    
 }
-.login, .signup {
+.login, .signup,.rate-us {
     display: inline-block; 
     cursor: pointer;       
   }
-  
+.rate-us{
+    display: flex;
+    gap: 15px;
+}
+.rate-us-button{
+    background-color: black;
+    border-color: white;
+    color: white;
+    font-weight: bold;
+ } 
