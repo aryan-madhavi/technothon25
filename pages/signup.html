@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Signup</title>
   <link rel="stylesheet" href="../css/loginsignup.css">
-  <script type="module" src = "../js/fire_base_signup.js"></script>
+  <script type="module" src="../js/fire_base_signup.js"></script>
 </head>
+
 <body>
   <div class="background">
     <div class="overlay"></div>
@@ -14,10 +16,10 @@
       <h1>SIGNUP</h1>
       <div id="signupmsg" class="MessageDiv" style="display: none"></div>
       <form method="post" id="signupForm">
-        <input type="text" placeholder="Username" id ="Username" required>
+        <input type="text" placeholder="Username" id="Username" required>
         <input type="text" placeholder="Email" id="email" required>
-        <input type="password" placeholder="Password" id="Password1"required>
-        <input type="password" placeholder="Confirm Password" id="Password2"required>
+        <input type="password" placeholder="Password" id="Password1" required>
+        <input type="password" placeholder="Confirm Password" id="Password2" required>
         <div class="password-toggle">
           <input type="checkbox" id="toggle-password" onclick="togglepass()">
           <label for="toggle-password">Show Password</label>
@@ -26,22 +28,22 @@
               var pass1 = document.getElementById("Password1");
               var pass2 = document.getElementById("Password2");
 
-                if (pass1.type === "password" || pass2.type == "password") {
-                  pass1.type = "text";
-                  pass2.type = "text";
-                } else {
-                  pass1.type = "password";
-                  pass2.type = "password";
-                }
+              if (pass1.type === "password" || pass2.type == "password") {
+                pass1.type = "text";
+                pass2.type = "text";
+              } else {
+                pass1.type = "password";
+                pass2.type = "password";
               }
+            }
           </script>
-        </div>        
+        </div>
         <p id="error" style="color: red; display: none;">Passwords do not match!</p>
         <div class="Account">
-            <p>Already Have a Account? </p>
-            <a href="../pages/login.html">Login</a>
+          <p>Already Have a Account? </p>
+          <a href="../pages/login.html">Login</a>
         </div>
-        <button type="submit" id = "SubmitSignUp">Signup</button>
+        <button type="submit" id="SubmitSignUp">Signup</button>
       </form>
       <!-- <script>
         document.getElementById('signupForm').addEventListener('submit', function(event) {
@@ -58,6 +60,7 @@
     </script> -->
     </div>
   </div>
-  
+
 </body>
+
 </html>

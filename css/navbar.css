@@ -1,7 +1,7 @@
 /* NavBar Box style */
 .header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 10px;
     background-color: #4F518C;
@@ -16,7 +16,7 @@
 }
 .header h1{
     color: white;
-    font-size: 30px;
+    font-size: 35px;
     font-family: "EB Garamond", serif;
     font-style: italic;
 }
@@ -27,9 +27,9 @@
     gap: 20px;
 }
 
-.Nav-Bar li {
-    font-size: 25px;
-}
+/* .Nav-Bar li {
+    font-size: 35px;
+} */
 
 .Nav-Bar a {
     color: white;
@@ -37,6 +37,7 @@
     font-weight: bold;
     text-decoration: none;
     font-size: 18px;
+    font-size: 20px;
 }
 .logo{
     display: flex;
