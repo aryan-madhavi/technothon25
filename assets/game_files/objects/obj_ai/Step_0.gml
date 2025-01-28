@@ -10,6 +10,7 @@ switch(obj_aariona.face) {
 	case LEFT:	face = SIDE;	image_xscale = -1;	break;
 }
 
+mask_index = sprite[face];
 sprite_index = sprite[face];
 
 mp_potential_step(obj_aariona.pos_x[record], obj_aariona.pos_y[record],mov_spd,true);
