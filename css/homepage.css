@@ -1,12 +1,12 @@
 body{
     background: linear-gradient(to right, #90A8C3, #4F518C);
-    font-family: 'EB Garamond', serif;
+    font-family: 'Jersey 15', sans-serif;
 }
 .flex-container{
     background-color: antiquewhite;
     opacity: 0.6;
     margin: 20px;
-    margin-top: 200px;
+    margin-top: 150px;
     border-radius: 50px;
     padding: 20px;
     display: flex;
@@ -15,23 +15,34 @@ body{
     padding: 30px;
 }
 .gamename{
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
 }
-.gamename h1{
-    font-size: 35px;
+.gamename-img{
+    width: 10%;
+    image-rendering: pixelated;
+}
+.gamename-title h1{
+    font-size: 40px;
     font-weight: bold;
+    letter-spacing: 1.5px;
 }
 .flex-row{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
+    margin: 20px;
 }
 .about-game{
     display: flex;
     flex-direction: column;
     width: 50%;
     text-align: justify;
+    font-size: 30px;
 }
 .game-img{
     width: 40%;
@@ -41,12 +52,13 @@ body{
     height: auto;
     display: block;
 }
-.start-game-button{
+.get-started-button{
     text-align: center;
+    margin-top: 20px;
 }
-.start-game{
+.get-started{
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 22px;
     border: none;
     border-radius: 5px;
     background-color: #4F518C;
@@ -54,6 +66,6 @@ body{
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.start-game:hover{
+.get-started:hover{
     background-color: #1f2036;
 }

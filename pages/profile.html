@@ -1,12 +1,22 @@
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carbonari Profile</title>
   <link rel="stylesheet" href="../css/profile.css">
   <link rel="stylesheet" href="../css/navbar.css">
+  <!-- Google fonts start -->
+  <!-- Pixelated Fonts EB Garamond, Jersey 10,  Jersey 15-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Jersey+10&family=Jersey+15&display=swap"
+    rel="stylesheet">
+  <!-- Google fonts end -->
   <script type="module" src="../js/profile.js"></script>
 </head>
+
 <body>
   <div class="header">
     <div class="logo">
@@ -14,11 +24,14 @@
       <h1>Carbonari</h1>
     </div>
     <div class="Nav-Bar">
-      <ul >
-        <li><a href="aboutus.html">About Us</a></li>
-        <li><a href="homepage.html">Game</a></li>
-        <li><a href="profile.html">Profile</a></li>
+      <ul>
+        <li><a href="../pages/gamepage.html">Game</a></li>
+        <li><a href="../pages/aboutus.html">About Us</a></li>
+        <li><a href="../pages/profile.html">Profile</a></li>
       </ul>
+    </div>
+    <div class="rate-us">
+      <button type="button" class="rate-us-button" onclick="rateus()">Rate Us</button>
     </div>
   </div>
 
@@ -28,8 +41,9 @@
       <h1>Profile</h1>
       <h2 id="username">UserName: </h2>
       <h2 id="email">Email: </h2>
-      <button id="logoutBtn">LogOut</button>
-    </div>  
+      <button id="logoutBtn">Log Out</button>
+    </div>
   </div>
 </body>
+<script src="../js/onclick_button.js"></script>
 </html>

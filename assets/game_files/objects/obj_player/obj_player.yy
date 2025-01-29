@@ -6,8 +6,8 @@
   "name":"obj_player",
   "overriddenProperties":[],
   "parent":{
-    "name":"Aariona",
-    "path":"folders/Objects/Aariona.yy",
+    "name":"Player",
+    "path":"folders/Objects/Player.yy",
   },
   "parentObjectId":null,
   "persistent":true,

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Signup</title>
+  <link rel="stylesheet" href="../css/loginsignup.css">
+  <!-- Google fonts start -->
+  <!-- Pixelated Fonts EB Garamond, Jersey 10,  Jersey 15-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Jersey+10&family=Jersey+15&display=swap"
+    rel="stylesheet">
+  <!-- Google fonts end -->
+  <script type="module" src="../js/firebase_login.js"></script>
+</head>
+
+<body>
+  <div class="background">
+    <div class="overlay"></div>
+    <div class="login-box">
+      <h1>LOGIN</h1>
+      <div id="signupmsg" class="MessageDiv" style="display: none"></div>
+      <form method="post">
+        <input type="text" placeholder="Email" id="Email" required>
+        <input type="password" placeholder="Password" id="Password" required>
+        <div class="password-toggle">
+          <input type="checkbox" id="toggle-password" onclick="togglepass()">
+          <label for="toggle-password">Show Password</label>
+          <script>
+            function togglepass() {
+              var pass1 = document.getElementById("Password");
+              if (pass1.type === "password") {
+                pass1.type = "text";
+              } else {
+                pass1.type = "password";
+              }
+            }
+          </script>
+        </div>
+
+        <div class="Account">
+          <p>Dont Have Account? </p>
+          <a href="../pages/signup.html">Signup</a>
+        </div>
+        <button type="submit" id="SubmitLoginIn" class="let-journey-begin-button">Let Journey Begin</button>
+      </form>
+    </div>
+  </div>
+
+  <!--   
+  <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+  <script src="https://files.bpcontent.cloud/2024/10/25/11/20241025115120-FD5XCJC8.js"></script>
+  -->
+
+</body>
+
+</html>

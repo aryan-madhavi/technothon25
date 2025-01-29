@@ -1,7 +1,9 @@
-if place_meeting(x,y,obj_aariona) {
-	msg = "Proceed to next room";
+if not place_meeting(x,y,obj_player) {
+	text = "";
+	exit;
 }
-else {
-	msg = "";
-}
-//draw_self();
+	
+text = msg;
+
+if keyboard_check_pressed(ord("F"))
+	image_index += 1;
