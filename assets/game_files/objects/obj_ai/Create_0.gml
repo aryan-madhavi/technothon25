@@ -1,6 +1,4 @@
 mov_spd = 2;
-xx = 0;
-yy = 0;
 
 record = 0;
 

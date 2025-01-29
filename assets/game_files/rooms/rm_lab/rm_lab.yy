@@ -37,6 +37,7 @@
     {"name":"inst_7997E672","path":"rooms/rm_lab/rm_lab.yy",},
     {"name":"inst_4CAA1726","path":"rooms/rm_lab/rm_lab.yy",},
     {"name":"inst_7A59597D","path":"rooms/rm_lab/rm_lab.yy",},
+    {"name":"inst_11923995","path":"rooms/rm_lab/rm_lab.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -57,6 +58,9 @@
         {"$GMRInstance":"v1","%Name":"inst_4CAA1726","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4CAA1726","objectId":{"name":"obj_bench3","path":"objects/obj_bench3/obj_bench3.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.4387755,"scaleY":1.6,"x":944.0,"y":381.0,},
         {"$GMRInstance":"v1","%Name":"inst_CBB9890","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_CBB9890","objectId":{"name":"obj_computers","path":"objects/obj_computers/obj_computers.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":949.0,"y":377.0,},
         {"$GMRInstance":"v1","%Name":"inst_7A59597D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7A59597D","objectId":{"name":"obj_servers","path":"objects/obj_servers/obj_servers.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1073.0,"y":186.0,},
+        {"$GMRInstance":"v1","%Name":"inst_11923995","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_11923995","objectId":{"name":"obj_interact","path":"objects/obj_interact/obj_interact.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_interact","path":"objects/obj_interact/obj_interact.yy",},"propertyId":{"name":"msg","path":"objects/obj_interact/obj_interact.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Press F to interact",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.5,"scaleY":0.97999996,"x":883.0,"y":390.0,},
       ],"layers":[],"name":"Decor","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Wall","depth":200,"effectEnabled":true,"effectType":null,"gridX":40,"gridY":40,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_3296113B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3296113B","objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":4.0,"x":122.0,"y":199.0,},

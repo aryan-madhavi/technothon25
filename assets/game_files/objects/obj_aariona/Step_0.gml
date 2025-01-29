@@ -38,18 +38,10 @@ if not instance_exists(obj_pauser) and ( h_input != 0 or v_input != 0) {
 	y += moveY;
 	
 	switch(dir) {
-		case 0:
-			face = RIGHT;
-			break;
-		case 90:
-			face = UP;
-			break;
-		case 180:
-			face = LEFT;
-			break;
-		case 270:
-			face = DOWN;
-			break;
+		case 0:		face = RIGHT;	break;
+		case 90:	face = UP;		break;
+		case 180:	face = LEFT;	break;
+		case 270:	face = DOWN;	break;
 	}
 }
 else { image_index = 1; }
