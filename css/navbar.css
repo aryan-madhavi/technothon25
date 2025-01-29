@@ -13,18 +13,20 @@
     padding: 8px;
     /* margin-bottom: 50px; */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: "Jersey 10", sans-serif;
 }
 .header h1{
     color: white;
-    font-size: 35px;
-    font-family: "EB Garamond", serif;
+    font-size: 45px;
     font-style: italic;
+    font-weight: bold;
+    letter-spacing: 1.5px;
 }
 .Nav-Bar ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    gap: 20px;
+    gap: 30px;
 }
 
 /* .Nav-Bar li {
@@ -34,27 +36,30 @@
 .Nav-Bar a {
     color: white;
     text-transform: uppercase;
-    font-weight: bold;
     text-decoration: none;
-    font-size: 18px;
-    font-size: 20px;
+    font-size: 35px;
+    /* font-weight: 800; */
+    letter-spacing: 1px;
 }
 .logo{
     display: flex;
     gap: 20px;
 }
 .logo-img{
-    width: 25px;
-    height: 25px;
-    border-radius: 25%;
-    padding-top: 9.5%;
+    width: 55px;
+    height: 55px;
+    /* border-radius: 25%; */
+    padding-top: 10%;
+    image-rendering: pixelated;
 }
 .login-and-signup{
     display: flex;
     gap: 15px;
 }
 button{
-    font-size: 18px;
+    font-size: 30px;
+    font-family: "Jersey 10", sans-serif;
+    letter-spacing: 1px;
     padding: 10px;
     border-radius: 95px;
 }

@@ -2,6 +2,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    font-family: "Jersey 15", sans-serif;
+    letter-spacing: 1.5px;
   }
   
   /* Background styling with blur effect */
@@ -45,12 +47,13 @@ body {
   }
   
   .Profile-box-box h1 {
-    font-size: 28px;
+    font-size: 35px;
     color: #fff;
     margin-bottom: 30px;
   }
     
   .Profile-box input::placeholder {
+    font-size: 32px;
     color: #777;
   }
   
@@ -60,7 +63,9 @@ body {
     border: none;
     padding: 15px 25px;
     border-radius: 10px;
-    font-size: 20px;
+    font-family: "Jersey 15", sans-serif;
+    letter-spacing: 1px;
+    font-size: 25px;
     cursor: pointer;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
   }

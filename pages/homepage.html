@@ -5,12 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google fonts start -->
-   <!-- Sankalp:- i like this font -->
+  <!-- Google fonts start -->
+  <!-- Pixelated Fonts EB Garamond, Jersey 10,  Jersey 15-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Jersey+10&family=Jersey+15&display=swap"
     rel="stylesheet">
-    <!-- Google fonts end -->
+  <!-- Google fonts end -->
+  <!-- Google fonts end -->
   <link rel="stylesheet" href="../css/homepage.css">
   <link rel="stylesheet" href="../css/navbar.css">
   <title>Carbonari Home Page</title>
@@ -18,47 +21,51 @@
 
 <body>
 
-    <div class="header">
-      <div class="logo">
-        <img src="../assets/imgs/logo.png" alt="logo will be added" class="logo-img">
-        <h1>Root Access</h1>
+  <div class="header">
+    <div class="logo">
+      <img src="../assets/imgs/logo.png" alt="logo will be added" class="logo-img">
+      <h1>Root Access</h1>
+    </div>
+    <div class="Nav-Bar">
+      <ul>
+        <li><a href="../pages/homepage.html">Home</a></li>
+        <li><a href="../pages/aboutus.html">About Us</a></li>
+        <li><a href="../pages/profile.html">Profile</a></li>
+        <!--TODO: pls change this if this page would be the index and add something new like future updates if needed for Sankalp -->
+      </ul>
+    </div>
+    <div class="login-and-signup">
+      <button type="button" class="login" onclick="dologin()">Login</button>
+      <button type="button" class="signup" onclick="dosignup()">Sign Up</button>
+    </div>
+  </div>
+
+
+
+  <div class="flex-container">
+    <div class="gamename">
+      <h1>Carbonari</h1>
+    </div>
+    <div class="flex-row">
+      <div class="about-game">
+        This game will teach you python basics.<br>You’re trapped inside a virtual prison, and the only way out is to
+        learn how to hack and manipulate the environment with code. As you hack into the system, you learn programming
+        concepts that allow you to manipulate the prison’s digital walls and defeat the hostile AIs guarding you.
       </div>
-      <div class="Nav-Bar">
-        <ul >
-          <li><a href="../pages/homepage.html">Home</a></li>
-          <li><a href="../pages/aboutus.html">About Us</a></li>
-          <li><a href="../pages/profile.html">Profile</a></li> <!--TODO: pls change this if this page would be the index and add something new like future updates if needed for Sankalp -->
-        </ul>
-      </div>
-      <div class="login-and-signup">
-        <button type="button" class="login" onclick="dologin()">Login</button>
-        <button type="button" class="signup" onclick="dosignup()">Sign Up</button>
+      <div class="game-img">
+        <img src="game-img.png" alt="Soon">
       </div>
     </div>
-
-   
-
-    <div class="flex-container">
-      <div class="gamename">
-          <h1>Carbonari</h1>
-      </div>
-      <div class="flex-row">
-          <div class="about-game">
-              This game will teach you python basics.<br>You’re trapped inside a virtual prison, and the only way out is to learn how to hack and manipulate the environment with code. As you hack into the system, you learn programming concepts that allow you to manipulate the prison’s digital walls and defeat the hostile AIs guarding you.
-          </div>
-          <div class="game-img">
-              <img src="game-img.png" alt="Soon">
-          </div>
-      </div>
-      <div class="get-started-button">
-          <button type="button" class="get-started" onclick="getstarted()">Get Started</button>
-      </div>
+    <div class="get-started-button">
+      <button type="button" class="get-started" onclick="getstarted()">Get Started</button>
+    </div>
   </div>
- 
+
 </body>
 <script src="../js/onclick_button.js"></script>
 <!-- ChatBot Script start -->
 <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
 <script src="https://files.bpcontent.cloud/2025/01/28/18/20250128180536-WUPKNIU3.js"></script>
 <!-- ChatBot Script End -->
+
 </html>
