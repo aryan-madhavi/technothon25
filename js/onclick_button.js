@@ -15,3 +15,15 @@ function dosignup() {
 function startgame(){
     window.location.href = "pages/gamepage.html";
 }
+
+function goindex(){
+    window.location.href = "../index.html";
+}
+
+function gohome(){
+    window.location.href = "../homepage.html";
+}
+
+function gosameindex(){
+    window.location.href = "index.html";
+}
