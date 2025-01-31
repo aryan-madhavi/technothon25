@@ -20,3 +20,6 @@ draw_text(x+op_border,y+_height/2,keyboard_string);
 
 if alarm[0] and not keyboard_check_pressed(vk_anykey)
 	draw_line_width(x+_str_width+op_border,y+op_border,x+_str_width+op_border,y+_height-op_border,2);
+
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);

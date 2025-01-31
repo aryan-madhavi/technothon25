@@ -1,5 +1,10 @@
-h_input = keyboard_check(vk_right) - keyboard_check(vk_left);
-v_input = keyboard_check(vk_down) - keyboard_check(vk_up);
+up		= keyboard_check(vk_up) or keyboard_check(ord("W"));
+left	= keyboard_check(vk_left) or keyboard_check(ord("A"));
+down	= keyboard_check(vk_down) or keyboard_check(ord("S"));
+right	= keyboard_check(vk_right) or keyboard_check(ord("D"));
+
+h_input = right - left;
+v_input = down - up;
 sprint = keyboard_check(vk_shift);
 
 if not instance_exists(obj_pauser) and ( h_input != 0 or v_input != 0) {
@@ -38,9 +43,9 @@ if not instance_exists(obj_pauser) and ( h_input != 0 or v_input != 0) {
 	y += moveY;
 	
 	switch(dir) {
-		case 0:		face = RIGHT;	break;
+		case 0:		face = SIDE;	image_xscale = 1; break;
 		case 90:	face = UP;		break;
-		case 180:	face = LEFT;	break;
+		case 180:	face = SIDE;	image_xscale = -1;	break;
 		case 270:	face = DOWN;	break;
 	}
 }
