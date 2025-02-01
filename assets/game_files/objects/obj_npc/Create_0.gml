@@ -2,9 +2,8 @@
 event_inherited();
 prompt = "Press T to talk";
 
-my_name = "Zenon";
 my_dialog = noone;
-sprite_index = sprite;
+self.sprite_index = sprite;
 
 area = noone
 vis = true;
