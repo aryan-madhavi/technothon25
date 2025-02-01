@@ -7,7 +7,6 @@ mov_spd = 1;
 
 face = DOWN;
 
-sprite[RIGHT] = spr_aariona_walk_right;
+sprite[SIDE] = spr_aariona_walk_side;
 sprite[UP] = spr_aariona_walk_up;
-sprite[LEFT] = spr_aariona_walk_left;
 sprite[DOWN] = spr_aariona_walk_down;

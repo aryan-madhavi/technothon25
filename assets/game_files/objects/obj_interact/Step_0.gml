@@ -1,12 +1,14 @@
+
 if not place_meeting(x,y,obj_player) {
-	text = "";
+	inside = false;
 	action = false;
 	exit;
 }
-	
-text = msg;
+
+inside = true;	
+prompt = prompt == "" ? msg : prompt;
 
 if keyboard_check_pressed(ord("F"))
 	action = !action;
 
-image_index = !action ? 0 : 1;
+image_index = !action ? type : 1;

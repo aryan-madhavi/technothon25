@@ -1,8 +1,7 @@
 switch(obj_aariona.face) {
 	case UP:	face = UP;			break;
 	case DOWN:	face = DOWN;		break;
-	case RIGHT:	face = SIDE;		break;
-	case LEFT:	face = SIDE;	image_xscale = -1;	break;
+	case SIDE:	face = SIDE;	image_xscale = obj_aariona.image_xscale;	break;
 }
 
 //mov_spd = obj_aariona.mov_spd-1;
