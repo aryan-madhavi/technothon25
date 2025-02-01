@@ -57,6 +57,8 @@
   "resources":[
     {"id":{"name":"fnt_biome","path":"fonts/fnt_biome/fnt_biome.yy",},},
     {"id":{"name":"fnt_bitpap","path":"fonts/fnt_bitpap/fnt_bitpap.yy",},},
+    {"id":{"name":"fnt_lt_railway","path":"fonts/fnt_lt_railway/fnt_lt_railway.yy",},},
+    {"id":{"name":"fnt_robotronika","path":"fonts/fnt_robotronika/fnt_robotronika.yy",},},
     {"id":{"name":"obj_aariona","path":"objects/obj_aariona/obj_aariona.yy",},},
     {"id":{"name":"obj_ai","path":"objects/obj_ai/obj_ai.yy",},},
     {"id":{"name":"obj_bench","path":"objects/obj_bench/obj_bench.yy",},},
@@ -81,6 +83,8 @@
     {"id":{"name":"obj_doors","path":"objects/obj_doors/obj_doors.yy",},},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
     {"id":{"name":"obj_interact","path":"objects/obj_interact/obj_interact.yy",},},
+    {"id":{"name":"obj_npc_dialog","path":"objects/obj_npc_dialog/obj_npc_dialog.yy",},},
+    {"id":{"name":"obj_npc","path":"objects/obj_npc/obj_npc.yy",},},
     {"id":{"name":"obj_pauser","path":"objects/obj_pauser/obj_pauser.yy",},},
     {"id":{"name":"obj_plants","path":"objects/obj_plants/obj_plants.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
