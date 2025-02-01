@@ -1,7 +1,7 @@
 if (image_index % 2 != 0)
 	exit;
 
-draw_set_font(fnt_help_dialog);
+draw_set_font(fnt_biome);
 
 draw_set_halign(fa_right);
 draw_set_valign(fa_bottom);

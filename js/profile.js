@@ -27,9 +27,9 @@ setPersistence(auth, browserLocalPersistence)
     onAuthStateChanged(auth, (user) => {
       if (user) {
         // User is logged in
-        console.log('User UID:', user.uid);
-        console.log('User Email:', user.email);
-        console.log('User Display Name:', user.displayName);
+        // console.log('User UID:', user.uid);
+        // console.log('User Email:', user.email);
+        // console.log('User Display Name:', user.displayName);
 
         // Set the values in the HTML elements
         usernameElement.innerText = `UserName: ${user.displayName || 'Guest'}`;  // If no displayName, show 'Guest'
