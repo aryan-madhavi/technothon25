@@ -6,5 +6,5 @@ _height = 0;
 name = noone;
 creator = noone;
 text = [];
-page = 0;
+page = 1;
 char_count = 0;

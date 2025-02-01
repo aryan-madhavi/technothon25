@@ -4,7 +4,10 @@ if creator.area.inside != true	{
 }
 
 if keyboard_check_pressed(vk_space) {
-	if page+1 < array_length(text) {
+	if char_count < string_length(text[page]) {
+		char_count = string_length(text[page]);
+	}
+	else if page+1 < array_length(text) {
 		page++;	
 		char_count = 0;
 	}
