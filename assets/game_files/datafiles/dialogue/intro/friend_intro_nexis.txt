@@ -1,0 +1,22 @@
+NEXIS
+This is NEXIS speaking
+They are far more advanced than us
+But we will try to help you get what you need
+You need to shut them down for the good of mankind
+Here are some convincing key points about Python and its need
+-	Python is a language that can be used for a wide range of applications, 
+from simple scripting to complex data analysis and machine learning 
+i.e from cooking Maggie to cooking something difficult.
+-	Code execution is no complex just simple line 
+after line without any extr-ordinary compilation steps 
+which is a benefit for testing quick and development.
+-	Also it supports Object – Oriented concepts such as classes and objects which are quiet easy.
+- Python is a chill guy 
+and hence do not need to explicitly declare variables with data-types, 
+which makes it more concise.
+-	Readability of python with clean syntax along with clear keywords 
+and significant whitespaces for code indentation,
+which makes it easy to read and fun to understand.
+-	Python has a motherly nature 
+and hence has a vast collection of pre-built modules 
+and libraries for several tasks.

@@ -47,7 +47,7 @@
   "origin":9,
   "parent":{
     "name":"Aariona",
-    "path":"folders/Sprites/Player/Aariona.yy",
+    "path":"folders/Sprites/Player Interaction/Aariona.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

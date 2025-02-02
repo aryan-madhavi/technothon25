@@ -48,7 +48,7 @@
   "origin":9,
   "parent":{
     "name":"Follower",
-    "path":"folders/Sprites/Player/Friends/Follower.yy",
+    "path":"folders/Sprites/Player Interaction/Friends/Follower.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

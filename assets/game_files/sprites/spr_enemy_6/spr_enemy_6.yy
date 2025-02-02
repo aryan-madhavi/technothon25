@@ -50,7 +50,7 @@
   "origin":9,
   "parent":{
     "name":"Enemy",
-    "path":"folders/Sprites/Player/Enemy.yy",
+    "path":"folders/Sprites/Player Interaction/Enemy.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

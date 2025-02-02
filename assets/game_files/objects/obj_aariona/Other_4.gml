@@ -6,3 +6,5 @@ for (_i = array_size-1; _i >= 0; _i--) {
 
 var _ai = instance_create_layer(x,y,"Instances",obj_ai);
 _ai.record = array_size-1;
+_ai.image_xscale = 1.2;
+_ai.image_yscale = 1.2;

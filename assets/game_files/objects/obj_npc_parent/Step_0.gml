@@ -2,8 +2,8 @@
 
 if area == noone {
 	area = instance_create_layer(x,y,"Instances",obj_interact);
-	area.image_xscale *= x_invert_area ? -1 : 1;
-	area.image_yscale *= y_invert_area ? -1 : 1;
+	area.image_xscale *= (x_invert_area ? -1 : 1);
+	area.image_yscale *= (y_invert_area ? -1 : 1);
 	area.prompt = prompt;
 }
 

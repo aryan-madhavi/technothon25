@@ -1,5 +1,5 @@
 /// @description Get dialogues from file
-var _file = file_text_open_read($"dialogues\\{category}\\{dialogue_file}");
+var _file = file_text_open_read($"dialogue\\{dialogue_file}");
 var _i = 0; 
 
 my_name = file_text_read_string(_file);

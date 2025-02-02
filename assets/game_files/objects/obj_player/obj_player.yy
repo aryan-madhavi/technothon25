@@ -6,8 +6,8 @@
   "name":"obj_player",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player",
-    "path":"folders/Objects/Player.yy",
+    "name":"Player Interaction",
+    "path":"folders/Objects/Player Interaction.yy",
   },
   "parentObjectId":null,
   "persistent":true,
