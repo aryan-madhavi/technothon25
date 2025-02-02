@@ -58,6 +58,7 @@ body{
 
 .game-img{
     width: 40%;
+    /* height: 10 px; */
 }
 .game-img img{
     width: 100%;

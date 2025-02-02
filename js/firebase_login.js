@@ -77,14 +77,14 @@ signin.addEventListener('click', async (event) => {
 // Authentication state listener
 onAuthStateChanged(auth, (user) => {
   if (user) {
-    console.log("User is logged in:", user.uid);
     localStorage.setItem('LoggedUserID', user.uid);
     localStorage.setItem('LoggedUserEmail', user.email);
     localStorage.setItem('LoggedUsername', user.displayName || 'Guest');
+    console.log("User is logged in:", user.uid);
   } else {
-    console.log("No user is logged in");
     localStorage.removeItem('LoggedUserID');
     localStorage.removeItem('LoggedUserEmail');
     localStorage.removeItem('LoggedUsername');x``
+    console.log("No user is logged in");
   }
 });

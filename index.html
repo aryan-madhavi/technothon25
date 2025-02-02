@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Google fonts start -->
+  <!-- Google fonts start -->
   <!-- Pixelated Fonts EB Garamond, Jersey 10,  Jersey 15-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,23 +13,24 @@
     href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Jersey+10&family=Jersey+15&display=swap"
     rel="stylesheet">
   <!-- Google fonts end -->
-  <link rel="stylesheet" href="css/homepage.css">
-  <link rel="stylesheet" href="css/navbar.css">
+  <!-- Google fonts end -->
+  <link rel="stylesheet" href="../css/homepage.css">
+  <link rel="stylesheet" href="../css/navbar.css">
   <title>Carbonari Home Page</title>
 </head>
 
 <body>
 
   <div class="header">
-    <div class="logo" onclick="gosameindex()">
-      <img src="assets/imgs/logo.png" alt="logo will be added" class="logo-img">
+    <div class="logo" onclick="gohome()">
+      <img src="../assets/imgs/logo.png" alt="logo will be added" class="logo-img">
       <h1>Carbonari</h1>
     </div>
     <div class="Nav-Bar">
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#updates">Updates</a></li>
+        <li><a href="index.html">Home</a></li>
+        <!-- <li><a href="../pages/aboutus.html">About</a></li> -->
+        <li><a href="../pages/updates.html">Updates</a></li>
         <!--TODO: pls change this if this page would be the index and add something new like future updates if needed for Sankalp -->
       </ul>
     </div>
@@ -40,30 +42,30 @@
 
 
 
-  <div class="flex-container" id="home">
-    <div class="gamename">
-      <!-- <img src="assets/imgs/game-img.png" alt="Soon" class="gamename-img"> -->
+  <div class="flex-container">
+    <div class="gamename"><img src="assets/imgs/game-img.png" alt="Soon" class="gamename-img">
       <div class="gamename-title">
         <h1>Root Access</h1>
       </div>
     </div>
-
+    
     <div class="flex-row">
       <div class="about-game">
-        In a top-tier AI robot factory, a new series of AI robots has turned against their creators. Players will take on the role of "Aariona," teaming up with a handful of loyal robots to stop the rogue machines once and for all. As they advance through each level, the challenges will become tougher and more intricate, requiring players to adapt and learn new skills.
+        This game will teach you python basics.<br>You’re trapped inside a virtual prison, and the only way out is to
+        learn how to hack and manipulate the environment with code. As you hack into the system, you learn programming
+        concepts that allow you to manipulate the prison’s digital walls and defeat the hostile AIs guarding you.
       </div>
-      <div class="about-game-img">
-        <img src="assets/imgs/snake.jpg" alt="Soon">
+      <div class="game-img">
+        <img src="assets\imgs\snake.jpg" alt="Soon">
       </div>
-      
     </div>
     <div class="get-started-button">
       <button type="button" class="get-started" onclick="getstarted()">Get Started</button>
     </div>
   </div>
+
 </body>
-<!-- Scripts -->
-<script src="js/onclick_button.js"></script>
+<script src="../js/onclick_button.js"></script>
 <!-- ChatBot Script start -->
 <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
 <script src="https://files.bpcontent.cloud/2025/01/28/18/20250128180536-WUPKNIU3.js"></script>

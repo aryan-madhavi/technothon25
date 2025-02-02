@@ -27,9 +27,9 @@ setPersistence(auth, browserLocalPersistence)
     onAuthStateChanged(auth, (user) => {
       if (user) {
         // User is logged in
-        console.log('User UID:', user.uid);
-        console.log('User Email:', user.email);
-        console.log('User Display Name:', user.displayName);
+        // console.log('User UID:', user.uid);
+        // console.log('User Email:', user.email);
+        // console.log('User Display Name:', user.displayName);
 
         // Set the values in the HTML elements
         usernameElement.innerText = `UserName: ${user.displayName || 'Guest'}`;  // If no displayName, show 'Guest'
@@ -52,7 +52,7 @@ logoutBtn.addEventListener('click', async () => {
   try {
     await signOut(auth);
     alert('You have been logged out!');
-    window.location.href = '../pages/login.html';  // Redirect to the login page
+    window.location.href = '../index.html';  
   } catch (error) {
     console.error('Error logging out:', error);
     alert('There was an error logging you out. Please try again.');
