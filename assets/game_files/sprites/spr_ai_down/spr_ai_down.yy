@@ -47,8 +47,8 @@
   },
   "origin":9,
   "parent":{
-    "name":"AI",
-    "path":"folders/Sprites/Player/AI.yy",
+    "name":"Follower",
+    "path":"folders/Sprites/Player/Friends/Follower.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
