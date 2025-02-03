@@ -1,3 +1,5 @@
+depth = -999999;
+
 draw_set_color(c_white);
 font = fnt_consolas; //fnt_robotronika;
 draw_set_font(font);
@@ -34,8 +36,11 @@ if char_count < string_length(text[page])
 text_part = string_copy(text[page],1,char_count);
 draw_text_ext(_x1+op_border,_y1+_height-_str_height,text_part,_str_height,_width);
 
+
+font = fnt_robotronika;
 _c = c_yellow;
 font_size = 12 / font_get_size(font);
+draw_set_font(font);
 draw_set_halign(fa_right);
 draw_set_valign(fa_middle);
 draw_text_transformed_color(_x1+_width,_y1+_height,name,font_size,font_size,0,_c,_c,_c,_c,1);

@@ -11,7 +11,7 @@ if area.inside == true {
 	action = false;
 	//inside = false;
 	if keyboard_check_pressed(ord("T")) and my_dialog == noone {
-		my_dialog = instance_create_layer(x,y,"Text",obj_npc_dialog);
+		my_dialog = instance_create_layer(area.x,area.y,"Text",obj_npc_dialog);
 		prompt = "Press Space to continue";
 		area.prompt = prompt;
 		my_dialog.name = my_name;
