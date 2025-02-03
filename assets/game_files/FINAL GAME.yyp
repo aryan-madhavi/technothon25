@@ -49,8 +49,6 @@
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[
-    {"$GMIncludedFile":"","%Name":"Hydra.mp3","CopyToMask":-1,"filePath":"datafiles/audio","name":"Hydra.mp3","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"Smart Riot.mp3","CopyToMask":-1,"filePath":"datafiles/audio","name":"Smart Riot.mp3","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"friend_intro_bot_name.txt","CopyToMask":-1,"filePath":"datafiles/dialogue/intro","name":"friend_intro_bot_name.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"friend_intro_nexis.txt","CopyToMask":-1,"filePath":"datafiles/dialogue/intro","name":"friend_intro_nexis.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"friend_intro_zenon.txt","CopyToMask":-1,"filePath":"datafiles/dialogue/intro","name":"friend_intro_zenon.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -187,10 +185,10 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_lab","path":"rooms/rm_lab/rm_lab.yy",},},
     {"roomId":{"name":"rm_menu_main","path":"rooms/rm_menu_main/rm_menu_main.yy",},},
     {"roomId":{"name":"rm_menu_email","path":"rooms/rm_menu_email/rm_menu_email.yy",},},
     {"roomId":{"name":"rm_menu_pass","path":"rooms/rm_menu_pass/rm_menu_pass.yy",},},
-    {"roomId":{"name":"rm_lab","path":"rooms/rm_lab/rm_lab.yy",},},
     {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
     {"roomId":{"name":"rm_menu_pause","path":"rooms/rm_menu_pause/rm_menu_pause.yy",},},
   ],
