@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="UTF-8">
@@ -12,15 +11,17 @@
   <link
     href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Jersey+10&family=Jersey+15&display=swap"
     rel="stylesheet">
-  <!-- Google fonts end -->
-  <!-- Google fonts end -->
-  <link rel="stylesheet" href="css/homepage.css">
-  <link rel="stylesheet" href="css/navbar.css">
+    <!-- Google fonts end -->
+    <!-- Google fonts end -->
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <script type="module" src="js/indexbuttoncontentload.js"></script>
+    <script type="module" src="js/profile.js"></script>
   <title>Carbonari Home Page</title>
 </head>
 
 <body>
-
+  
   <div class="header">
     <div class="logo" onclick="gohome()">
       <img src="assets/imgs/logo.png" alt="logo will be added" class="logo-img">
@@ -28,22 +29,27 @@
     </div>
     <div class="Nav-Bar">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" id="home">Home</a></li>
         <!-- <li><a href="../pages/aboutus.html">About</a></li> -->
-        <li><a href="pages/updates.html">Updates</a></li>
+        <li><a href="pages/updates.html" id="updates">Updates</a></li>
+        <li><a href="pages/gamepage.html" id="game">Game</a></li>
+        <li><a href="pages/aboutus.html" id="aboutus">About Us</a></li>
+        <li><a href="pages/profile.html" id="profile">Profile</a></li>
         <!--TODO: pls change this if this page would be the index and add something new like future updates if needed for Sankalp -->
       </ul>
+      
     </div>
-    <div class="login-and-signup">
-      <button type="button" class="login" onclick="dologin()">Login</button>
-      <button type="button" class="signup" onclick="dosignup()">Sign Up</button>
+      <div class="login-and-signup">
+        <button type="button" id="logoutBtn" class="login">Logout</button>
+        <button type="button" class="login" id="loginBtn" onclick="dologin()">Login</button>
+        <button type="button" class="signup" id="signupBtn" onclick="dosignup()">Sign Up</button>
+      </div>
     </div>
-  </div>
 
 
-
-  <div class="flex-container">
-    <div class="gamename"><img src="assets/imgs/game-img.png" alt="Soon" class="gamename-img">
+    
+    <div class="flex-container">
+      <div class="gamename"><img src="assets/imgs/game-img.png" alt="Soon" class="gamename-img">
       <div class="gamename-title">
         <h1>Root Access</h1>
       </div>
@@ -63,7 +69,7 @@
       <button type="button" class="get-started" onclick="getstarted()">Get Started</button>
     </div>
   </div>
-
+  
 </body>
 <script src="js/onclick_button.js"></script>
 <!-- ChatBot Script start -->
