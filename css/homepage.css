@@ -82,3 +82,15 @@ body{
 .get-started:hover{
     background-color: #1f2036;
 }
+
+.profile {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    text-align: center; 
+    height: 100%; 
+}

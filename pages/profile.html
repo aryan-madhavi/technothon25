@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carbonari Profile</title>
-  <link rel="stylesheet" href="../css/profile.css">
+  <link rel="stylesheet" href="../css/homepage.css">
   <link rel="stylesheet" href="../css/navbar.css">
   <!-- Google fonts start -->
   <!-- Pixelated Fonts EB Garamond, Jersey 10,  Jersey 15-->
@@ -25,9 +25,11 @@
     </div>
     <div class="Nav-Bar">
       <ul>
-        <li><a href="../pages/gamepage.html">Game</a></li>
-        <li><a href="../pages/aboutus.html">About Us</a></li>
-        <li><a href="../pages/profile.html">Profile</a></li>
+        <li><a href="../index.html" id="home">Home</a></li>
+        <li><a href="updates.html" id="updates">Updates</a></li>
+        <li><a href="gamepage.html" id="game">Game</a></li>
+        <li><a href="aboutus.html" id="aboutus">About Us</a></li>
+        <li><a href="profile.html" id="profile">Profile</a></li>
       </ul>
     </div>
     <div class="rate-us">
@@ -35,15 +37,20 @@
     </div>
   </div>
 
-  <div class="background">
-    <div class="overlay"></div>
-    <div class="Profile-box">
-      <h1>Profile</h1>
-      <h2 id="username">UserName: </h2>
-      <h2 id="email">Email: </h2>
-      <button id="logoutBtn">Log Out</button>
+ 
+    <div class="flex-container">
+      <div class="profile">
+        <h1>Profile</h1>
+        <h2 id="username">UserName: </h2>
+        <h2 id="email">Email: </h2>
+        <button id="logoutBtn">Log Out</button>
+      </div>
     </div>
-  </div>
+
+
+ 
+
+</div>
 </body>
 <script src="../js/onclick_button.js"></script>
 </html>
