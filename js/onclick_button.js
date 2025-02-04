@@ -17,7 +17,7 @@ function startgame(){
 }
 
 function goindex(){
-    window.location.href = "gamepage.html";
+    window.location.href = "../index.html";
 }
 
 function gohome(){
