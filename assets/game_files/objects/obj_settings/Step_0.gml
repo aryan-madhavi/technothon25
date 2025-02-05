@@ -1,4 +1,7 @@
-if keyboard_check_pressed(vk_escape) and not instance_exists(obj_pauser) {
+if global.pause
+	exit;
+
+if keyboard_check_pressed(vk_escape) {
 	if room == rm_menu_pass {
 		room_goto_previous();
 		exit;
@@ -9,9 +12,15 @@ if keyboard_check_pressed(vk_escape) and not instance_exists(obj_pauser) {
 		exit;
 	}
 	if instance_exists(obj_aariona) {
+		global.pause = true;
+
+		//Update Coords for Pause Menu
+		global.last_room = room;
+		global.xx = obj_aariona.x;
+		global.yy = obj_aariona.y;
+		global.face = obj_aariona.face;
 		instance_destroy(obj_aariona);
 		//object_set_visible(obj_aariona, false);
 	}
 	room_goto(rm_menu_pause);
-		
 }

@@ -14,10 +14,7 @@
     "name":"Others",
     "path":"folders/Objects/Others.yy",
   },
-  "parentObjectId":{
-    "name":"obj_pauser",
-    "path":"objects/obj_pauser/obj_pauser.yy",
-  },
+  "parentObjectId":null,
   "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

@@ -7,8 +7,8 @@ if (_type == "video_start")
 
 {
     play = true;
-	instance_create_layer(x,y,"Instances",obj_pauser);
-
+	
+	global.pause = true;
 }
 
 else if (_type == "video_end") {
@@ -21,5 +21,5 @@ else if (_type == "video_end") {
 
     video = undefined; // Reset the video variable
 	
-	instance_destroy(obj_pauser);
+	global.pause = false;
 }

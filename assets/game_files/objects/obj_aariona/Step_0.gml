@@ -1,3 +1,4 @@
+
 up		= keyboard_check(vk_up) or keyboard_check(ord("W"));
 left	= keyboard_check(vk_left) or keyboard_check(ord("A"));
 down	= keyboard_check(vk_down) or keyboard_check(ord("S"));
@@ -7,9 +8,8 @@ h_input = right - left;
 v_input = down - up;
 sprint = keyboard_check(vk_shift);
 
-if not instance_exists(obj_pauser) and ( h_input != 0 or v_input != 0) {
-	if sprint == true { state = STATE_AARIONA.SPRINT; }
-	else { state = STATE_AARIONA.WALK; }
+if (h_input != 0 or v_input != 0) and not global.pause {
+	state = sprint ? STATE_AARIONA.SPRINT : STATE_AARIONA.WALK;
 	dir = point_direction(0,0,h_input,v_input);
 	direction = dir;
 	
@@ -55,12 +55,6 @@ mask_index = sprite[face];
 sprite_index = sprite[face];
 
 depth = -bbox_bottom;
-
-//Update Coords for Pause Menu
-global.last_room = room;
-global.xx = x;
-global.yy = y;
-global.face = face;
 
 //Update Recordings
 if (x != xprevious or y != yprevious) {

@@ -18,6 +18,5 @@ if not play {
 	video = undefined;
 	pause = false;
 	play = false;
-	if instance_exists(obj_pauser)
-		instance_destroy(obj_pauser);
+	global.pause = false;
 }
