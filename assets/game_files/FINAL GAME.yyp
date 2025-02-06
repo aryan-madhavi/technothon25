@@ -53,6 +53,7 @@
     {"$GMIncludedFile":"","%Name":"friend_intro_nexis.txt","CopyToMask":-1,"filePath":"datafiles/dialogue/intro","name":"friend_intro_nexis.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"friend_intro_zenon.txt","CopyToMask":-1,"filePath":"datafiles/dialogue/intro","name":"friend_intro_zenon.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"friend_intro.txt","CopyToMask":-1,"filePath":"datafiles/dialogue/intro","name":"friend_intro.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"KEYS.txt","CopyToMask":-1,"filePath":"datafiles","name":"KEYS.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"python-intro.mp4","CopyToMask":-1,"filePath":"datafiles/video","name":"python-intro.mp4","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
