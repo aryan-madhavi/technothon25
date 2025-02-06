@@ -3,13 +3,12 @@
 function scr_sendgpt(_question){
 	
 	var _map = ds_map_create();
-	//ds_map_add(map, "Host", "https://chat.botpress.cloud/0dddcd0a-8dca-4abc-a8ed-54c0152d080b/messages");
 	ds_map_add(_map, "Authorization", "Bearer " + API_KEY);
 	ds_map_add(_map, "Content-Type", "application/json");
 
     var _curl = {
 					"model": "gpt-4o-mini",
-			        "messages": [
+					"messages": [
 			            {
 			                "role": "developer",
 			                "content": "Your name is 'Riruru'. You are a helpful AI robot that has to help the user to defeat the rogue AI robots. Be extremely concise. Answer within 100 words. Ensure the response is in plain text without any Markdown or special formatting. If asked about exiting, respond by asking the to hit 'F1' key. "

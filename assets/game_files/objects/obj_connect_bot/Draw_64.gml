@@ -46,7 +46,7 @@ if display_string != "" {
 	
 	draw_set_font(fnt_elianto);
 	_y1 += string_height(" ")*1.5;
-	draw_text_ext(_x1+_op_border,_y1+_op_border,text_part,-1,_view_width-_xbuf*2.5-_op_border);
+	draw_text_ext(_x1+_op_border,_y1+_op_border,text_part,string_height(" ")+5,_view_width-_xbuf*2.5-_op_border);
 }
 else {
 	
