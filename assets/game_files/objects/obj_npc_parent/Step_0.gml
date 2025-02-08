@@ -15,6 +15,7 @@ if area.inside == true {
 	if keyboard_check_pressed(ord("T")) and my_dialog == noone {
 		my_dialog = instance_create_layer(area.x,area.y,"Text",obj_npc_dialog);
 		prompt = "Press Space to continue";
+		my_dialog.snd = choose_robot_lang();
 		area.prompt = prompt;
 		my_dialog.name = my_name;
 		my_dialog.creator = self;

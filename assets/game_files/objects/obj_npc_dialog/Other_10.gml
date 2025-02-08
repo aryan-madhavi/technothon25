@@ -1,7 +1,5 @@
 /// @description Play Audio if talking
 
-snd = snd_ai_response;
-
 if string_length(text_part) < string_length(text[page])  {
 	if snd_inst == noone 
 		snd_inst = audio_play_sound(snd,1,true);

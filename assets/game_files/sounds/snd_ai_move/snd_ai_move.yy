@@ -7,7 +7,7 @@
   },
   "bitDepth":1,
   "bitRate":128,
-  "compression":0,
+  "compression":3,
   "conversionMode":0,
   "duration":1.149388,
   "name":"snd_ai_move",
@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"snd_ai_move.mp3",
   "type":1,
-  "volume":0.05,
+  "volume":0.06,
 }
