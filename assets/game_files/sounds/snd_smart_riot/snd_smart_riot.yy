@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"snd_smart_riot.mp3",
   "type":1,
-  "volume":0.2,
+  "volume":0.5,
 }

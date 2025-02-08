@@ -10,6 +10,7 @@ mask_index = sprite[face];
 sprite_index = sprite[face];
 
 mp_potential_step_object(obj_aariona.pos_x[record], obj_aariona.pos_y[record],mov_spd,obj_wall);
+event_user(0);
 
 //x = obj_aariona.pos_x[record];
 //y = obj_aariona.pos_y[record];

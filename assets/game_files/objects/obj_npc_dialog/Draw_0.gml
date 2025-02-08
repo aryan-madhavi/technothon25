@@ -35,7 +35,7 @@ if char_count < string_length(text[page])
 	char_count += .5;
 text_part = string_copy(text[page],1,char_count);
 draw_text_ext(_x1+op_border,_y1+_height-_str_height,text_part,_str_height,_width);
-
+event_user(0);
 
 font = fnt_robotronika;
 _c = c_yellow;

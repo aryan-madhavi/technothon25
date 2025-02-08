@@ -1,5 +1,13 @@
-if global.pause and not help and room == rm_menu_pause
+if global.pause and not help
 	exit;
+	
+switch room {
+	case rm_menu_main:
+	case rm_menu_email:
+	case rm_menu_pass:
+	case rm_menu_pause:
+		exit;
+}
 
 if keyboard_check_pressed(vk_f1) 
 	help = !help;

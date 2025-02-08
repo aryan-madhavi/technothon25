@@ -1,7 +1,5 @@
-if not inside
-	exit;
 
-if action
+if not inside
 	exit;
 
 draw_set_font(fnt_lt_railway);

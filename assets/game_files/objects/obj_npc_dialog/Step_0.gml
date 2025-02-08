@@ -1,5 +1,5 @@
 if creator.area.inside != true	{
-	event_user(0);
+	event_user(1);
 	exit;
 }
 
@@ -12,5 +12,5 @@ if keyboard_check_pressed(vk_space) {
 		char_count = 0;
 	}
 	else 
-		event_user(0);
+		event_user(1);
 }

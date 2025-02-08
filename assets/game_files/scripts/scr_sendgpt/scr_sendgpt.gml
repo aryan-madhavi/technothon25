@@ -22,17 +22,8 @@ function scr_sendgpt(_question){
 			                "content": _question,
 			            }
 			        ],
-					//"max_tokens": int64(300),
 					"temperature": 0.6,
-					//"n": int64(4),
 			    }
-	/*var _curl = {
-					"model": "text-daVinco-03",
-					"prompt": "Write a haiku about recursion in programming",
-					"max_tokens": int64(30),
-					"temperature": 0.6,
-					"n": int64(4),
-				};*/
 			
 	var _data = json_stringify(_curl);
 

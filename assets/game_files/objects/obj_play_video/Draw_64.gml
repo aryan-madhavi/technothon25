@@ -3,7 +3,7 @@
 event_inherited();
 
 if (play) {
-
+	
     if (!video_loaded) {
 
         // Check if a video is already loaded or playing, close it before loading a new one
@@ -25,6 +25,8 @@ if (play) {
         }
 
     } else {
+
+		audio_pause_all();
 
         var videoData = video_draw();
 
@@ -58,7 +60,9 @@ if (play) {
         video_loaded = false;
 
     }
-
+	
+	audio_resume_all();
+	
 }
 
 /*

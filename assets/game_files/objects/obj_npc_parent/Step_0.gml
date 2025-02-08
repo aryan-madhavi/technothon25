@@ -1,5 +1,7 @@
 //event_inherited();
 
+depth = -bbox_bottom;
+
 if area == noone {
 	area = instance_create_layer(x,y,"Instances",obj_interact);
 	area.image_xscale *= (x_invert_area ? -1 : 1);
@@ -19,5 +21,3 @@ if area.inside == true {
 		my_dialog.text = my_text;
 	}
 }
-
-depth = -bbox_bottom;

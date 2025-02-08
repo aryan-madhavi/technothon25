@@ -9,4 +9,10 @@ enum STATE_AARIONA {
 	SPRINT,
 }
 
+
+// Controls
 pause = false;
+
+// Sound
+master_vol = 1;
+music_vol = 1;

@@ -1,6 +1,6 @@
 
-type = inside ? 2 : 0;
-image_index = !action ? type : 1;
+image_index = inside ? 1 : 0;
+//image_index = !action ? type : 2;
 
 if not place_meeting(x,y,obj_player) {
 	inside = false;

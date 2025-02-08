@@ -1,0 +1,5 @@
+Move with WASD or ARROW keys
+Hold 'SHIFT' to Sprint
+Interact with 'F' key
+Talk with 'T' key
+Press 'F1' to learn from RIRURU

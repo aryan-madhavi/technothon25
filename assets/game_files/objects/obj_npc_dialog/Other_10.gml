@@ -1,6 +1,13 @@
-/// @description Destroy instances
-instance_destroy(creator.area);
-creator.area = noone;
-instance_destroy();
-creator.my_dialog = noone;
-creator.prompt = "Press T to Talk";
+/// @description Play Audio if talking
+
+snd = snd_ai_response;
+
+if string_length(text_part) < string_length(text[page])  {
+	if snd_inst == noone 
+		snd_inst = audio_play_sound(snd,1,true);
+}
+else {
+	if string_length(text_part) >= string_length(text[page]) and audio_is_playing(snd_inst)
+		audio_stop_sound(snd_inst)
+	snd_inst = noone;
+}

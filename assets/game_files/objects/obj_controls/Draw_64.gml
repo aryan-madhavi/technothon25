@@ -17,10 +17,16 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_top);
 
 draw_set_font(fnt_case1979);
+draw_set_color(c_yellow);
 draw_text(_view_width/2,_ybuf*2,"CONTROLS");
 
+draw_set_color(c_white);
 draw_set_font(fnt_bitpap);
-draw_text(_view_width/2,_ybuf*6,"Move with WASD or ARROW keys\nInteract with 'F' key\nTalk with 'T' key\nPress 'F1' to learn from RIRURU");
+
+if array_length(my_text) == 0
+	event_user(0);
+for (var _i = 0; _i < array_length(my_text); ++_i)
+	draw_text_transformed(_view_width/2,_ybuf*6+_i*string_height(" "),my_text[_i],.8,.8,0);
 
 draw_set_color(c_silver);
 draw_text_transformed(_view_width/2,_view_height-_ybuf*3,"Press 'esc' key to go back",.7,.7,0);
