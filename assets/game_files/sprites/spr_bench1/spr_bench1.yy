@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Benches",
-    "path":"folders/Sprites/Decor/Benches.yy",
+    "name":"Furniture",
+    "path":"folders/Sprites/Decor/Furniture.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -9,5 +9,4 @@ text = [];
 page = 0;
 char_count = 0;
 
-snd = noone;
 snd_inst = noone;

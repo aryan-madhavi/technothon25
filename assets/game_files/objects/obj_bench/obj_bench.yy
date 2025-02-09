@@ -9,8 +9,8 @@
   "name":"obj_bench",
   "overriddenProperties":[],
   "parent":{
-    "name":"Benches",
-    "path":"folders/Objects/Decor/Benches.yy",
+    "name":"Furniture",
+    "path":"folders/Objects/Decor/Furniture.yy",
   },
   "parentObjectId":{
     "name":"obj_wall",

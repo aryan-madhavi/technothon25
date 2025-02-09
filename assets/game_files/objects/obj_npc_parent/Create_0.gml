@@ -1,9 +1,12 @@
 
 event_inherited();
-prompt = "Press T to talk";
+
+prompt = "Press 'F' to Talk";
 
 my_dialog = noone;
 sprite_index = sprite;
+image_xscale *= 1.8;
+image_yscale *= 1.8;
 
 area = noone;
 
