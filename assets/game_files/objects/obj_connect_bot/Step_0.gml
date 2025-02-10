@@ -1,5 +1,6 @@
-if global.pause and not help
+if global.pause and not help {
 	exit;
+}
 	
 switch room {
 	case rm_menu_main:
@@ -9,7 +10,7 @@ switch room {
 		exit;
 }
 
-if keyboard_check_pressed(vk_f1) 
+if string_length(text_part) >= string_length(display_string) and display_string != "Thinking..." and keyboard_check_pressed(vk_f1) 
 	help = !help;
 
 if help and keyboard_check_pressed(vk_enter) {

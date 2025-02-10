@@ -7,7 +7,8 @@ if string_length(text_part) < string_length(display_string) {
 		snd_inst = audio_play_sound(snd,1,true);
 }
 else {
-	if string_length(text_part) >= string_length(display_string) and audio_is_playing(snd_inst)
+	if string_length(text_part) >= string_length(display_string) and audio_is_playing(snd_inst) {
 		audio_stop_sound(snd_inst);
-	snd_inst = noone;
+		snd_inst = noone;
+	}
 }
