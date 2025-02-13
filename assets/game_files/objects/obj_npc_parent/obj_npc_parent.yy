@@ -35,7 +35,7 @@
     {"$GMObjectProperty":"v1","%Name":"sprite","filters":[],"listItems":[],"multiselect":false,"name":"sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"","varType":5,},
     {"$GMObjectProperty":"v1","%Name":"x_invert_area","filters":[],"listItems":[],"multiselect":false,"name":"x_invert_area","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"y_invert_area","filters":[],"listItems":[],"multiselect":false,"name":"y_invert_area","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
-    {"$GMObjectProperty":"v1","%Name":"dialogue_file","filters":[],"listItems":[],"multiselect":false,"name":"dialogue_file","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"intro\\\\friend_intro.txt","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"dialogue_file","filters":[],"listItems":[],"multiselect":false,"name":"dialogue_file","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"friend_intro.txt","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

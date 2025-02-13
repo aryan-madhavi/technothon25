@@ -1,0 +1,22 @@
+Q: Who developed Python?
+O: Dennis Ritchie
+   Guido van Rossum
+   James Gosling
+   Bjarne Stroustrup
+A: Guido van Rossum
+
+Q: Python was released in the year
+O: 1989
+   1991 
+   1995
+   2000
+A: 1991
+
+Q: Python is an example of a __________ language
+O: Compiled
+   Interpreted
+   Assembly
+   Machine
+A: Interpreted
+
+

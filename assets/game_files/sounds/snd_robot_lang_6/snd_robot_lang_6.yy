@@ -12,8 +12,8 @@
   "duration":6.60898,
   "name":"snd_robot_lang_6",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Robot",
+    "path":"folders/Sounds/Robot.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

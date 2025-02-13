@@ -5,7 +5,12 @@ intro_len = 0.428;
 total_len = 1.041;
 loop_len = total_len-intro_len;
 
-if x != xprevious or y != yprevious {
+if global.battle and snd_inst != noone {
+	if audio_is_playing(snd_inst)
+		audio_stop_sound(snd_inst);
+	snd_inst = noone;
+}
+else if x != xprevious or y != yprevious {
 	if snd_inst != noone {
 		pos = audio_sound_get_track_position(snd_inst)
 		if pos >= total_len {

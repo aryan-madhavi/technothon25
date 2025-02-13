@@ -10,8 +10,9 @@ enum STATE_AARIONA {
 }
 
 
-// Controls
+// Game State
 pause = false;
+battle = false;
 
 // Sound
 master_vol = 1;

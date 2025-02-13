@@ -1,4 +1,4 @@
-if not help {
+if not help and not global.battle {
 	keyboard_string = "";
 	exit;
 }

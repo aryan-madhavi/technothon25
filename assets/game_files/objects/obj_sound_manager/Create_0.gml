@@ -10,3 +10,7 @@ end_fade_out_time = 0;
 fade_out_insts = array_create(0);
 fade_out_inst_vol = array_create(0);
 fade_out_inst_time = array_create(0);
+
+room_start = function() {
+	event_perform(ev_other,ev_room_start);
+}

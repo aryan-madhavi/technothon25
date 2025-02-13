@@ -1,7 +1,15 @@
-image_speed = 0;
-image_index = 1;
+sprite_index = spr_enemy;
 
-// Follow player
-mp_potential_step_object(obj_aariona.x,obj_aariona.y,1,obj_wall);
+if global.pause {
+	path_speed = 0;
+	exit;
+}
 
-depth = -bbox_bottom;
+path_speed = 1;
+
+if path_position <= 0 {
+	path_start(enemy_path,1,path_action_restart,true);
+}
+
+if path_get_point_x(enemy_path,0) != path_get_point_x(enemy_path,1)
+	image_xscale *= path_position == 0.5 or path_position == 1 ? -1 : 1;		
