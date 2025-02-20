@@ -15,13 +15,13 @@ while(!file_text_eof(_file)) {
     
 	var _s = file_text_read_string(_file);
 	var _type = string_char_at(_s,0);
-	_s = string_copy(_s,4,string_length(_s));
+	_s = string_trim(string_copy(_s,4,string_length(_s)));
 	
 	switch _type {
 		
 		case "Q":
 			if _options != [] {
-				array_push(_options,_option);	
+				array_push(_options,_option);
 			}
 			array_push(_questions,_s);
 			break;

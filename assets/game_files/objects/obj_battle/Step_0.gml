@@ -1,4 +1,3 @@
-//show_debug_message(sprite_get_name(enemy_spr));
 
 if global.battle {
 	if obj_sound_manager.snd_asset != snd_smart_riot {
@@ -58,11 +57,13 @@ if keyboard_check_pressed(vk_enter) {
 		page = 0;
 		cc_que = 0;
 		cc_opt = 0;
+		ans = "";
 		keyboard_string = "";
 		action = false;
 	}
 	else if keyboard_string != "" {
-		if string_trim(keyboard_string) == assessment[page][ANSWER] {
+		ans = array_get_index(assessment[page][OPTIONS],assessment[page][ANSWER]) + 1;
+		if string_upper(string_trim(keyboard_string)) == ans {
 			page++;
 			hp_enemy -= damage_enemy;
 		}
@@ -73,5 +74,4 @@ if keyboard_check_pressed(vk_enter) {
 		cc_opt = 0;
 		keyboard_string = "";
 	}
-	
 }

@@ -16,11 +16,14 @@ if not action {
 	assessment = [];
 	if instance_exists(obj_tb_aariona)
 		instance_destroy(obj_tb_aariona);
+	hp_enemy = hp_total;
+	hp_player = hp_total;
+	damage_enemy = 0;
 	exit;
 }
 
 
-if not read_file
+if not read_file 
 	event_user(0);
 
 
@@ -34,6 +37,7 @@ var _x2 = sprite_get_width(spr_tb_bg) / sprite_get_width(spr_textbox);
 var _y2 = (sprite_get_height(spr_tb_bg)/2.3) / sprite_get_height(spr_textbox);
 //draw_sprite_ext(spr_textbox,-1,_x1,_y1,_x2,_y2,0,c_white,1);
 draw_sprite_stretched(spr_textbox,-1,_x1,_y1,800,600);
+
 // Prompts
 draw_set_font(fnt_lt_railway);
 var _p = "Press 'F2' to exit";
@@ -84,14 +88,13 @@ draw_set_font(fnt_lt_railway);
 draw_set_color(c_silver);
 draw_set_valign(fa_bottom);
 draw_set_halign(fa_right);
-draw_text(_x2,_y2-5,"Type your answer");
+draw_text(_x2,_y2-5,"Type your option number and hit ENTER");
 
 draw_set_color(c_white);
 draw_set_valign(fa_top);
 draw_set_halign(fa_left);
+
 #endregion
-
-
 
 #region Sprites
 
@@ -109,10 +112,11 @@ draw_sprite_ext(spr_tb_hp,0,_x1,_y1,3*sprite_get_width(spr_tb_hp)*(hp_player/hp_
 // Enemy
 _x1 = sprite_get_width(spr_tb_bg) / 4;
 _y1 = sprite_get_height(spr_tb_bg) / 4 * 2.125;
-draw_sprite_ext(enemy_spr,obj_enemy.image_index,_x1,_y1,5,5,0,c_white,1);
+draw_sprite_ext(enemy_spr,enemy.object_index.image_index,_x1,_y1,5,5,0,c_white,1);
 _x1 += _xbuf;
 _y1 -= sprite_get_height(spr_tb_aariona)*2.5;
 draw_sprite_ext(spr_tb_hp,0,_x1,_y1,-3*sprite_get_width(spr_tb_hp),1,0,c_white,1);
 draw_sprite_ext(spr_tb_hp,0,_x1,_y1,-3*sprite_get_width(spr_tb_hp)*(hp_enemy/hp_total),1,0,c_red,1);
+
 #endregion
 

@@ -227,8 +227,8 @@
     {"roomId":{"name":"rm_menu_pass","path":"rooms/rm_menu_pass/rm_menu_pass.yy",},},
     {"roomId":{"name":"rm_level_1","path":"rooms/rm_level_1/rm_level_1.yy",},},
     {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
-    {"roomId":{"name":"rm_menu_pause","path":"rooms/rm_menu_pause/rm_menu_pause.yy",},},
     {"roomId":{"name":"rm_level_template","path":"rooms/rm_level_template/rm_level_template.yy",},},
+    {"roomId":{"name":"rm_menu_pause","path":"rooms/rm_menu_pause/rm_menu_pause.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
