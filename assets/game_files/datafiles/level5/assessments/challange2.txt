@@ -1,0 +1,32 @@
+Q: What does the *args parameter do in a function?
+O: Accepts multiple keyword arguments
+   Accepts multiple positional arguments
+   Makes a function return multiple values
+   Defines a default argument
+A: Accepts multiple positional arguments
+
+Q: What will be the output of the following function call?\ndef add(a, b):\n\treturn a + b\nprint(add(2, 3))
+O: 5
+   6
+   None
+   Error
+A: 5
+
+Q: The **kwargs parameter allows a function to accept multiple __________ arguments.
+O: Positional
+   Keyword
+   Integer
+   None
+A: Keyword
+
+Q: Positional arguments are assigned to parameters based on their __________.
+O: Order
+   Name
+   Value
+   Default
+A: Order
+
+Q: The number of arguments passed to a function must always match the number of parameters.
+O: True
+   False
+A: False

@@ -1,0 +1,32 @@
+Q: What does dict.keys() return?
+O: List of values
+   List of keys
+   List of tuples
+   Single key
+A: List of keys
+
+Q: How do you access the value of a key in a dictionary?
+O: dict.get(key)
+   dict[key]
+   Both a and b
+   None
+A: Both a and b
+
+Q: Dictionaries store data in __________ pairs.
+O: Index-value
+   Key-value
+   Data-value
+   None
+A: Key-value
+
+Q: The values() method returns all the __________ in a dictionary.
+O: Keys
+   Indexes
+   Values
+   Elements
+A: Values
+
+Q: Dictionary keys must be unique.
+O: True
+   False
+A: True

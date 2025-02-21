@@ -1,0 +1,32 @@
+Q: What mode is used to append data to a file?
+O: "w"
+   "r"
+   "a"
+   "x"
+A: "a"
+
+Q: What does open("file.txt", "r") do?
+O: Reads the file
+   Writes to the file
+   Deletes the file
+   None
+A: Reads the file
+
+Q: The read() method is used to __________ a file’s content.
+O: read
+   delete
+   modify
+   rename
+A: read
+
+Q: The write() method is used to __________ data into a file.
+O: erase
+   store
+   write
+   move
+A: write
+
+Q: The with statement automatically closes a file after execution.
+O: True
+   False
+A: True
