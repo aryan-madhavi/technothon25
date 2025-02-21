@@ -1,0 +1,54 @@
+Data Types in Python
+A data type is a classification of data that specifies the kind of value a variable can hold.
+
+1. Numeric Types
+a. Integers (int):
+Integers store whole numbers, positive or negative, without decimals.
+Example:
+int_num = 3
+
+b. Floating-point (float):
+Floats store decimal numbers, positive or negative.
+Example:
+float_num = 4.16
+
+c. Complex numbers (complex):**
+Complex numbers consist of a real part and an imaginary part.
+Example:
+complex_number = 4 + 13j
+
+2. Boolean (bool)
+Boolean values represent either `True` or `False`.
+Example:
+r = 4
+s = 10
+print(r == s)  # Output: False
+
+3. Sequence Types
+a. List
+An ordered collection of items within square brackets, allowing modification.
+Example:
+my_list = [3, 4.14, "harper"]
+my_list.append("hello")  # Adds an item at the end
+
+b. Tuple
+An ordered collection within parentheses, immutable.
+Example:
+tuple_example = (4, "peace", 4.2, "science")
+
+c. String
+A sequence of characters enclosed in single or double quotes.
+Example:
+str_example = "Hello"
+
+4. Dictionary
+A collection of key-value pairs enclosed in curly braces.
+Example:
+dictionary = {"name": "grey", "age": 20, "weight": 52}
+dictionary["age"] = 21  # Modifying a value
+
+5. Set
+An unordered collection of unique items within curly braces.
+Example:
+my_set = {4, 6, 8, 10}
+my_set.add(12)  # Adds a single element

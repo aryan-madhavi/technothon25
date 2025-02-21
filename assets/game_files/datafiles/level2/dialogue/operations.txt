@@ -1,0 +1,24 @@
+Operators in Python
+Operators in Python are special symbols or keywords used to perform operations on variables and values. They help manipulate data, compare values, and perform logical operations. Python supports various types of operators.
+Arithmetic operators perform mathematical calculations like addition, subtraction, multiplication, division, and exponentiation. For example:
+x = 5 + 3  # Addition
+Assignment operators are used to assign values to variables. The basic assignment operator `=` stores a value, while compound operators like `+=` modify the variable's value.
+y = 10
+y += 5  # y becomes 15
+Bitwise operators manipulate individual bits in binary numbers. Examples include:
+a = 5 & 3  # Bitwise AND
+Comparison operators compare values and return a Boolean result. Examples include:
+print(5 == 5)  # True
+print(4 > 6)   # False
+Logical operators (`and`, `or`, `not`) combine multiple conditions:
+print(True and False)  # False
+print(not False)       # True
+The ternary operator is a shorthand for an if-else statement:
+status = "Adult" if age >= 18 else "Child"
+Membership operators (`in`, `not in`) check if a value exists in a sequence:
+print(3 in [1, 2, 3])  # True
+Identity operators (`is`, `is not`) compare memory locations:
+x = [1, 2, 3]
+y = x
+print(x is y)  # True
+Understanding these operators helps in writing efficient and readable Python programs.
