@@ -1,0 +1,32 @@
+Q: Which of the following is a valid tuple?
+O: (1, 2, 3)
+   {1, 2, 3}
+   [1, 2, 3]
+   tuple[1, 2, 3]
+A: (1, 2, 3)
+
+Q: A __________ is the only data structure that uses key-value pairs.
+O: List
+   Set
+   Tuple
+   Dictionary
+A: Dictionary
+
+Q: You can convert a list to a tuple using tuple() function.
+O: True
+   False
+A: True
+
+Q: Which data structure provides the fastest way to check if an item exists using keys?
+O: List
+   Set
+   Tuple
+   Dictionary
+A: Dictionary
+
+Q: Which data structure should be used when data must not be modified after creation?
+O: List
+   Set
+   Tuple
+   Dictionary
+A: Tuple

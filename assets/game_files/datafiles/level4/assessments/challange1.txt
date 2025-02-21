@@ -1,0 +1,36 @@
+Q: What will happen in this loop?\nx = 5\nwhile x > 0:\n\tprint(x)
+O: Infinite loop
+   Prints 5 once
+   Error
+   Nothing
+A: Infinite loop 
+
+Q: What will be the output?
+   x = 0
+   while x < 3:
+       print(x)
+       x += 1
+O: 0 1 2
+   1 2 3
+   2 1 0
+   Nothing
+A: 0 1 2
+
+Q: A while loop runs as long as the __________ is True.
+O: Condition
+   Variable
+   Statement
+   None
+A: Condition
+
+Q: The while loop may cause an __________ loop if the condition never becomes False.
+O: Infinite
+   Finite
+   Constant
+   None
+A: Infinite
+
+Q: while loops always execute at least once.
+O: True
+   False
+A: False

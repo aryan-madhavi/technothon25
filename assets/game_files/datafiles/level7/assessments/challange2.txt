@@ -1,0 +1,34 @@
+Q: Which of the following maintains insertion order in Python 3.7+?
+O: List
+   Set
+   Tuple
+   Dictionary
+A: List, Dictionary
+
+Q: What happens if you try to modify an element in a tuple?
+O: It updates
+   An error occurs
+   The tuple is deleted
+   Nothing happens
+A: An error occurs
+
+Q: Unlike lists, sets do not allow __________ values.
+O: Mutable
+   Duplicate
+   Constant
+   Ordered
+A: Duplicate
+
+Q: Which data structure is best for storing unique student roll numbers?
+O: List
+   Set
+   Tuple
+   Dictionary
+A: Set
+
+Q: Which data structure does NOT support indexing?
+O: List
+   Tuple
+   Dictionary
+   Set
+A: Set

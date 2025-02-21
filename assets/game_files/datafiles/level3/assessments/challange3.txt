@@ -1,0 +1,26 @@
+Q: Nested if statements are not allowed in Python.
+O: True
+   False
+A: False
+
+Q: 5 == 5 and 2 > 1 evaluates to True.
+O: True
+   False
+A: True
+
+Q: 3 != 3 evaluates to True.
+O: True
+   False
+A: False
+
+Q: not (10 > 5) evaluates to False.
+O: True
+   False
+A: True
+
+Q: What is the output of the following?\nx = 7\nif x < 10 and x > 5:\n\tprint("Pass")
+O: Pass
+   Error
+   Nothing
+   None
+A: Pass
