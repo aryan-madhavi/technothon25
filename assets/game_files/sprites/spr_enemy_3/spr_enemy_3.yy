@@ -16,6 +16,7 @@
     {"$GMSpriteFrame":"","%Name":"8390c92c-f72c-41d9-8ac8-85a31656382b","name":"8390c92c-f72c-41d9-8ac8-85a31656382b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"f5433d0b-0008-4b5b-9ec5-429b7f94bd81","name":"f5433d0b-0008-4b5b-9ec5-429b7f94bd81","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"612b400c-6fcb-4e0b-86c5-10afb9985c63","name":"612b400c-6fcb-4e0b-86c5-10afb9985c63","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"ef416209-0cac-468f-bfd3-0fd3947de2dd","name":"ef416209-0cac-468f-bfd3-0fd3947de2dd","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
@@ -52,7 +53,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":4.0,
+    "length":5.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -83,6 +84,9 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"612b400c-6fcb-4e0b-86c5-10afb9985c63","path":"sprites/spr_enemy_3/spr_enemy_3.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"03dd852c-184d-4478-b406-b52daa716514","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ef416209-0cac-468f-bfd3-0fd3947de2dd","path":"sprites/spr_enemy_3/spr_enemy_3.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"7e1d78a6-5f85-4042-b3ac-e0cadcf9d362","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -93,8 +97,8 @@
   "swatchColours":null,
   "swfPrecision":0.5,
   "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
+    "name":"texture_enemy",
+    "path":"texturegroups/texture_enemy",
   },
   "type":0,
   "VTile":false,

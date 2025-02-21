@@ -13,6 +13,7 @@ enum STATE_AARIONA {
 // Game State
 pause = false;
 battle = false;
+current_battler_id = noone;
 
 // Sound
 master_vol = 1;

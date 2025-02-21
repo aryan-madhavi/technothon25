@@ -1,0 +1,34 @@
+Q: Which of the following data structures does not allow duplicates?
+O: List
+   Set
+   Tuple
+   Dictionary
+A: Set
+
+Q: What will be the output of len({1, 2, 2, 3})?
+O: 3
+   4
+   2
+   5
+A: 3
+
+Q: Tuples are __________, meaning their values cannot be changed.
+O: mutable
+   immutable
+   flexible
+   dynamic
+A: immutable
+
+Q: Which data structure is best for fast lookups and key-value storage?
+O: List
+   Set
+   Tuple
+   Dictionary
+A: Dictionary
+
+Q: A dictionary key must be __________.
+O: Mutable
+   Immutable
+   Changeable
+   Dynamic
+A: Immutable

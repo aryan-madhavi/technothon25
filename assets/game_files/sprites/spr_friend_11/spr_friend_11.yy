@@ -112,8 +112,8 @@
   "swatchColours":null,
   "swfPrecision":0.5,
   "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
+    "name":"texture_friends",
+    "path":"texturegroups/texture_friends",
   },
   "type":0,
   "VTile":false,

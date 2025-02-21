@@ -1,23 +1,20 @@
 
-if global.battle {
-	if obj_sound_manager.snd_asset != snd_smart_riot {
-		set_snd_ingame(snd_smart_riot,120,60);
-	}
-}
-else {
-	obj_sound_manager.room_start();
-}
-if global.pause and not global.battle
+ 
+ if global.pause and not global.battle
 	exit;
 
 event_inherited();
 
-global.pause = action;
-global.battle = action;
-
 image_index = inside ? 3 : 2;
 
-if enemy == noone {
+if action {
+	global.current_battler_id = id;	
+}
+
+enemy_arr = get_enemy_array();
+
+if enemy == noone and not player_won {
+	if array_contains(texturegroup_get_sprites("texture_enemy"),enemy_spr) {
 	enemy_path = path_add();
 	switch enemy_pos {
 		case "top":
@@ -49,22 +46,60 @@ if enemy == noone {
 			enemy.enemy_path = enemy_path;
 			enemy.image_xscale *= -1;
 			break;
-	}	
+	}
+	}
+	else if enemy_spr == spr_wall_ingame {
+		enemy = instance_create_layer(x,y,"Instances",obj_wall_ingame);
+		enemy.width = w;
+		//enemy.height = 160;
+	}
+	
+	if not array_contains(enemy_arr,file_name) {
+		player_won = true
+	}
+		
+}
+
+if id == global.current_battler_id {
+	global.pause = action;
+	global.battle = action;
+}
+
+
+if player_won == true {
+	if enemy != noone {
+	if array_contains(texturegroup_get_sprites("texture_enemy"),enemy_spr) {
+		enemy.defeated = true;
+	}
+	else if enemy_spr == spr_wall_ingame {
+		instance_destroy(enemy);
+		instance_destroy();
+	}
+	}
+	image_index = -1;
+	action = false;
+	if array_contains(enemy_arr,file_name)
+		array_delete(enemy_arr,array_get_index(enemy_arr,file_name),1);
+}
+
+if id != global.current_battler_id
+	exit;
+	
+if global.battle {
+	if obj_sound_manager.snd_asset != snd_smart_riot {
+		_temp_snd = snd_smart_riot;
+		set_snd_ingame(snd_smart_riot,120,60);
+	}
+}
+else {
+	obj_sound_manager.room_start();
 }
 
 if keyboard_check_pressed(vk_enter) {
-	if page+1 >= array_length(assessment) {
-		page = 0;
-		cc_que = 0;
-		cc_opt = 0;
-		ans = "";
-		keyboard_string = "";
-		action = false;
-	}
-	else if keyboard_string != "" {
+	if keyboard_string != "" {
 		ans = array_get_index(assessment[page][OPTIONS],assessment[page][ANSWER]) + 1;
-		if string_upper(string_trim(keyboard_string)) == ans {
-			page++;
+		if string(string_upper(string_trim(keyboard_string))) == string(ans) {
+			array_delete(assessment,page,1);
 			hp_enemy -= damage_enemy;
 		}
 		else {
@@ -73,5 +108,14 @@ if keyboard_check_pressed(vk_enter) {
 		cc_que = 0;
 		cc_opt = 0;
 		keyboard_string = "";
+	}
+	if array_length(assessment) == 0 {
+		page = 0;
+		cc_que = 0;
+		cc_opt = 0;
+		ans = "";
+		keyboard_string = "";
+		action = false;
+		player_won = true;
 	}
 }

@@ -1,0 +1,32 @@
+Q: Which logical operator returns True if both conditions are True?
+O: or
+   and
+   not
+   xor
+A: and
+
+Q: What will be the result of not (True and False)?
+O: True
+   False
+   None
+   Error
+A: True
+
+Q: The or operator returns True if at least __________ operand is True.
+O: One
+   Two
+   None
+   All
+A: One
+
+Q: not is a __________ operator that negates a Boolean expression.
+O: Arithmetic
+   Relational
+   Logical
+   Comparison
+A: Logical
+
+Q: (5 > 10) or (10 > 5) evaluates to True.
+O: True
+   False
+A: True

@@ -1,6 +1,6 @@
 /// @description Read Assesment file
 
-var _file = file_text_open_read($"{get_file(true, "final_boss.txt")}");
+var _file = file_text_open_read($"{get_file(true, file_name)}");
 
 read_file = true;
 

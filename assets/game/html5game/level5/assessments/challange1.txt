@@ -1,0 +1,32 @@
+Q: Which keyword is used to define a function in Python?
+O: function
+   define
+   def
+   lambda
+A: def
+
+Q: What is the correct way to call a function named hello()?
+O: call hello()
+   hello
+   hello()
+   function hello()
+A: hello()
+
+Q: A function is a reusable block of code that performs a __________ task.
+O: General
+   Specific
+   Random
+   None
+A: Specific
+
+Q: The return statement is used to return a __________ from a function.
+O: Value
+   Function
+   Statement
+   None
+A: Value
+
+Q: A function must always have parameters.
+O: True
+   False
+A: False

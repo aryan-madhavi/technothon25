@@ -16,6 +16,8 @@ hp_enemy = hp_total;
 damage_enemy = 0;
 damage_player = hp_total/5;
 
+player_won = false;
+
 if w != 0 or h != 0 {
 	image_xscale = w / sprite_width;
 	image_yscale = h / sprite_height;
