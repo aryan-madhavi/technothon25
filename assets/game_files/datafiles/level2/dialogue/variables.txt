@@ -1,0 +1,14 @@
+Variables in Python
+A variable in Python is a named storage for data values, acting like a kitchen cabinet that holds ingredients. Python creates a variable as soon as a value is assigned to it, without requiring a declaration step.
+To create a variable, assign a value using `=`:
+age = 13  # Integer
+name = "Alice"  # String
+is_student = True  # Boolean
+Python automatically determines the data type based on the assigned value.
+Important Points:
+- Variables are case-sensitive (`Age` and `age` are different).
+- Names can include letters, numbers, and underscores (_) but cannot start with a number.
+- Use descriptive names like `user_name` for better readability.
+- Avoid using **reserved keywords** like `if`, `for`, or `while` as variable names.
+Using clear and meaningful variable names improves code readability and organization.
+
