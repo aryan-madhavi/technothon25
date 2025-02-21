@@ -26,8 +26,8 @@ iframe {
 }
 .wasd {
     padding: 0px 10px 0px 10px;
-    width: 10%;
-    height: 10%;
+/*     width: 10%;
+    height: 10%; */
     display: inline-block;
 }
 .Info_level {
