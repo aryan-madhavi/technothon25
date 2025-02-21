@@ -1,0 +1,3 @@
+Q: Open this door by giving the command "Open Door". \nHint: Use print() \n\nCan you open this door? It is impossible for you.
+O: print("Open Door")
+A: print("Open Door")

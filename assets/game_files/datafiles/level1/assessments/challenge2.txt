@@ -1,0 +1,23 @@
+Q: What is used to indicate a block of code in Python?
+O: Curly braces {}
+   Indentation
+   Semicolons ;
+   Parentheses ()
+A: Indentation
+
+Q: Which of the following is a valid variable name in Python?
+O: 2variable
+   var_1 
+   var-2
+   @variable
+A: var_1
+
+Q: Python is case-sensitive
+O: True
+   False
+A: True
+
+Q: The semicolon ; is required at the end of every Python statement
+O: True
+   False
+A: False
