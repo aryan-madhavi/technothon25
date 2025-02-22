@@ -1,6 +1,11 @@
 /// @description Read Assesment file
 
-var _file = file_text_open_read($"{get_file(true, file_name)}");
+if check_challenges_remains != 0
+	name = get_file(true, (array_length(get_enemy_array()) > check_challenges_remains and check_challenges_remains != 0) ? "challenge0.txt" : "continue.txt")
+else
+	name = get_file(true, (array_length(get_enemy_array()) > check_challenges_remains and check_challenges_remains != 0) ? "challenge0.txt" : file_name)
+
+var _file = file_text_open_read($"{name}");
 
 read_file = true;
 

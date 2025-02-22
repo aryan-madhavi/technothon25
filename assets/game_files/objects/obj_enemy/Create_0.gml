@@ -5,5 +5,6 @@ image_yscale *= 2;
 // Path to follow
 enemy_path = noone;
 defeated = false;
+set_defeat = false;
 
 depth = -bbox_bottom;

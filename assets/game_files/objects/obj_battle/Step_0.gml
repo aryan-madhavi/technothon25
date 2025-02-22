@@ -116,6 +116,7 @@ if keyboard_check_pressed(vk_enter) {
 		ans = "";
 		keyboard_string = "";
 		action = false;
-		player_won = true;
+		if not (array_length(get_enemy_array()) > check_challenges_remains and check_challenges_remains != 0)
+			player_won = true;
 	}
 }
