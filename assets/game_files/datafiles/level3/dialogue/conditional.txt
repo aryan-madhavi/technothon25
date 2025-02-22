@@ -1,0 +1,42 @@
+Conditional Statements in Python
+Conditional statements allow a program to execute different blocks of code depending on whether a condition is true or false.
+Key Points About Conditionals
+- They control the flow of a program by selectively executing code based on conditions.
+- Conditional statements use the `if` keyword followed by a condition.
+- Components:
+  - if statement: Executes a block of code if the condition is true.
+  - else statement: Executes a block of code if the `if` condition is false.
+  - elif statement: Allows checking multiple conditions sequentially.
+
+If Statement
+Executes a block of code only if the condition is met.
+age = 5
+if age < 10:
+    print("Valid age")
+
+If-Else Statement
+Executes the `else` block if the `if` condition is false.
+outfit = "casual"
+if outfit == "perfect":
+    print("To wear tonight")
+else:
+    print("Second option")
+
+Elif Statement
+Checks multiple conditions in sequence.
+a = 10
+b = 15
+if a > b:
+    print("A is greater")
+elif a < b:
+    print("A is less")
+elif a == b:
+    print("A and B are equal")
+else:
+    print("Invalid")
+
+Important Aspects of Conditionals
+- Comparison operators: `==`, `!=`, `<`, `>`, `<=`, `>=` compare values.
+- Logical operators: `and`, `or`, `not` combine multiple conditions.
+- Indentation: Python requires proper indentation to define blocks of code.
+

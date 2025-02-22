@@ -1,0 +1,27 @@
+Conditional Statements in Python
+Conditional statements are like life decisions—"If this happens, do that; otherwise, do something else."
+
+if Statement
+"If it's raining, take an umbrella!"—Simple logic, right? Python works the same way.
+weather = "rainy"
+if weather == "rainy":
+    print("Take an umbrella! ☔")
+if-else Statement
+
+"If the coffee is hot, drink it. Otherwise, wait."
+coffee_temp = 90
+if coffee_temp > 80:
+    print("Drink carefully! 🔥")
+else:
+    print("Wait a bit. 🧊")
+elif (else if) Statement
+
+Sometimes, there are multiple choices.
+"If you get an A, celebrate! If you get a B, feel good. Otherwise, try harder next time."
+grade = "B"
+if grade == "A":
+    print("Yay! You nailed it! 🎉")
+elif grade == "B":
+    print("Good job! 👍")
+else:
+    print("Keep going! 💪")

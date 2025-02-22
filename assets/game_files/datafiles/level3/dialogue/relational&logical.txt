@@ -1,0 +1,19 @@
+Relational Expressions
+Think of relational expressions as ways to compare things. They help answer questions like "Is this bigger?" or "Are these the same?" by returning True or False.
+Common ones:
+== (equal to) → Checks if two values are the same.
+!= (not equal to) → Checks if two values are different.
+<, >, <=, >= → Compare values (less than, greater than, etc.).
+Example:
+age = 18
+print(age >= 18)  # True (because 18 is equal to 18)
+
+Logical Expressions
+Logical expressions help combine multiple conditions. They act like filters in decision-making.
+and → All conditions must be true.
+or → At least one condition must be true.
+not → Reverses the condition (True becomes False, and vice versa).
+Example:
+age = 20
+has_ID = True
+print(age >= 18 and has_ID)  # True (both conditions are met)
