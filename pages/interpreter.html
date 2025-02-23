@@ -16,9 +16,11 @@
   <!-- Google fonts end -->
   <!-- Google fonts end -->
   <link rel="stylesheet" href="../css/aboutus.css">
+  <!-- <link rel="stylesheet" href="../css/homepage.css"> -->
   <link rel="stylesheet" href="../css/navbar.css">
   <link rel="icon" href="../assets/imgs/logo.png">
   <script type="module" src="../js/indexbuttoncontentload.js"></script>
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
 </head>
 
 <body>
@@ -30,7 +32,7 @@
     <div class="Nav-Bar">
       <ul>
         <li><a href="../index.html" id="home">Home</a></li>
-        <li><a href="updates.html" id="updates">Updates</a></li>
+        <li><a href="interpreter.html" id="updates">Python Interpreter</a></li>
         <li><a href="gamepage.html" id="game">Game</a></li>
         <li><a href="aboutus.html" id="aboutus">About Us</a></li>
         <li><a href="profile.html" id="profile">Profile</a></li>
@@ -44,8 +46,15 @@
       <button type="button" class="rate-us-button" onclick="rateus()">Rate Us</button>
     </div>
   </div>
-  <div class="about-us-info">
-    
+  <div class="pythoninterpreter">
+    <h2>Python Interpreter</h2>
+    <textarea id="pythoncode" rows="6" cols="50">print("Hello World")</textarea>
+    <button onclick="runPython()" id="get-started">Run</button>
+    <h2>Output</h2>
+    <div class="output">
+      <pre id="output"></pre>
+    </div>
+    <script src="../js/interpreter.js"></script>
   </div>
 </body>
 

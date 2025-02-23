@@ -23,6 +23,7 @@ const home = document.getElementById("home");
 const game = document.getElementById("game");
 const aboutus = document.getElementById("aboutus");
 const profile = document.getElementById("profile");
+const getstarted = document.getElementById("getstarted");
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -33,9 +34,10 @@ document.addEventListener("DOMContentLoaded", function () {
             onAuthStateChanged(auth, (user) => {
                 if (user) {
                     // User is logged in
-                    console.log(user.uid);  // Log the user's UID
+                    console.log(user.uid);  
                     loginBtn.style.display = "none";
                     signupBtn.style.display = "none";
+                    getstarted.style.display = "none";
                     logoutBtn.style.display = "block";
                     home.style.display = "block";
                     game.style.display = "block";
@@ -46,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     // User is logged out
                     loginBtn.style.display = "block";
                     signupBtn.style.display = "block";
+                    getstarted.style.display = "block";
                     logoutBtn.style.display = "none";
                     home.style.display = "block";
                     game.style.display = "none";
