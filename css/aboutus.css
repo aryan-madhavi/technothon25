@@ -38,27 +38,36 @@ body{
 }
 
 .chero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
     color: black;
     font-family:  Georgia;
+    margin: 150px/*top*/ 0px/*right*/ 0px/*bottom*/ 0px/*left*/;
 }
 .chero img{
-    padding-top: 150px;
     width: 20%;
     height: 20%;
 }
 
 .chero-text{
-    position: absolute;
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
     text-align: left;
 
-}
+} 
 .chero-text h1{
     font-size: 50px;
-    margin: 0;
 }
-.chero-text p{
+.chero-paragraph{
     font-size: 25px;
-    margin: 0;
+    inline-size: auto;
+    text-wrap: wrap;
+    padding: 20px;
 }
     
 .team{
