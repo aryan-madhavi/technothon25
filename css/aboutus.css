@@ -2,4 +2,68 @@ body{
     background: linear-gradient(to right, #90A8C3, #4F518C);
     color: #fff;
     font-family: "Jersey 15", sans-serif;
+    box-sizing: border-box;
+}
+
+.chero{
+    color: black;
+    font-family:  Georgia;
+}
+.chero img{
+    padding-top: 150px;
+    width: 20%;
+    height: 20%;
+}
+
+.chero-text{
+    position: absolute;
+    text-align: left;
+
+}
+.chero-text h1{
+    font-size: 50px;
+    margin: 0;
+}
+.chero-text p{
+    font-size: 25px;
+    margin: 0;
+}
+    
+.team{
+    text-align: center;
+    padding: 50px;
+}
+.team h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.team-members{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+.team-member{
+    background-color: black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.team-member img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.team-member h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.team-member p{
+    font-size: 20px;
+    margin-bottom:10px;
 }
