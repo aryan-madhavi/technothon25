@@ -12,4 +12,4 @@ area = noone;
 
 my_name = "";
 my_text = [];
-event_user(0);
+read_file = false;

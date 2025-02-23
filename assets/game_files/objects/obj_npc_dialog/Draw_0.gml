@@ -1,4 +1,4 @@
-depth = -999999;
+/*depth = -999999;
 
 draw_set_color(c_white);
 font = fnt_consolas; //fnt_robotronika;

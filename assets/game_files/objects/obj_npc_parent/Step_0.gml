@@ -11,6 +11,10 @@ if area == noone {
 
 if area.inside == true {
 	if keyboard_check_pressed(ord("F")) and my_dialog == noone {
+		if not read_file {
+			event_user(0);
+			read_file = true;
+		}
 		my_dialog = instance_create_layer(area.x,area.y,"Text",obj_npc_dialog);
 		prompt = "Press Space to continue";
 		area.prompt = prompt;
