@@ -1,0 +1,43 @@
+🔄 Return Values in Python Functions 🎯
+When a function processes data and we need the result, we use the return statement. It sends back a value to the caller instead of just printing it.
+🛠 Why Use return?
+✔ Stores the result for later use
+✔ Makes functions reusable
+✔ Allows further processing
+
+🎯 Basic return Example
+Imagine a calculator function that adds two numbers and returns the result instead of just displaying it.
+def add(a, b):
+    return a + b  # Sends back the sum
+result = add(5, 3)  # Store the returned value
+print(result)  # Output: 8
+🚀 What happens?
+The function computes 5 + 3
+The result (8) is returned and stored in result
+We print the stored result
+
+🔄 Returning Multiple Values
+A function can return multiple values using tuples!
+def math_operations(a, b):
+    sum_ = a + b
+    diff = a - b
+    prod = a * b
+    return sum_, diff, prod  # Returning multiple values
+
+x, y, z = math_operations(10, 5)
+print(x, y, z)  # Output: 15 5 50
+🔥 How does this work?
+
+The function returns multiple values as a tuple
+We unpack them into variables
+
+🔥 Returning Conditional Values
+A function can return different values based on conditions.
+def check_even(n):
+    if n % 2 == 0:
+        return "Even"
+    return "Odd"
+print(check_even(10))  # Output: Even
+print(check_even(7))   # Output: Odd
+💡 Smart way to handle conditions inside a function!
+🚀 Mastering return makes your functions powerful & reusable! 🔥

@@ -1,0 +1,29 @@
+📌 Dictionaries in Python – Quick Guide! 🚀
+A dictionary is like your phone’s contact list 📞—it stores data in key-value pairs inside {} for quick lookups!
+
+🔹 Why Use Dictionaries?
+✅ Unordered – No fixed position
+✅ Mutable – Can add, remove, modify
+✅ Fast Lookups – Access data quickly
+
+🎯 Creating a Dictionary
+student = {
+    "name": "Alex",
+    "age": 21,
+    "course": "Computer Engineering"
+}
+🔹 Accessing & Modifying Data
+print(student["name"])  # Alex  
+print(student.get("age"))  # 21  
+
+student["grade"] = "A"  # Adding a new key-value pair
+🔹 Looping Through a Dictionary
+for key, value in student.items():
+    print(key, ":", value)
+    
+🎯 When to Use?
+✔ Need fast lookups 🔍
+✔ Data requires labels 🏷
+✔ Order doesn’t matter ✅
+
+🚀 Dictionaries keep data structured & accessible! 🔥

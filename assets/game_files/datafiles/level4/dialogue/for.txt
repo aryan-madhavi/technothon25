@@ -1,0 +1,43 @@
+For Loop in Python 
+A for loop in Python is like playing a playlist—it goes through each song (or item) one by one and performs an action. 🎵
+
+Basic For Loop
+Imagine you have a list of your favorite snacks, and you want to print each one.
+snacks = ["Chips", "Chocolate", "Cookies"]
+for snack in snacks:
+    print(snack)
+Output:
+mathematica
+Copy
+Edit
+Chips  
+Chocolate  
+Cookies  
+
+The loop picks one item at a time from the list and prints it.
+When there are no more items left, the loop stops automatically.
+
+Using range() in For Loop
+What if you want to repeat something a fixed number of times? That’s where range() helps!
+
+Example (Counting Numbers):
+for i in range(5):  # Loops from 0 to 4
+    print(i)
+Output:
+0  
+1  
+2  
+3  
+4  
+range(5) generates numbers from 0 to 4 (5 is not included).
+Example (Custom Start & Step Size):
+python
+for i in range(1, 10, 2):  # Start at 1, stop before 10, step by 2
+    print(i)
+Output:
+1  
+3  
+5  
+7  
+9  
+The loop starts from 1, jumps by 2, and stops before 10.
