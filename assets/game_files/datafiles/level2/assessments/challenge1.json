@@ -1,0 +1,29 @@
+{
+  "assessment" : [
+    {
+      "question" : "What will be the output of: \n\tx = 10 \n\ty = 5 \n\tprint(x + y * 2)",
+      "options" : ["30", "20", "15", "10"],
+      "answer" : "20"
+    },
+    {
+      "question" : "Which operator is used for exponentiation in Python?",
+      "options" :  [ "^", "**", "//", "%"],
+      "answer" : "**"
+    },
+    {
+      "question" : "Variables in Python need to be declared with a specific type.",
+      "options" : ["True", "False"],
+      "answer" : "False"
+    },
+    {
+      "question" : "The modulo operator % returns the __________ of a division",
+      "options" : ["Quotient", "Dividend", "Remainder", "Divisor"],
+      "answer" : "Remainder"
+    },
+    {
+      "question": "x += 5 is the same as x = x + 5",
+      "options" : ["True", "False"],
+      "answer" : "True"
+    }
+  ]
+}

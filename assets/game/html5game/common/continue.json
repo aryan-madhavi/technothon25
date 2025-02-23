@@ -1,0 +1,9 @@
+{
+  "assessment" : [
+    {
+      "question" : "You can go ahead now but you won't be alive for long! \nSelect the path you wish to choose: ",
+      "options" : ["I will defeat you all","I will leave humanity on the outside to save themselves"],
+      "answer" : "I will defeat you all"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "assessment" : [
+    {
+      "question" : "What will be the output of the following? \n\tx = 10 \n\tif x > 5: \n\t\tprint('Hello')",
+      "options" : ["Hello", "Error", "Nothing", "None"],
+      "answer" : "Hello"
+    },
+    {
+      "question" : "What is the default condition for an else statement?",
+      "options" : ["Always True", "Always False", "Must Be Specified", "None"],
+      "answer" : "Always True"
+    },
+    {
+      "question" : "The if statement is used for __________ execution.",
+      "options" : ["Sequential", "Repetitive", "Conditional", "None"],
+      "answer" : "Conditional"
+    },
+    {
+      "question" : "The 'else' block runs when the if condition is __________.",
+      "options" : ["True", "False", "None", "Always"],
+      "answer" : "False"
+    },
+    {
+      "question" : "An if statement can exist without an else block.",
+      "options" : ["True", "False"],
+      "answer" : "True"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "assessment" : [
+    {
+      "question" : "Which logical operator returns 'True' if both conditions are True?",
+      "options" : ["or", "and", "not", "xor"],
+      "answer" : "and"
+    },
+    {
+      "question" : "What will be the result of: \n\tnot (True and False)?",
+      "options" : ["True", "False", "None", "Error"],
+      "answer" : "True"
+    },
+    {
+      "question" : "The 'or' operator returns True if at least __________ operand is True.",
+      "options" : ["Two", "None", "All", "One"],
+      "answer" : "One"
+    },
+    {
+      "question" : "'not' is a __________ operator that negates a Boolean expression.",
+      "options" : ["Arithmetic", "Relational", "Logical", "Comparison"],
+      "answer" : "Logical"
+    },
+    {
+      "question" : "The following evaluates to True \n\t(5 > 10) or (10 > 5)",
+      "options" : ["True", "False"],
+      "answer" : "True"
+    },
+    {
+      "question" : "Nested if statements are not allowed in Python.",
+      "options" : ["True", "False"],
+      "answer" : "False"
+    },
+    {
+      "question" : "The following evaluates to True \n\t(5 == 5) and (2 > 1)",
+      "options" : ["True", "False"],
+      "answer" : "True"
+    },
+    {
+      "question" : "The following evaluates to True \n\t(3 != 3)",
+      "options" : ["True", "False"],
+      "answer" : "False"
+    },
+    {
+      "question" : "The following evaluates to True \n\tnot (10 > 5)",
+      "options" : ["True", "False"],
+      "answer" : "True"
+    },
+    {
+      "question" : "What is the output of the following? \n\tx = 7 \n\tif x < 10 and x > 5: \n\t\tprint('Pass')",
+      "options" : ["Pass", "Error", "Nothing", "None"],
+      "answer" : "Pass"
+    }
+  ] 
+}

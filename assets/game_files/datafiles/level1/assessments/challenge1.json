@@ -1,0 +1,24 @@
+{
+  "assessment" : [
+    {
+      "question" : "Who developed Python?",
+      "options" : ["Dennis Ritchie", "James Gosling", "Bjarne Stroustrup", "Guido van Rossum"],
+      "answer" : "Guido van Rossum"
+    },
+    {
+      "question" : "Python was released in the year ________",
+      "options" : ["1991", "1989", "1995", "2000"],
+      "answer" : "1991"
+    },
+    {
+     "question" : "Python is an example of a __________ language",
+      "options" : ["Compiled", "Assembly", "Interpreted", "Machine"],
+      "answer" : "Interpreted"
+    },
+    {
+      "question" : "Python supports both functional and object-oriented programming",
+      "options" : ["True", "False"],
+      "answer" : "True"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "assessments" : [
+    {
+      "question" : "What will happen in this loop?\n\tx = 5\n\twhile x > 0:\n\t\tprint(x)",
+      "options" : ["Infinite loop", "prints '5' once", "Error", "Nothing"],
+      "answer" : "Infinite loop"
+    },
+    {
+      "question" : "What will be the output? \n\tx = 0\n\twhile x < 3:\n\t\tprint(x)\n\t\tx += 1",
+      "options" : ["0 1 2", "1 2 3", "2 1 0", "Nothing"],
+      "answer" : "0 1 2"
+    },
+    {
+      "question" : "A while loop runs as long as the __________ is True.",
+      "options" : ["Condition", "Variable", "Statement", "None"],
+      "answer" : "Condition"
+    },
+    {
+      "question" : "The while loop may cause an __________ loop if the condition never becomes False.",
+      "options" : ["Infinite", "Finite", "Constant", "None"],
+      "answer" : "Infinite"
+    },
+    {
+      "question" : "While loops always execute at least once.",
+      "options" : ["True", "False"],
+      "answer" : "False"
+    }
+  ]
+}

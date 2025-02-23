@@ -1,0 +1,24 @@
+{
+  "assessment" : [
+    {  
+      "question" : "What is used to indicate a block of code in Python?",
+      "options" : ["Curly braces {}", "Indentation", "Semicolons ;", "Parentheses ()"],
+      "answer" : "Indentation"
+    },
+    {
+      "question" : "Which of the following is a valid variable name in Python?",
+      "options" : ["2variable", "var_1", "var-2", "@variable"],
+      "answer" : "var_1"
+    },
+    {
+      "question" : "Python is case-sensitive",
+      "options" : ["True", "False"],
+      "answer" : "True"
+    },
+    {
+      "question" : "The semicolon ; is required at the end of every Python statement",
+      "options" : ["True", "False"],
+      "answer" : "False"
+    }
+  ]
+}

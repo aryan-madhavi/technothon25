@@ -1,5 +1,0 @@
-Q: Open this door by giving the command "Open Door". Can you open this door? It is impossible for you.
-O: print("Open Door")
-   display("Open Door")
-   show("Open Door")
-A: print("Open Door")

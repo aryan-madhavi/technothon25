@@ -1,0 +1,50 @@
+🚀 Function Parameters in Python 🎯
+Functions are awesome because they let us pass data and make them flexible! The values you send into a function are called parameters (or arguments). Let’s break it down!
+
+🛠 1. Positional Parameters (Order Matters!)
+These are the default way to pass arguments. The order must match the function definition.
+✅ Example:
+def greet(name, age):
+    print(f"Hello {name}, you are {age} years old! 😊")
+greet("Alice", 25)  # Output: Hello Alice, you are 25 years old!
+🔥 Note: "Alice" is passed to name, and 25 to age in the same order.
+
+🎯 2. Default Parameters (Set a Backup Value!)
+If no value is given, Python uses the default value instead.
+✅ Example:
+def greet(name="Guest"):
+    print(f"Hello {name}! 😊")
+greet()  # Output: Hello Guest!
+greet("Bob")  # Output: Hello Bob!
+💡 Why use default values? To avoid errors when arguments are missing!
+
+🔄 3. Keyword Arguments (Order Doesn’t Matter!)
+Instead of relying on position, we specify parameter names while calling the function!
+✅ Example:
+def order(food, drink):
+    print(f"You ordered {food} with {drink}.")
+order(drink="Coke", food="Pizza")  
+# Output: You ordered Pizza with Coke.
+🔥 Why use this?
+✔ Makes code clearer
+✔ No need to remember the order!
+
+🔢 *4. Arbitrary Arguments (args) – Multiple Values!
+Sometimes, we don’t know how many arguments we need. *args allows passing multiple values!
+
+✅ Example:
+def sum_numbers(*nums):
+    total = sum(nums)
+    print(f"Total sum: {total}")
+sum_numbers(2, 4, 6, 8)  # Output: Total sum: 20
+💡 *args collects all extra arguments as a tuple.
+🔑 **5. Arbitrary Keyword Arguments (kwargs) – Multiple Key-Value Pairs!
+If we need multiple named arguments, we use **kwargs.
+✅ Example:
+def person_details(**info):
+    for key, value in info.items():
+        print(f"{key}: {value}")
+person_details(name="Alice", age=25, city="NYC")
+💡 **kwargs collects arguments into a dictionary {}.
+
+🚀 Mastering function parameters = More flexible & powerful Python code! 🔥

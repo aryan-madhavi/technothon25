@@ -1,0 +1,29 @@
+{
+  "assessment" : [
+    {
+      "question" : "Which module is used for regular expressions in Python?",
+      "options" : ["regex", "reg", "re", "match"],
+      "answer" : "re"
+    },
+    {
+      "question" : "What does re.search('abc', 'abcdef') return?",
+      "options" : ["None", "A match object", "An error", "A boolean"],
+      "answer" : "A match object"
+    },
+    {
+      "question" : "The match() function checks for a pattern at the __________ of a string.",
+      "options" : ["end", "middle", "beginning", "anywhere"],
+      "answer" : "beginning"
+    },
+    {
+      "question" : "The findall() function returns a __________ of all matching patterns.",
+      "options" : ["tuple", "dictionary", "list", "string"],
+      "answer" : "list"
+    },
+    {
+      "question" : "Regular expressions are used for pattern matching in strings.",
+      "options" : ["True", "False"],
+      "answer" : "True"
+    }
+  ]
+}

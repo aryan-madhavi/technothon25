@@ -1,0 +1,29 @@
+{
+  "assessment" : [
+    {
+      "question" : "What does the break statement do?",
+      "options" : ["Skips the next iteration", "Stops the loop completely", "Restarts the loop", "Does nothing"],
+      "answer" : "Stops the loop completely"
+    },
+    {
+      "question" : "What does the continue statement do?",
+      "options" : ["Stops the loop", "Skips the current iteration", "Restarts the loop", "None"],
+      "answer" : "Skips the current iteration"
+    },
+    {
+      "question" : "The break statement is used to __________ a loop prematurely.",
+      "options" : ["Exit", "Skip", "Restart", "Iterate"],
+      "answer" : "Exit"
+    },
+    {
+      "question" : "The continue statement skips the __________ of a loop.",
+      "options" : ["Current iteration", "Next iteration", "Entire loop", "None"],
+      "answer" : "Current iteration"
+    },
+    {
+      "question" : "The continue statement stops the loop.",
+      "options" : ["True", "False"],
+      "answer" : "False"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-if not global.pause
+if not global.pause and not player_won
 	event_inherited();
 
 
@@ -20,12 +20,11 @@ if not action {
 	hp_enemy = hp_total;
 	hp_player = hp_total;
 	damage_enemy = 0;
-	
 	exit;
 }
 
 if not read_file 
-	event_user(0);
+	event_user(3); //event_user(0);
 
 if array_contains(texturegroup_get_sprites("texture_enemy"),enemy_spr) {
 	event_user(1);

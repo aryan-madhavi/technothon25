@@ -1,0 +1,29 @@
+{
+  "assessment" : [
+    {
+      "question" : "Which of the following is a valid tuple?",
+      "options": ["(1, 2, 3)", "{1, 2, 3}", "[1, 2, 3]", "tuple[1, 2, 3]"],
+      "answer" : "(1, 2, 3)"
+    },
+    {
+      "question" : "A __________ is the only data structure that uses key-value pairs.",
+      "options": ["List", "Set", "Tuple", "Dictionary"],
+      "answer" : "Dictionary"
+    },
+    {
+      "question" : "You can convert a list to a tuple using tuple() function.",
+      "options": ["True", "False"],
+      "answer" : "True"
+    },
+    {
+      "question" : "Which data structure provides the fastest way to check if an item exists using keys?",
+      "options": ["List", "Set", "Tuple", "Dictionary"],
+      "answer" : "Dictionary"
+    },
+    {
+      "question" : "Which data structure should be used when data must not be modified after creation?",
+      "options": ["List", "Set", "Tuple", "Dictionary"],
+      "answer" : "Tuple"
+    }
+  ]
+}

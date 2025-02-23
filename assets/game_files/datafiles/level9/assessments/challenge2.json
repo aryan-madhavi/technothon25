@@ -1,0 +1,29 @@
+{
+  "assessment" : [
+    {
+      "question" : "What mode is used to append data to a file?",
+      "options" : ["'w'", "'r'", "'a'", "'x'"],
+      "answer" : "'a'"
+    },
+    {
+      "question" : "What does open('file.txt', 'r') do?",
+      "options" : ["Reads the file", "Writes to the file", "Deletes the file", "None"],
+      "answer" : "Reads the file"
+    },
+    {
+      "question" : "The read() method is used to __________ a file's content.",
+      "options" : ["read", "delete", "modify", "rename"],
+      "answer" : "read"
+    },
+    {
+      "question" : "The write() method is used to __________ data into a file.",
+      "options" : ["erase", "store", "write", "move"],
+      "answer" : "write"
+    },
+    {
+      "question" : "The with statement automatically closes a file after execution.",
+      "options" : ["True", "False"],
+      "answer" : "True"
+    }
+  ]
+}

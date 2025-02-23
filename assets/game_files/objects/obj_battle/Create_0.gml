@@ -38,3 +38,5 @@ cc_opt = 0;
 ans = "";
 
 _temp_snd = noone;
+
+alarm[0] = 1;

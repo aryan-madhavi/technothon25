@@ -16,7 +16,7 @@ levels = [
 		home : "level1\\",
 		enemies : {
 			path : "assessments\\",
-			files : ["challenge1.txt", "challenge2.txt", "challenge3.txt"],	
+			files : ["challenge1.json", "challenge2.json", "challenge3.json"],	
 		},
 		allies : {
 			path : "dialogue\\",
@@ -27,7 +27,7 @@ levels = [
 		home : "level2\\",
 		enemies : {
 			path : "assessments\\",
-			files : ["challenge1.txt", "challenge2.txt", "challenge3.txt"],	
+			files : ["challenge1.json", "challenge2.json", "challenge3.json"],	
 		},
 		allies : {
 			path : "dialogue\\",
@@ -38,7 +38,7 @@ levels = [
 		home : "level3\\",
 		enemies : {
 			path : "assessments\\",
-			files : ["challenge1.txt", "challenge2.txt"],	
+			files : ["challenge1.json", "challenge2.json"],	
 		},
 		allies : {
 			path : "dialogue\\",
@@ -63,6 +63,9 @@ function get_level() {
 }
 
 function get_file(_is_enemy, _file) {
+	
+	if _file == "wait.json" or _file == "continue.json"
+		return $"common\\{_file}";
 	
 	var _struct = get_level();
 	var _root = "";

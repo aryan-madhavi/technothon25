@@ -5,6 +5,8 @@
 
 event_inherited();
 
+prompt = "Press 'F2' to fight";
+
 image_index = inside ? 3 : 2;
 
 if action {
@@ -68,13 +70,13 @@ if id == global.current_battler_id {
 
 if player_won == true {
 	if enemy != noone {
-	if array_contains(texturegroup_get_sprites("texture_enemy"),enemy_spr) {
-		enemy.defeated = true;
-	}
-	else if enemy_spr == spr_wall_ingame {
-		instance_destroy(enemy);
-		instance_destroy();
-	}
+		if array_contains(texturegroup_get_sprites("texture_enemy"),enemy_spr) {
+			enemy.defeated = true;
+		}
+		else if enemy_spr == spr_wall_ingame {
+			instance_destroy(enemy);
+			instance_destroy();
+		}
 	}
 	image_index = -1;
 	action = false;

@@ -2,7 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function scr_sendgpt(_question){
 	
-	var _file = file_text_open_read("KEYS.txt");
+	var _file = file_text_open_read("common\\KEYS.txt");
+	
 	var _a = file_text_read_string(_file);
 	file_text_close(_file);
 	
@@ -15,7 +16,7 @@ function scr_sendgpt(_question){
 					"messages": [
 			            {
 			                "role": "developer",
-			                "content": "Your name is 'Riruru'. You are a helpful AI robot that has to help the user to defeat the rogue AI robots. Be extremely concise. Answer within 100 words. Ensure the response is in plain text without any Markdown or special formatting. If asked about exiting, respond by asking the to hit 'F1' key. "
+			                "content": "Your name is 'Riruru'. You are a helpful AI robot that has to help the user to defeat the rogue AI robots. Be extremely concise. Answer within 100 words. Ensure the response is in plain text without any Markdown or special formatting. If asked about exiting, respond by asking the to hit 'F1' key." //You can only answer programming questions related to Python to defeat the AI bots.
 			            },
 			            {
 			                "role": "user",
