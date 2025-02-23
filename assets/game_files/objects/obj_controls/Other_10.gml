@@ -1,6 +1,6 @@
 /// @description Read controls.txt file
 
-var _file = file_text_open_read("controls.txt");
+var _file = file_text_open_read("common\\controls.txt");
 var _i = 0; 
 
 while(!file_text_eof(_file)) {

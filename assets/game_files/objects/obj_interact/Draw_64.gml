@@ -2,7 +2,7 @@
 if not inside
 	exit;
 
-draw_set_font(fnt_lt_railway);
+draw_set_font(fnt_doto);
 
 var _cam = view_camera[0];
 var _xbuf = 20, _ybuf = 15;

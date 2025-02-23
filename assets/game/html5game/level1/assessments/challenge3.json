@@ -1,0 +1,9 @@
+{
+  "assessment" : [
+    {
+      "question" : "Open this door by giving the command 'Open Door'. \nCan you open this door? It is impossible for you.",
+      "options": ["print('Open Door')", "display('Open Door')", "show('Open Door')"],
+      "answer" : "print('Open Door')"
+    }
+  ]
+}

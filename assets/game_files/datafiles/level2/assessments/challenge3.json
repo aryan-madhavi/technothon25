@@ -1,0 +1,39 @@
+{
+  "assessment" : [
+    {
+      "question" : "What function is used to take input from the user in Python?",
+      "options" : ["read()", "scan()", "input()", "get()"],
+      "answer" : "input()"
+    },
+    {
+      "question" : "What is the output of type(input('Enter a number: ')) if the user enters 10?",
+      "options" : ["int", "str", "float", "bool"],
+      "answer" : "str"
+    },
+    {
+       "question" : "How do you convert a string '10' to an integer?",
+      "options" : ["str(10)", "int('10')", "float('10')", "convert(10)"],
+      "answer" : "int('10')"
+    },
+    {
+      "question" : "Type casting is the process of converting one data type into another",
+      "options" : ["True", "False"],
+      "answer" : "True"
+    },
+    {
+      "question" : "What is the result of: \n(5 > 3 and 2 < 4)",
+      "options" : ["True", "False", "None", "Error"],
+      "answer" : "True"
+    },
+    {
+      "question" : "What is the result of: \nnot (5 > 3)",
+      "options" : ["True", "False", "None", "Error"],
+      "answer" : "False"
+    },
+    {
+      "question" : "Which of the following operators is used to check membership in a sequence?",
+      "options" : ["==", "is", "in", "and"],
+      "answer" : "in"
+    }
+  ]
+}

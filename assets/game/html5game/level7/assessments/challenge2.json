@@ -1,0 +1,24 @@
+{
+  "assessment" : [
+    {
+      "question" : "What happens if you try to modify an element in a tuple?",
+      "options" : ["It updates", "An error occurs", "The tuple is deleted", "Nothing happens"],
+      "answer" : "An error occurs"
+    },
+    {
+      "question" : "Unlike lists, sets do not allow __________ values.",
+      "options" : ["Mutable", "Duplicate", "Constant", "Ordered"],
+      "answer" : "Duplicate"
+    },
+    {
+      "question" : "Which data structure is best for storing unique student roll numbers?",
+      "options" : ["List", "Set", "Tuple", "Dictionary"],
+      "answer" : "Set"
+    },
+    {
+      "question" : "Which data structure does NOT support indexing?",
+      "options" : ["List", "Tuple", "Dictionary", "Set"],
+      "answer" : "Set"
+    }
+  ]
+}

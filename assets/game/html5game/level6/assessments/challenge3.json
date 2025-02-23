@@ -1,0 +1,29 @@
+{
+  "assessment" : [
+    {
+      "question" : "What does dict.keys() return?",
+      "options" : ["List of values", "List of keys", "List of tuples", "Single key"],
+      "answer" : "List of keys"
+    },
+    {
+      "question" : "How do you access the value of a key in a dictionary?",
+      "options" : ["dict.get(key)", "dict[key]", "Both a and b", "None"],
+      "answer" : "Both a and b"
+    },
+    {
+      "question" : "Dictionaries store data in __________ pairs.",
+      "options" : ["Index-value", "Key-value", "Data-value", "None"],
+      "answer" : "Key-value"
+    },
+    {
+      "question" : "The values() method returns all the __________ in a dictionary.",
+      "options" : ["Keys", "Indexes", "Values", "Elements"],
+      "answer" : "Values"
+    },
+    {
+      "question" : "Dictionary keys must be unique.",
+      "options" : ["True", "False"],
+      "answer" : "True"
+    }
+  ]
+}

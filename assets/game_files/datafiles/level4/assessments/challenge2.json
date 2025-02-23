@@ -1,0 +1,29 @@
+{
+  "assessment" : [
+    {
+      "questions" : "What does range(5) generate?",
+      "options" : ["[1, 2, 3, 4, 5]", "[0, 1, 2, 3, 4]", "[1, 2, 3, 4]", "None"],
+      "answer" : "[0, 1, 2, 3, 4]"
+    },
+    {
+      "questions" : "Which loop is used when we know the number of iterations?",
+      "options" : ["while", "for", "do-while", "None"],
+      "answer" : "for"
+    },
+    {
+      "questions" : "The for loop in Python iterates over a __________",
+      "options" :["Sequence", "Number", "Condition", "Function"],
+      "answer" : "Sequence"
+    },
+    {
+      "questions" : "range() generates a sequence of numbers starting from __________",
+      "options" : ["0", "1", "Any number", "None"],
+      "answer" : "0"
+    },
+    {
+      "questions" : "The for loop can iterate over strings.",
+      "options" : ["True", "False"],
+      "answer" : "True"
+    }
+  ]
+}

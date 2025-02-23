@@ -1,0 +1,29 @@
+{
+  "assessment" : [
+    {
+    "question" : "Which of the following data structures does not allow duplicates?",
+    "options" : ["List", "Set", "Tuple", "Dictionary"],
+    "answer" : "Set"
+    },
+    {
+    "question" : "What will be the output of len({1, 2, 2, 3})?",
+    "options" : ["3", "4", "2", "5"],
+    "answer" : "3"
+    },
+    {
+    "question" : "Tuples are __________, meaning their values cannot be changed.",
+    "options" : ["mutable", "immutable", "flexible", "dynamic"],
+    "answer" : "immutable"
+    },
+    {
+    "question" : "Which data structure is best for fast lookups and key-value storage?",
+    "options" : ["List", "Set", "Tuple", "Dictionary"],
+    "answer" : "Dictionary"
+    },
+    {
+    "question" : "A dictionary key must be __________.",
+    "options" : ["Mutable", "Immutable", "Changeable", "Dynamic"],
+    "answer" : "Immutable"
+    }
+  ]
+}

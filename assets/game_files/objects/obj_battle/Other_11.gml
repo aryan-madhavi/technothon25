@@ -13,7 +13,7 @@ var _y2 = (sprite_get_height(spr_tb_bg)/2.3) / sprite_get_height(spr_textbox);
 draw_sprite_stretched(spr_textbox,-1,_x1,_y1,800,600);
 
 // Prompts
-draw_set_font(fnt_lt_railway);
+draw_set_font(fnt_doto);
 var _p = "Press 'F2' to exit";
 draw_sprite_ext(spr_textbox,0,500,20,(string_width(_p)+50)/sprite_get_width(spr_textbox),.6,0,c_white,1);
 draw_text(520,30,_p);
@@ -32,12 +32,13 @@ draw_set_halign(fa_left);
 
 // Question
 if cc_que < string_length(assessment[page][QUESTION])
-	cc_que += .5;
+	cc_que += .7;
 text_part = string_copy(assessment[page][QUESTION],1,cc_que);
 
 draw_text_ext(_x1,_y1,text_part,-1,_x2-_x1);
 
-_y1 += string_height(" ") * (string_width(text_part)/(_x2-_x1) + 1);
+newln_count = string_count(ansi_char(10),assessment[page][QUESTION]);
+_y1 += string_height(" ") * (string_width(text_part)/(_x2-_x1) + newln_count + 1);
 
 // Options
 if cc_que >= string_length(assessment[page][QUESTION])
@@ -53,20 +54,19 @@ for (var _i = 0; _i < array_length(assessment[page][OPTIONS]); ++_i) {
 }
 
 // Answer
+draw_set_font(fnt_nova);
 draw_set_valign(fa_top);
 draw_set_halign(fa_right);
-draw_text(_x2 + _xbuf, _y2, " |");
+if alarm[0] or keyboard_string != ""
+	draw_text(_x2 + _xbuf, _y2, " |");
+else
+	draw_text(_x2 + _xbuf, _y2, " -");
 draw_text(_x2,_y2,keyboard_string);
 
-draw_set_font(fnt_lt_railway);
-draw_set_color(c_silver);
+draw_set_font(fnt_doto);
 draw_set_valign(fa_bottom);
 draw_set_halign(fa_right);
-draw_text(_x2,_y2-5,"Type your option number and hit ENTER");
-
-draw_set_color(c_white);
-draw_set_valign(fa_top);
-draw_set_halign(fa_left);
+draw_text(_x2,_y2,"Type your option number and hit ENTER");
 
 #endregion
 
@@ -95,3 +95,6 @@ draw_sprite_ext(spr_tb_hp,0,_x1,_y1,-3*sprite_get_width(spr_tb_hp)*(hp_enemy/hp_
 #endregion
 
 
+draw_set_color(c_white);
+draw_set_valign(fa_top);
+draw_set_halign(fa_left);

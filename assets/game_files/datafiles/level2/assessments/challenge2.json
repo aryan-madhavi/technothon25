@@ -1,0 +1,9 @@
+{
+  "assessment" : [
+    {
+      "question" : "Datatypes are not that important for you right now. \nSo, i am going to let you continue ahead to your DOOM. HAHAHAHAHAHA!! \nPick your poison!",
+      "options" : ["Continue to your DOOM", "Stay and let humanity perish"],
+      "answer" : "Continue to your DOOM"
+    }
+  ]
+}

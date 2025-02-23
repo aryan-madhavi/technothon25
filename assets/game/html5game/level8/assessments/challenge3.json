@@ -1,0 +1,29 @@
+{
+  "assessment" : [
+    {
+      "question" : "What is inheritance in Python?",
+      "options" : ["A class acquiring properties of another class", "Copying variables from one function to another", "Making private attributes public", "Using super() in a function"],
+      "answer" : "A class acquiring properties of another class"
+    },
+    {
+      "question" : "Which syntax is used to inherit from a class A?",
+      "options" : ["class B inherit A:", "class B(A):", "class B -> A:", "class B:A"],
+      "answer" : "class B(A):"
+    },
+    {
+      "question" : "The super() function is used to call methods of the __________ class.",
+      "options" : ["child", "parent", "instance", "function"],
+      "answer" : "parent"
+    },
+    {
+      "question" : "What is polymorphism in Python?",
+      "options" : ["One function working differently for different inputs", "Creating multiple objects of the same class", "Using the self keyword", "None of the above"],
+      "answer" : "One function working differently for different inputs"
+    },
+    {
+      "question" : "Python supports multiple inheritance.",
+      "options" : ["True", "False"],
+      "answer" : "True"
+    }
+  ]
+}

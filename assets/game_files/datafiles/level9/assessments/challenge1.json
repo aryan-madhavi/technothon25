@@ -1,0 +1,29 @@
+{ 
+  "assessment" : [
+    {
+      "question" : "Which keyword is used to catch exceptions in Python?",
+      "options" :["catch", "except", "finally", "raise"],
+      "answer" : "except"
+    },
+    {
+      "question" : "What will happen if an exception occurs inside a try block but there is no except block?",
+      "options" :["The program continues", "The program crashes", "The error is ignored", "The program executes the next line"],
+      "answer" : "The program crashes"
+    },
+    {
+      "question" : "The finally block always executes, __________ of exceptions.",
+      "options" :["when an error occurs", "before exceptions", "regardless", "only in case of an error"],
+      "answer" : "regardless"
+    },
+    {
+      "question" : "The raise keyword is used to __________ an exception manually.",
+      "options" :["ignore", "catch", "throw", "handle"],
+      "answer" : "throw"
+    },
+    {
+      "question" : "Every try block must have at least one except block.",
+      "options" : ["True", "False"],
+      "answer" : "False"
+    }
+  ]
+}

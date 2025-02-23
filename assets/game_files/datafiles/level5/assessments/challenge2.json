@@ -1,0 +1,29 @@
+{
+  "assessment" : [
+    {
+      "question" : "What does the *args parameter do in a function?",
+      "options" : ["Accepts multiple keyword arguments", "Accepts multiple positional arguments", "Makes a function return multiple values", "Defines a default argument"],
+      "answer" : "Accepts multiple positional arguments"
+    },
+    {
+      "question" : "What will be the output of the following function call?\n\tdef add(a, b):\n\t\treturn a + b\n\n\tprint(add(2, 3))",
+      "options" : ["5", "6", "None", "Error"],
+      "answer" : "5"
+    },
+    {
+      "question" : "The **kwargs parameter allows a function to accept multiple __________ arguments.",
+      "options" : ["Positional", "Keyword", "Integer", "None"],
+      "answer" : "Keyword"
+    },
+    {
+      "question" : "Positional arguments are assigned to parameters based on their __________.",
+      "options" : ["Order", "Name", "Value", "Default"],
+      "answer" : "Order"
+    },
+    {
+      "question" : "The number of arguments passed to a function must always match the number of parameters.",
+      "options" : ["True", "False"],
+      "answer" : "False"
+    }
+  ]
+}

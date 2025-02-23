@@ -1,0 +1,29 @@
+{
+  "assessment" : [
+    {
+      "question" : "What is a method in Python?",
+      "options" : ["A function inside a class", "A variable inside a class", "A built-in function", "A standalone function"],
+      "answer" : "A function inside a class"
+    },
+    {
+      "question" : "How do you define a method inside a class?",
+      "options" : ["def method(self):", "method(self):", "define method(self):", "class method(self):"],
+      "answer" : "def method(self):"
+    },
+    {
+      "question" : "The first parameter of an instance method is always __________.",
+      "options" : ["self", "cls", "instance", "obj"],
+      "answer" : "self"
+    },
+    {
+      "question" : "Instance attributes belong to a specific __________.",
+      "options" : ["class", "object", "method", "function"],
+      "answer" : "object"
+    },
+    {
+      "question" : "A class method can be called without creating an object.",
+      "options" : ["True", "False"],
+      "answer" : "False"
+    }
+  ]
+}

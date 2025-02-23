@@ -1,0 +1,29 @@
+{  
+  "assessment" : [
+    {
+      "question" : "What happens if a function does not have a return statement?",
+      "options" : ["It returns None", "It returns 0", "It raises an error", "It executes indefinitely"],
+      "answer" : "It returns None"
+    },
+    {
+      "question" : "What is the output of the following function?\n\tdef square(x):\n\t\treturn x * x\n\tprint(square(4))",
+      "options" : ["8", "16", "None", "Error"],
+      "answer" : "16"
+    },
+    {
+      "question" : "The return statement is used to return a __________ from a function.",
+      "options" : ["Value", "Function", "String", "None"],
+      "answer" : "Value"
+    },
+    {
+      "question" : "A function can return multiple values using a __________.",
+      "options" : ["List", "Tuple", "Dictionary", "String"],
+      "answer" : "Tuple"
+    },
+    {
+      "question" : "A function can return more than one value.",
+      "options" : ["True", "False"],
+      "answer" : "True"
+    }
+  ]
+}

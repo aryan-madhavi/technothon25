@@ -1,14 +1,24 @@
 /// @description Read Assesment file
 
-if check_challenges_remains != 0
-	name = get_file(true, (array_length(get_enemy_array()) > check_challenges_remains and check_challenges_remains != 0) ? "challenge0.txt" : "continue.txt")
-else
-	name = get_file(true, (array_length(get_enemy_array()) > check_challenges_remains and check_challenges_remains != 0) ? "challenge0.txt" : file_name)
+//_name = get_file(true, (array_length(get_enemy_array()) > check_challenges_remains and check_challenges_remains != 0) ? "challenge0.txt" : file__name)
 
-var _file = file_text_open_read($"{name}");
+//_name = get_file(true, not (array_length(get_enemy_array()) > check_challenges_remains and check_challenges_remains != 0) ? "challenge0.txt" : "continue.txt")
+
+var _name = "";
+
+if check_challenges_remains != 0 {
+	if array_length(get_enemy_array()) > check_challenges_remains
+		_name = get_file(true,"challenge0.txt");
+	else if array_length(get_enemy_array()) == check_challenges_remains
+		_name = get_file(true,"continue.txt");
+}
+else {
+	_name = get_file(true,file_name);
+}
+
+var _file = file_text_open_read($"{_name}");
 
 read_file = true;
-
 
 var _questions = array_create(0);
 var _options = array_create(0);
@@ -20,7 +30,7 @@ while(!file_text_eof(_file)) {
     
 	var _s = file_text_read_string(_file);
 	var _type = string_char_at(_s,0);
-	_s = string_trim(string_copy(_s,4,string_length(_s)));
+	_s = string(string_trim(string_copy(_s,4,string_length(_s))));
 	
 	switch _type {
 		

@@ -1,0 +1,29 @@
+{
+  "assessment" : [
+    {
+      "question" : "Which keyword is used to define a function in Python?",
+      "options" : ["function", "define", "def", "lambda"],
+      "answer" : "def"
+    },
+    {
+      "question" : "What is the correct way to call a function named hello()?",
+      "options" : ["call hello()", "hello", "hello()", "function hello()"],
+      "answer" : "hello()"
+    },
+    {
+      "question" : "A function is a reusable block of code that performs a __________ task.",
+      "options" : ["General", "Specific", "Random", "None"],
+      "answer" : "Specific"
+    },
+    {
+      "question" : "The return statement is used to return a __________ from a function.",
+      "options" : ["Value", "Function", "Statement", "None"],
+      "answer" : "Value"
+    },
+    {
+      "question" : "A function must always have parameters.",
+      "options" : ["True", "False"],
+      "answer" : "False"
+    }
+  ]
+}

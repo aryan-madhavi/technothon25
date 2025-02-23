@@ -61,7 +61,7 @@ else {
 	//draw_text_transformed(_view_width/2,_ybuf*5.5,"Start typing your question",2,2,0);
 	draw_set_font(fnt_robotronika);
 	draw_text(_view_width/2,_ybuf*6,"Start typing your question");
-	draw_set_font(fnt_lt_railway);
+	draw_set_font(fnt_doto);
 	draw_text(_view_width/2,_ybuf*7,"Press F1 to exit and ENTER to ask");
 }
 
