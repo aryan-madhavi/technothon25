@@ -1,0 +1,31 @@
+🚀 Polymorphism in Python – One Name, Many Forms!
+🔍 What is Polymorphism?
+Polymorphism lets different objects use the same method name but implement it in their own way. Think of it like a universal remote 🎮—the same button works for TV 📺, AC ❄, and speakers 🔊, but performs different actions!
+
+✅ Same method name, different implementations
+✅ Behavior changes based on object type
+✅ Makes code flexible & reusable
+
+⚙ Example: Different Shapes, Same Method!
+class Shape:
+    def area(self): pass  # Placeholder method
+class Circle(Shape):
+    def __init__(self, r): self.r = r
+    def area(self): return 3.14 * self.r * self.r  # π * r²
+class Square(Shape):
+    def __init__(self, s): self.s = s
+    def area(self): return self.s * self.s  # side²
+# Using Polymorphism
+for shape in [Circle(5), Square(4)]:
+    print("Area:", shape.area())  # Calls respective class's method
+🔥 What’s Happening?
+
+Both Circle and Square have an area() method but compute the area differently.
+The same method name works for both objects!
+
+🎯 Why Use Polymorphism?
+✔ Write cleaner, reusable code
+✔ Handle different objects in a single loop
+✔ Makes code more dynamic & flexible
+
+🚀 Polymorphism makes your programs smarter & scalable! 💡

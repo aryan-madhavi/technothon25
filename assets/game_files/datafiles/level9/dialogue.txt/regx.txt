@@ -1,0 +1,37 @@
+🔎 Regular Expressions (RegEx) in Python
+📌 Why Use RegEx?
+Regular expressions help find patterns in text, making it useful for extracting information, validating input, and modifying text efficiently.
+🛠 Common RegEx Functions
+re.search(pattern, string) → Finds the first match in a string.
+import re
+match = re.search(r"\d+", "Price: 100")
+print(match.group())  # Output: 100
+re.findall(pattern, string) → Returns all matches in a list.
+numbers = re.findall(r"\d+", "A1, B2, C3")
+print(numbers)  # Output: ['1', '2', '3']
+re.sub(pattern, replacement, string) → Replaces matched patterns.
+text = re.sub(r"\d", "*", "A1B2C3")
+print(text)  # Output: A*B*C*
+re.match(pattern, string) → Checks if the string starts with the pattern.
+if re.match(r"\d+", "123abc"):
+    print("Match found!")  # Output: Match found!
+re.group() → Extracts specific parts of a match.
+order = re.search(r"Order #(\d+)", "Order #123")
+print(order.group(1))  # Output: 123
+🔢 Common RegEx Patterns
+\d → Matches any digit (0-9).
+\D → Matches any non-digit character.
+\w → Matches any alphanumeric character (a-z, A-Z, 0-9, _).
+\W → Matches any non-alphanumeric character.
+\s → Matches whitespace (spaces, tabs, newlines).
+\S → Matches any non-whitespace character.
+🎯 Example Use Cases
+Find phone numbers:
+phone = re.findall(r"\d{10}", "My number is 9876543210")
+print(phone)  # Output: ['9876543210']
+Extract email addresses:
+emails = re.findall(r"\w+@\w+\.\w+", "Emails: john@example.com, jane123@mail.com")
+print(emails)  # Output: ['john@example.com', 'jane123@mail.com']
+Remove special characters:
+clean_text = re.sub(r"[^a-zA-Z0-9]", "", "Hello@123!")
+print(clean_text)  # Output: Hello123
