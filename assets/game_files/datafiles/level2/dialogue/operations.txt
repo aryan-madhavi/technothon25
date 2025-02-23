@@ -1,4 +1,4 @@
-Operators in Python
+FLUXOR
 Operators in Python are special symbols or keywords used to perform operations on variables and values. They help manipulate data, compare values, and perform logical operations. Python supports various types of operators.
 Arithmetic operators perform mathematical calculations like addition, subtraction, multiplication, division, and exponentiation. For example:
 x = 5 + 3  # Addition

@@ -38,7 +38,7 @@ levels = [
 		home : "level3\\",
 		enemies : {
 			path : "assessments\\",
-			files : [],//["challenge1.txt", "challenge2.txt", "challenge3.txt"],	
+			files : ["challenge1.txt", "challenge2.txt"],	
 		},
 		allies : {
 			path : "dialogue\\",

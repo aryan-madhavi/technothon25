@@ -63,6 +63,7 @@
     {"name":"inst_82B49AF","path":"rooms/rm_level_2/rm_level_2.yy",},
     {"name":"inst_40FB6859","path":"rooms/rm_level_2/rm_level_2.yy",},
     {"name":"inst_14057A52","path":"rooms/rm_level_2/rm_level_2.yy",},
+    {"name":"inst_75801AED","path":"rooms/rm_level_2/rm_level_2.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -101,6 +102,10 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_npc_parent","path":"objects/obj_npc_parent/obj_npc_parent.yy",},"propertyId":{"name":"sprite","path":"objects/obj_npc_parent/obj_npc_parent.yy",},"resource":{"name":"spr_friend_02","path":"sprites/spr_friend_02/spr_friend_02.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_friend_02",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":744.0,"y":1530.0,},
         {"$GMRInstance":"v1","%Name":"inst_14057A52","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_14057A52","objectId":{"name":"obj_warp_block","path":"objects/obj_warp_block/obj_warp_block.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.0,"scaleY":0.875,"x":840.0,"y":1686.0,},
+        {"$GMRInstance":"v1","%Name":"inst_75801AED","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_75801AED","objectId":{"name":"obj_battle","path":"objects/obj_battle/obj_battle.yy",},"properties":[
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_battle","path":"objects/obj_battle/obj_battle.yy",},"propertyId":{"name":"enemy_spr","path":"objects/obj_battle/obj_battle.yy",},"resource":{"name":"spr_wall_ingame","path":"sprites/spr_wall_ingame/spr_wall_ingame.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"spr_wall_ingame",},
+            {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_battle","path":"objects/obj_battle/obj_battle.yy",},"propertyId":{"name":"w","path":"objects/obj_battle/obj_battle.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"120",},
+          ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":840.0,"y":880.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Decor","depth":200,"effectEnabled":true,"effectType":null,"gridX":40,"gridY":40,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_71E92E0F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_71E92E0F","objectId":{"name":"obj_sofa_1","path":"objects/obj_sofa_1/obj_sofa_1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.2,"scaleY":2.0,"x":715.5195,"y":1466.0,},

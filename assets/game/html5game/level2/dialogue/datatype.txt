@@ -1,5 +1,5 @@
-Data Types in Python
-A data type is a classification of data that specifies the kind of value a variable can hold.
+BOLTZER
+A DATATYPE is a classification of data that specifies the kind of value a variable can hold.
 
 1. Numeric Types
 a. Integers (int):
