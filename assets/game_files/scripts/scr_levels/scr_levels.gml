@@ -44,6 +44,17 @@ levels = [
 			path : "dialogue\\",
 		}
 	},
+	{
+		rm : rm_level_4,
+		home : "level4\\",
+		enemies : {
+			path : "assessments\\",
+			files : ["challenge1.json", "challenge2.json", "challenge3.json"],	
+		},
+		allies : {
+			path : "dialogue\\",
+		}
+	},
 ];
 
 function get_level() {
@@ -56,6 +67,7 @@ function get_level() {
 		case rm_level_1:	_struct = _struct[1];	break;
 		case rm_level_2:	_struct = _struct[2];	break;
 		case rm_level_3:	_struct = _struct[3];	break;
+		case rm_level_4:	_struct = _struct[4];	break;
 	}
 	
 	return _struct;

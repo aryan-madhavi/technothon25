@@ -1,12 +1,12 @@
 /// @description Read JSON file
 
-var _name = get_file(true,"challenge1.json");
+var _name = "";//get_file(true,"challenge1.json");
 
 if check_challenges_remains != 0 {
 	if array_length(get_enemy_array()) > check_challenges_remains
 		_name = get_file(true,"wait.json");
 	else if array_length(get_enemy_array()) == check_challenges_remains
-		_name = get_file(true,"continue.json");
+		_name = get_file(true,file_name);
 }
 else {
 	_name = get_file(true,file_name);

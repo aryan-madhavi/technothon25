@@ -1,0 +1,37 @@
+📌 List Methods – Superpowers for Lists! 🦸‍♂️
+Lists come with built-in methods that help you add, remove, and manipulate items.
+
+🔹 Adding Elements
+1️ .append(x) – Adds an item at the end
+fruits.append("orange")
+
+2️ .insert(i, x) – Inserts item x at index i
+fruits.insert(1, "kiwi")
+🔹 Removing Elements
+
+3️ .remove(x) – Removes the first occurrence of x
+fruits.remove("banana")
+
+4️ .pop(i) – Removes & returns the item at index i
+fruits.pop(2)
+
+🔹 Sorting & Reversing
+5️ .sort() – Sorts the list (ascending by default)
+numbers.sort()
+
+6️ .reverse() – Reverses the order of items
+numbers.reverse()
+🔹 Finding & Counting
+
+7️ .count(x) – Counts occurrences of x
+fruits.count("apple")
+
+8 .index(x) – Returns the index of x
+fruits.index("mango")
+
+🎯 Why Use List Methods?
+✅ Efficient – No need to manually modify lists.
+✅ Faster – Built-in methods work quicker than loops.
+✅ Cleaner Code – Makes programs easier to read & write.
+
+💡 Master these methods & become a Python pro! 🚀🔥

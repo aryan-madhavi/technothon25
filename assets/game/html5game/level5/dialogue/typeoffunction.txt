@@ -1,0 +1,28 @@
+🔥 Types of Functions in Python 🚀
+Functions in Python can be classified into different types based on how they work and where they come from! Let's break it down!
+
+1️⃣ Built-in Functions (Already There!)
+These are pre-defined functions that come with Python. You can use them without writing any extra code!
+
+✅ Examples:
+print() – Displays output.
+len() – Finds the length of a string or list.
+max() – Finds the largest number in a list.
+print(len("Python"))  # Output: 6
+print(max(5, 10, 3))  # Output: 10
+
+2️⃣ User-Defined Functions (DIY Functions) 🛠
+These are functions created by programmers to perform specific tasks. You define them using def and call them when needed.
+
+✅ Example:
+def greet(name):
+    print(f"Hello, {name}! 😊")
+greet("Alice")  # Output: Hello, Alice! 😊
+
+3️⃣ Lambda Functions (Tiny but Powerful!) ⚡
+These are one-liner functions that don’t need a name! They are mostly used for short, quick calculations.
+
+✅ Example:
+square = lambda x: x * x
+print(square(4))  # Output: 16
+(🔥 Shortcut Alert! Instead of writing a full function, just use lambda!)
