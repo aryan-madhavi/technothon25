@@ -1,7 +1,8 @@
+
 if global.pause and not help {
 	exit;
 }
-	
+
 switch room {
 	case rm_menu_main:
 	case rm_menu_email:
