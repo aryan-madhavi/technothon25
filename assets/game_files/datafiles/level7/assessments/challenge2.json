@@ -6,19 +6,34 @@
       "answer" : "An error occurs"
     },
     {
-      "question" : "Unlike lists, sets do not allow __________ values.",
-      "options" : ["Mutable", "Duplicate", "Constant", "Ordered"],
+      "question" : "Which of these is a valid tuple?",
+      "options" : ["(1, 2, 3) ", "{1, 2, 3}", "[1, 2, 3]", "tuple[1, 2, 3]"],
       "answer" : "Duplicate"
     },
     {
-      "question" : "Which data structure is best for storing unique student roll numbers?",
-      "options" : ["List", "Set", "Tuple", "Dictionary"],
-      "answer" : "Set"
+      "question" : "Tuples are __________, meaning their values cannot be changed. ",
+      "options" : ["Dynamic", "Mutable", "immutable", "Static"],
+      "answer" : "immutable"
     },
     {
-      "question" : "Which data structure does NOT support indexing?",
-      "options" : ["List", "Tuple", "Dictionary", "Set"],
-      "answer" : "Set"
+      "question" : "Tuple elements can be accessed using an index. ",
+      "options" : ["True", "False"],
+      "answer" : "True"
+    },
+    {
+      "question" : "You can append elements to a tuple.",
+      "options" : ["True", "False"],
+      "answer" : "False"
+    },
+    {
+      "question" : "Tuple must contain at least two elements.",
+      "options" : ["True", "False"],
+      "answer" : "False"
+    },
+    {
+      "question" : "A tuple can store __________ data types. ",
+      "options" : ["Multiple", "Only Two", "Same", "None of Above"],
+      "answer" : "Multiple"
     }
   ]
 }
