@@ -1,4 +1,3 @@
-
 show_debug_message("In Async Event")
 char_count = 0;
 

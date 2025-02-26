@@ -16,25 +16,26 @@ body{
     background-color: linear-gradient(to right, #90A8C3, #4F518C);
 }
 .chero-text{
+    color: black;
     text-align: left; 
     padding-top: 150px;
 }
 .chero-text h1{
     margin-bottom:  5px;;
     padding-left: 70px;
-    font-size: 120px;
+    font-size: 140px;
     text-align: center;
 }
 
 .chero-text p{
     margin-top: 0;
-    font-size: 50px;
-    padding-left: 70px;
+    font-size: 70px;
+    padding-left: 30px;
 
 }
 .chero img{
     padding-top: 330px;
-    padding-right: 250px;
+    padding-right: 100px;
     height: 450px;
     width: 450px;
     
@@ -54,22 +55,30 @@ body{
 }
 
 .infob img{
-    padding-left: 100px;
-    width: 45%;
+    padding-left: 80px;
+    width: 35%;
     height: 80%;
     border-radius: 10px;
 }
 
 .infob-text{
     color: black;
-    width: 50%;
-    text-align: center;
+    width: 60%;
+    padding-bottom: 50px;
 
 }
 
 .infob-text h2{
-    font-size: 80px;
-    border: none;
+    font-size: 90px;
+    padding-bottom: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.infob-text p{
+    margin-top: 0;
+    padding-bottom: none;
+    font-size: 25px;
+    text-align: left;
 }
 
 .team{
@@ -81,9 +90,6 @@ body{
     margin-bottom: 20px;
     text-align: center;
 }
-.team h2{
-    color: white;
-}
 
 .team-members{
     display: flex;
@@ -91,27 +97,32 @@ body{
 }
 
 .team-member{
-    background-color: rgb(10, 7, 22);
+    /* background-color: rgb(10, 7, 22); */
    /* background-color: #444680;*/
+   background-color: #444680;
     color: white;
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
-    width: 300px;
-    height:400px;
+    width: 700px;
+    height:500px;
     text-align: center;
 }
 .team-member img{
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    border-radius: 60%;
+    width: 225px;
+    height: 225px;
     margin-bottom: 10px;
 }
 .team-member h2{
-    font-size: 20px;
-    margin-bottom: 10px;
+    /* color: black; */
+    font-size: 30px;
+    margin-bottom: 30px;
     font-family:  'Lucida Sans';
 }
 .team-member p{
-    font-size: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align: left;
+    font-family:  'Lucida Sans';
 }

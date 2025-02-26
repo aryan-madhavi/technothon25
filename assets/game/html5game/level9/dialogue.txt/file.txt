@@ -1,0 +1,49 @@
+📂 File Input & Output in Python
+Python provides built-in functions to handle reading and writing files.
+📌 Opening a File
+Use the open() function:
+file = open("example.txt", "r")  # "r" for reading
+Modes:
+"r" → Read (default, file must exist)
+"w" → Write (creates file, overwrites if exists)
+"a" → Append (adds to the file)
+"x" → Create (fails if file exists)
+"b" → Binary mode (e.g., images, PDFs)
+📖 Reading from a File
+file = open("data.txt", "r")
+content = file.read()  # Reads entire file
+print(content)
+file.close()  # Always close the file
+✔ Read Specific Lines:
+file = open("data.txt", "r")
+line = file.readline()  # Reads one line at a time
+print(line)
+file.close()
+✔ Read All Lines into a List:
+with open("data.txt", "r") as file:
+    lines = file.readlines()  # Returns a list of lines
+    print(lines)  
+✏ Writing to a File
+file = open("output.txt", "w")
+file.write("Hello, world!")  # Overwrites file
+file.close()
+✔ Append Instead of Overwriting:
+file = open("output.txt", "a")
+file.write("\nNew line added!")  # Adds text at the end
+file.close()
+🔄 Using with for Auto Close
+with open("data.txt", "r") as file:
+    print(file.read())  # No need to call file.close()
+✔ Write Using with:
+with open("notes.txt", "w") as file:
+    file.write("This is a test.")
+📸 Reading & Writing Binary Files (Images, PDFs, etc.)
+✔ Read Binary:
+with open("image.jpg", "rb") as file:
+    data = file.read()
+✔ Write Binary:
+with open("copy.jpg", "wb") as file:
+    file.write(data)
+🚀 Example: Copy a File
+with open("source.txt", "r") as src, open("copy.txt", "w") as dest:
+    dest.write(src.read())

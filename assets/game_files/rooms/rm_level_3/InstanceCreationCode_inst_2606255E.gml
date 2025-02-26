@@ -1,10 +1,4 @@
-target_rm = rm_level_0;
-target_x = 115;
-target_y = 582;
-target_face = SIDE;
-
-/*
-target_rm = rm_game;
-target_x = 358;
-target_y = 263;
-target_face = DOWN;
+target_rm = rm_level_4;
+target_x = 1538;
+target_y = 1441
+target_face = UP;

@@ -1,5 +1,5 @@
 {
-  "assessments" : [
+  "assessment" : [
     {
       "question" : "What will happen in this loop?\n\tx = 5\n\twhile x > 0:\n\t\tprint(x)",
       "options" : ["Infinite loop", "prints '5' once", "Error", "Nothing"],
