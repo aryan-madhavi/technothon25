@@ -1,9 +1,9 @@
 {
   "assessment" : [
     {
-      "question" : "Which of the following is a valid tuple?",
-      "options": ["(1, 2, 3)", "{1, 2, 3}", "[1, 2, 3]", "tuple[1, 2, 3]"],
-      "answer" : "(1, 2, 3)"
+      "question" : "Which data structure maintains the insertion order in Python ",
+      "options": ["List", "Dictionary", "Set", "Tuple"],
+      "answer" : "List"
     },
     {
       "question" : "A __________ is the only data structure that uses key-value pairs.",
@@ -11,9 +11,9 @@
       "answer" : "Dictionary"
     },
     {
-      "question" : "You can convert a list to a tuple using tuple() function.",
+      "question" : "A dictionary key can be any mutable object. ",
       "options": ["True", "False"],
-      "answer" : "True"
+      "answer" : "False"
     },
     {
       "question" : "Which data structure provides the fastest way to check if an item exists using keys?",
@@ -22,6 +22,36 @@
     },
     {
       "question" : "Which data structure should be used when data must not be modified after creation?",
+      "options": ["List", "Set", "Tuple", "Dictionary"],
+      "answer" : "Tuple"
+    },
+    {
+      "question": "What is the key difference between a list and a tuple?",
+      "options" : ["Lists are immutable, but tuples are mutable", "Tuples are immutable, but lists are mutable ", "Both are immutable", "Lists are ordered, but tuples are unordered"],
+      "answer" : "Tuples are immutable, but lists are mutable "
+    },
+    {
+      "question" : "Which data structure does NOT support indexing?",
+      "options": ["List", "Set", "Tuple", "Dictionary"],
+      "answer" : "Set"
+    },
+    {
+      "question" : "Which data structure would be best for storing unique student roll numbers efficiently?",
+      "options": ["List", "Set", "Tuple", "Dictionary"],
+      "answer" : "Set"
+    },
+    {
+      "question" : "Sets store elements in an unordered way.",
+      "options": ["True", "False"],
+      "answer" : "True"
+    },
+    {
+      "question" : "A dictionary can have duplicate keys",
+      "options": ["True", "False"],
+      "answer" : "False"
+    },
+    {
+      "question" : "If you need to store a sequence of items and prioritize iteration speed, which data structure is best?",
       "options": ["List", "Set", "Tuple", "Dictionary"],
       "answer" : "Tuple"
     }

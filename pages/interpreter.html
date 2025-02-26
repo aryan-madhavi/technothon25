@@ -15,9 +15,9 @@
     rel="stylesheet">
   <!-- Google fonts end -->
   <!-- Google fonts end -->
-  <link rel="stylesheet" href="../css/aboutus.css">
   <!-- <link rel="stylesheet" href="../css/homepage.css"> -->
   <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/interpreted.css">
   <link rel="icon" href="../assets/imgs/logo.png">
   <script type="module" src="../js/indexbuttoncontentload.js"></script>
   <script src="https://cdn.jsdelivr.net/pyodide/v0.23.4/full/pyodide.js"></script>
@@ -47,9 +47,11 @@
     </div>
   </div>
   <div class="pythoninterpreter">
-    <h2>Python Interpreter</h2>
+    <div class="textnbutton">
+      <h2>Python Interpreter</h2>
+      <button onclick="runPython()" id="get-started">Run</button>
+    </div>
     <textarea id="pythoncode" rows="6" cols="50">print("Hello World")</textarea>
-    <button onclick="runPython()" id="get-started">Run</button>
     <h2>Output</h2>
     <div class="output">
       <pre id="output"></pre>

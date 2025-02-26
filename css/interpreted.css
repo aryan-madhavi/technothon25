@@ -1,0 +1,116 @@
+body{
+    background: linear-gradient(to right, #CDCDCD, #657F7D);
+    color: #657F7D;
+    font-family: "Jersey 15", sans-serif;
+    box-sizing: border-box;
+}
+
+/* Python Interpreter Container */
+.pythoninterpreter {
+    background-color: rgba(205, 205, 205, 0.9); /* Increased opacity for better visibility */
+    color: black;
+    margin: 50px auto;
+    max-width: 80%;
+    border-radius: 25px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    margin-top: 150px;
+    gap: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.pythoninterpreter h2 {
+    font-size: 40px;
+    text-align: center;
+    color: black;
+}
+
+/* Text Area */
+.pythoninterpreter textarea {
+    padding: 12px;
+    border-radius: 15px;
+    font-size: 20px;
+    width: 100%;
+    /* max-width: 600px; */
+    resize: vertical;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+}
+
+.pythoninterpreter textarea:focus {
+    border: 1px solid #657F7D;
+}
+
+/* Output Box */
+.output {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    /* max-width: 600px; */
+    min-height: 60px;
+    margin-top: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Run Button & Header */
+.textnbutton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 800px;
+}
+
+/* Run Button */
+.textnbutton button {
+    font-size: 30px;
+    font-family: "Jersey 10", sans-serif;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: #657F7D;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.textnbutton button:hover {
+    background-color: #4A6564;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .pythoninterpreter {
+        max-width: 95%;
+        padding: 20px;
+    }
+
+    .pythoninterpreter h2 {
+        font-size: 28px;
+    }
+
+    .pythoninterpreter textarea,
+    .output {
+        max-width: 100%;
+    }
+
+    .textnbutton {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textnbutton button {
+        margin-left: 0;
+        width: 100%;
+        max-width: 200px;
+    }
+}
