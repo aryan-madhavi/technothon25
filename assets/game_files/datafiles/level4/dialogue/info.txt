@@ -37,9 +37,9 @@ Output:
 \t 5  
 @END
 @START
--Why Use Loops?
-Saves Time – No need to write the same code again and again.
-Reduces Errors – Instead of making mistakes copying code, loops handle repetition perfectly. 
-Works with Data – Easily process lists, files, user input, and more.
-Automation – From checking emails to running a program continuously, loops are everywhere!
+Why Use Loops?
+1. Saves Time – No need to write the same code again and again.
+2. Reduces Errors – Instead of making mistakes copying code, loops handle repetition perfectly. 
+3. Works with Data – Easily process lists, files, user input, and more.
+4. Automation – From checking emails to running a program continuously, loops are everywhere!
 @END
