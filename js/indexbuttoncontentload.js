@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
-import { getAuth, onAuthStateChanged, signOut, setPersistence, browserLocalPersistence } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
+import { getAuth, onAuthStateChanged, setPersistence, browserLocalPersistence } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
 
 // Firebase configuration
 const firebaseConfig = {
@@ -24,6 +24,7 @@ const game = document.getElementById("game");
 const aboutus = document.getElementById("aboutus");
 const profile = document.getElementById("profile");
 const getstarted = document.getElementById("getstarted");
+const interpreter = document.getElementById("interpreter");
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -38,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     loginBtn.style.display = "none";
                     signupBtn.style.display = "none";
                     getstarted.style.display = "none";
+                    interpreter.style.display = "block";
                     logoutBtn.style.display = "block";
                     home.style.display = "block";
                     game.style.display = "block";
@@ -49,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     loginBtn.style.display = "block";
                     signupBtn.style.display = "block";
                     getstarted.style.display = "block";
+                    interpreter.style.display = "none";
                     logoutBtn.style.display = "none";
                     home.style.display = "block";
                     game.style.display = "none";

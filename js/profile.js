@@ -55,6 +55,7 @@ logoutBtn.addEventListener('click', async () => {
     localStorage.removeItem('LoggedUserID');
     localStorage.removeItem('LoggedUserEmail');
     localStorage.removeItem('LoggedUsername');
+    localStorage.removeItem('UserSaveFile');
     window.location.href = '/index.html';  
   } catch (error) {
     console.error('Error logging out:', error);
