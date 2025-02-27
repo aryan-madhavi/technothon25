@@ -10,7 +10,7 @@ The Class Defines:
 @END 
 @START
 What’s an Object?
-An object is a real instance of a class. Think of it as an actual car created from the blueprint. 🏎️
+An object is a real instance of a class. Think of it as an actual car created from the blueprint. 
 Each car (object) follows the same structure but can have different properties.
 For example, from our Car class, we can create:
 A red sedan with 4 wheels.
