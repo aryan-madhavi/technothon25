@@ -1,29 +1,37 @@
-📌 Sets in Python – Definition & Usage! 🚀
+Sets in Python – Definition & Usage!
+@START
 A set in Python is like a collection of unique items, similar to a bag of marbles where no two marbles are the same 🎯. It stores unordered, non-duplicate values inside curly braces {}.
-
-🔹 What is a Set?
-✅ No Duplicates – Automatically removes repeated values.
-✅ Unordered – No fixed order of elements.
-✅ Immutable Elements – You can’t change set elements, but you can add or remove them.
-✅ Fast Lookups – Checking if an item exists is very efficient.
-
-🎯 Creating a Set
-# Creating a set with unique values
-fruits = {"apple", "banana", "cherry"}
-
-# Creating an empty set
-empty_set = set()  # {} creates an empty dictionary
-
-# Creating a set with duplicates (Python automatically removes duplicates)
-numbers = {1, 2, 3, 3, 4, 5, 5}
-print(numbers)  # Output: {1, 2, 3, 4, 5}
-🔹 Accessing Elements in a Set
+What is a Set?
+1. No Duplicates – Automatically removes repeated values.
+2. Unordered – No fixed order of elements.
+3. Immutable Elements – You can’t change set elements, but you can add or remove them.
+4. Fast Lookups – Checking if an item exists is very efficient.
+@END
+@START
+Creating a Set
+\t # Creating a set with unique values
+\t fruits = {"apple", "banana", "cherry"}
+\t # Creating a set with duplicates (Python automatically removes duplicates)
+\t numbers = {1, 2, 3, 3, 4, 5, 5}
+\t print(fruits)
+\t print(numbers)  
+Output:
+\t {"apple", "banana", "cherry"}
+\t {1, 2, 3, 4, 5}
+@END
+@START
+Accessing Elements in a Set
 Since sets are unordered, they don’t support indexing like lists or tuples. However, you can check for an element’s presence using the in keyword.
-
-print("banana" in fruits)  # Output: True
-print("grape" in fruits)  # Output: False
-🔹 When to Use Sets?
-✔ When you need unique items only (e.g., storing student IDs, tags, etc.).
-✔ When you need fast membership checks (if item in set).
-✔ When order doesn’t matter (since sets are unordered).
-✔ When performing set operations like union, intersection, and difference.
+\t print("banana" in fruits)  
+\t print("grape" in fruits)  
+Output: 
+\t True
+\t False
+@END 
+@START
+When to Use Sets?
+1. When you need unique items only (e.g., storing student IDs, tags, etc.).
+2. When you need fast membership checks (if item in set).
+3. When order doesn’t matter (since sets are unordered).
+4. When performing set operations like union, intersection, and difference.
+@END
