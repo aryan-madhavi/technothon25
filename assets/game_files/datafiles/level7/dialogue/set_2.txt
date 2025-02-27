@@ -1,45 +1,88 @@
-📌 Set Methods in Python 🔥
-🔹 Adding & Removing Elements
+Set Methods in Python 
+ Adding & Removing Elements
 You can add new items to a set using .add() and remove existing items using .remove() or .discard().
-fruits.add("mango")  # Adds "mango" to the set
-print(fruits)
-fruits.remove("banana")  # Removes "banana" (raises error if not found)
-fruits.discard("grape")  # Removes "grape" if present (no error if not found)
-🔹 Using .pop(): Since sets are unordered, .pop() removes a random element.
-fruits.pop()  # Removes a random element from the set
-🔹 Clearing the Set:
-fruits.clear()  # Removes all elements from the set
-print(fruits)  # Output: set()
-
-🔹 Set Operations (Union, Intersection, Difference)
+\t fruits.add("mango")  #
+\t print(fruits)
+\t fruits.remove("banana") 
+\t fruits.discard("grape") 
+\t print(fruits)
+Output:
+\t {'apple', 'cherry', 'mango', 'banana'}
+\t {'apple', 'cherry', 'mango'}
+@END
+@START
+Using .pop(): Since sets are unordered, .pop() removes a random element.
+\t fruits = {"apple", "banana", "cherry", "mango"}
+\t removed_item = fruits.pop()  # Removes a random item
+\t print("Removed Item:", removed_item)
+\t print("Updated Set:", fruits)
+Output:
+\t Removed Item: mango
+\t Updated Set: {'banana', 'apple', 'cherry'}
+@END
+@START
+Clearing the Set:
+\t fruits.clear()  
+\t print(fruits)   
+Output: 
+\t set()
+@END
+@START
+Set Operations (Union, Intersection, Difference)
 Sets support powerful mathematical operations like union, intersection, and difference.
-A = {1, 2, 3, 4}
-B = {3, 4, 5, 6}
-# 🔹 Union: Combines all unique elements from both sets
-print(A.union(B))  # Output: {1, 2, 3, 4, 5, 6}
-# 🔹 Intersection: Returns elements common in both sets
-print(A.intersection(B))  # Output: {3, 4}
-# 🔹 Difference: Elements in A but not in B
-print(A.difference(B))  # Output: {1, 2}
-# 🔹 Symmetric Difference: Elements in either A or B, but not both
-print(A.symmetric_difference(B))  # Output: {1, 2, 5, 6}
-
-🔹 Looping Through a Set
+\t A = {1, 2, 3, 4}
+\t B = {3, 4, 5, 6}
+a. Union: Combines all unique elements from both sets
+\t print(A.union(B))  
+Output: 
+\t {1, 2, 3, 4, 5, 6}
+@END
+@START
+b. Intersection: Returns elements common in both sets
+\t print(A.intersection(B))   
+Output:
+\t {3, 4}
+@END
+@START
+c. Difference: Elements in A but not in B
+\t print(A.difference(B))   
+Output: 
+\t {1, 2}
+@END
+@START
+Symmetric Difference: Elements in either A or B, but not both
+\t print(A.symmetric_difference(B))  
+Output: 
+\t {1, 2, 5, 6}
+@END
+@START
+Looping Through a Set
 Since sets are iterable, you can use a for loop to go through each element.
-for fruit in fruits:
-    print(fruit)
-🔹 Set Comparisons
+\t fruits = {"apple", "banana", "cherry", "mango"}
+\t for fruit in fruits:
+\t     print(fruit)
+Output:
+\t banana
+\t cherry
+\t apple
+\t mango
+@END
+@START
+Set Comparisons
 You can check if one set is a subset or superset of another.
-
-A = {1, 2, 3}
-B = {1, 2, 3, 4, 5}
-print(A.issubset(B))  # Output: True (A is a subset of B)
-print(B.issuperset(A))  # Output: True (B is a superset of A)
-
-📌 Key Takeaways
-✅ Sets store unique, unordered values.
-✅ Fast lookups using in.
-✅ Powerful operations like union, intersection, and difference.
-✅ Mutable (can add/remove elements) but unordered (no indexing).
-
-🚀 Sets are great for handling unique, unordered data efficiently! 🔥
+\t A = {1, 2, 3}
+\t B = {1, 2, 3, 4, 5}
+\t print(A.issubset(B))  
+\t print(B.issuperset(A)) 
+Ouput:
+\t True
+\t True
+@END
+@START
+Key Takeaways
+1. Sets store unique, unordered values.
+2. Fast lookups using in.
+3. Powerful operations like union, intersection, and difference.
+4. Mutable (can add/remove elements) but unordered (no indexing).
+Sets are great for handling unique, unordered data efficiently!
+@END
