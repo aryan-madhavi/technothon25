@@ -7,6 +7,7 @@ import {
   browserLocalPersistence, 
   onAuthStateChanged 
 } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
+import { getFirestore, doc , updateDoc , getdoc} from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
 
 // Firebase configuration
 const firebaseConfig = {
@@ -54,7 +55,7 @@ signin.addEventListener('click', async (event) => {
     localStorage.setItem('LoggedUserID', user.uid);
     localStorage.setItem('LoggedUserEmail', user.email);
     localStorage.setItem('LoggedUsername', user.displayName || 'Guest');
-    localStorage.setItem('save', user.save);
+    // localStorage.setItem('save', user.save);
 
     // Show success message
     Showmsg('Login Successful', 'signupmsg');
