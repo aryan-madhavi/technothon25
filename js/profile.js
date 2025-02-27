@@ -56,7 +56,7 @@ logoutBtn.addEventListener('click', async () => {
     localStorage.removeItem('LoggedUserEmail');
     localStorage.removeItem('LoggedUsername');
     localStorage.removeItem('UserSaveFile');
-    window.location.href = '/technothon25/index.html';  
+    window.location.href = './index.html';  
   } catch (error) {
     console.error('Error logging out:', error);
     alert('There was an error logging you out. Please try again.');
