@@ -54,6 +54,7 @@ signin.addEventListener('click', async (event) => {
     localStorage.setItem('LoggedUserID', user.uid);
     localStorage.setItem('LoggedUserEmail', user.email);
     localStorage.setItem('LoggedUsername', user.displayName || 'Guest');
+    localStorage.setItem('save', user.save);
 
     // Show success message
     Showmsg('Login Successful', 'signupmsg');
@@ -84,7 +85,8 @@ onAuthStateChanged(auth, (user) => {
   } else {
     localStorage.removeItem('LoggedUserID');
     localStorage.removeItem('LoggedUserEmail');
-    localStorage.removeItem('LoggedUsername');x``
+    localStorage.removeItem('LoggedUsername');
+    localStorage.removeItem('save');
     console.log("No user is logged in");
   }
 });
