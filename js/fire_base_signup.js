@@ -41,7 +41,10 @@ Signup.addEventListener('click', (event) => {
   const email = document.getElementById('email').value.trim();
   const password = document.getElementById('Password1').value;
   const confirmPassword = document.getElementById('Password2').value;
-
+  const save = {
+      completed: [],
+      current_level : 0
+    }
   if (password !== confirmPassword) {
     Showmsg("Passwords do not match.", "signupmsg");
     return; // Prevent further action if passwords don't match
@@ -63,7 +66,7 @@ Signup.addEventListener('click', (event) => {
   createUserWithEmailAndPassword(auth,  email, password)
     .then((userCredential) => {
       const user = userCredential.user;
-      const userdata = { username, email, password };
+      const userdata = { username, email, password, save};
 
       // Set the displayName for the new user
       return updateProfile(user, {

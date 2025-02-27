@@ -7,6 +7,7 @@ import {
   browserLocalPersistence, 
   onAuthStateChanged 
 } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
+import { getFirestore, doc , getDoc} from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
 
 // Firebase configuration
 const firebaseConfig = {
@@ -21,6 +22,8 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth();
+const db = getFirestore(app);
+
 
 // Show messages
 function Showmsg(message, divID) {
@@ -50,10 +53,15 @@ signin.addEventListener('click', async (event) => {
     const userCredential = await signInWithEmailAndPassword(auth, email, password);
     const user = userCredential.user;
 
+    const docref = doc(db, "user", user.uid);
+    const docSnap = await getDoc(docref);
+    // console.log("Document data:", docSnap.data());
+
     // Store user ID in local storage
     localStorage.setItem('LoggedUserID', user.uid);
     localStorage.setItem('LoggedUserEmail', user.email);
     localStorage.setItem('LoggedUsername', user.displayName || 'Guest');
+    localStorage.setItem('UserSaveFile', JSON.stringify(docSnap.data()['save']));
 
     // Show success message
     Showmsg('Login Successful', 'signupmsg');
@@ -84,7 +92,8 @@ onAuthStateChanged(auth, (user) => {
   } else {
     localStorage.removeItem('LoggedUserID');
     localStorage.removeItem('LoggedUserEmail');
-    localStorage.removeItem('LoggedUsername');x``
+    localStorage.removeItem('LoggedUsername');
+    localStorage.removeItem('UserSaveFile');
     console.log("No user is logged in");
   }
 });
