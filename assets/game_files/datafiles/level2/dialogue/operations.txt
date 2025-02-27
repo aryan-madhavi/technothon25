@@ -1,24 +1,119 @@
 FLUXOR
+@START
 Operators in Python are special symbols or keywords used to perform operations on variables and values. They help manipulate data, compare values, and perform logical operations. Python supports various types of operators.
+@END
+@START
 Arithmetic operators perform mathematical calculations like addition, subtraction, multiplication, division, and exponentiation. For example:
-x = 5 + 3  # Addition
-Assignment operators are used to assign values to variables. The basic assignment operator `=` stores a value, while compound operators like `+=` modify the variable's value.
-y = 10
-y += 5  # y becomes 15
+\t x = 5 + 3  
+\t y = 10 - 2
+\t z = 2 * 4
+\t w = 10 / 5 
+\t u = 10 % 2
+\t v = 2**3
+\t print("Addition: ",x,"\nSubtraction: ",y,"\nMultiplication: ",z,"\nDivision: ",w,"\nModulus: ",u, "\nExponentiation: ",v)
+Output:
+\t Addition:  8 
+\t Subtraction:  8 
+\t Multiplication:  8 
+\t Division:  2.0 
+\t Modulus: 0
+\t Exponentiation:  8
+@END 
+@START
+Assignment operators are used to assign values to variables. The basic assignment operator `=` stores a value, while compound operators like `+=` modify the variable's value.For example 
+\t y = 10
+\t y += 5  
+\t print("Assignment operator: ",y)
+\t y -= 2 
+\t print("Assignment operator: ",y)
+\t y *= 3  
+\t print("Assignment operator: ",y)
+\t y /= 5  
+\t print("Assignment operator: ",y)
+\t y %= 5  
+\t print("Assignment operator: ",y)
+\t y **= 5  
+\t print("Assignment operator: ",y)
+Output: 
+\t Assignment operator:  15
+\t Assignment Operator:  13
+\t Assignment Operator:  39
+\t Assignment Operator:  7.8
+\t Assignment Operator:  2.8
+\t Assignment Operator:  172.10367999999994
+@END
+@START
 Bitwise operators manipulate individual bits in binary numbers. Examples include:
-a = 5 & 3  # Bitwise AND
+\t a = 5 & 3  
+\t print("Bitwise AND: ", a)
+\t a = 5 | 3  
+\t print("Bitwise OR: ", a)
+\t a = ~5  
+\t print("Bitwise NOT: ", a)
+\t a = 4 ^ 2
+\t print("bitwise XOR: ", a)
+Output:
+\t Bitwise AND:  1
+\t Bitwise OR:  7
+\t Bitwise NOT:  -6
+\t bitwise XOR:  6
+@END 
+@START
 Comparison operators compare values and return a Boolean result. Examples include:
-print(5 == 5)  # True
-print(4 > 6)   # False
+\t a =  2 
+\t b = 4
+\t print("Comparison Operator:", a == b)
+\t print("Comparison Operator:", a != b)
+\t print("Comparison Operator:", a > b)
+\t print("Comparison Operator:", a < b)
+\t print("Comparison Operator:", a >= b)
+\t print("Comparison Operator:", a <= b)
+Output:
+\t Comparison Operator: False
+\t Comparison Operator: True
+\t Comparison Operator: False
+\t Comparison Operator: True
+\t Comparison Operator: False
+\t Comparison Operator: True
+@END 
+@START
 Logical operators (`and`, `or`, `not`) combine multiple conditions:
-print(True and False)  # False
-print(not False)       # True
+\t print(True and False) 
+\t print(True or False)
+\t print(not False) 
+Output:
+\t False
+\t True
+\t True
+@END
+@START
 The ternary operator is a shorthand for an if-else statement:
-status = "Adult" if age >= 18 else "Child"
+\t a = 10
+\t b = 20
+\t min_value = a if a < b else b
+\t print(min_value)
+Output:
+\t 10
+@END
+@START
 Membership operators (`in`, `not in`) check if a value exists in a sequence:
-print(3 in [1, 2, 3])  # True
+\t fruits = ["apple", "banana", "cherry"]
+\t print("banana" in fruits)   
+\t print("grape" not in fruits) 
+Output:
+\t True
+\t True
+@END 
+@START
 Identity operators (`is`, `is not`) compare memory locations:
-x = [1, 2, 3]
-y = x
-print(x is y)  # True
+\t a = 10
+\t b = 10
+\t print(a is b)   
+\t print(a is not b)
+Output:
+\t True
+\t False
+@END
+@START
 Understanding these operators helps in writing efficient and readable Python programs.
+@END
