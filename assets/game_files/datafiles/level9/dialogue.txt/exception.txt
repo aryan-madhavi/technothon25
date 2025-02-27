@@ -1,45 +1,27 @@
-🐍 Exceptions in Python: Handle Errors Like a Pro!
-📌 What Are Exceptions?
+ Exceptions in Python: Handle Errors Like a Pro!
+@START
+ What Are Exceptions?
 An exception is an unexpected event that disrupts the normal flow of a program.
 Instead of crashing, Python lets you handle these exceptions gracefully!
-
-🔹 Example: Imagine shopping online:
-
+Example: Imagine shopping online:
 Card Declined → You entered the wrong card details.
 Insufficient Funds → Not enough balance.
 Server Error → Payment gateway is down.
 Instead of abruptly stopping, the system handles errors and asks you to try again.
-
-🛠 Exception Handling: try and except
-try ➝ Runs risky code 🚀
-except ➝ Catches & handles errors 🛑
-try:
-    result = 10 / 0  # Division by zero error
-except ZeroDivisionError:
-    print("❌ Cannot divide by zero!")
-🎮 Game Analogy: Jumping over a hole? If you fall, there's a trampoline (try-except) so the game doesn’t crash!
-
-🛑 except – Catch Specific Errors
-Handle different errors separately:
-try:
-    num = int(input("Enter a number: "))  
-except ValueError:
-    print("❌ Please enter a valid number!")
-👨‍🍳 Cooking Analogy:
-
-Not enough sugar? Use honey 🍯 instead of giving up!
-🔄 finally – Runs No Matter What!
-The finally block always executes, even if there’s an error.
-try:
-    print("Locking the door...")
-    raise ValueError("Oops! Key dropped.")  
-except ValueError as e:
-    print(f"Error: {e}")
-finally:
-    print("🔒 Ensuring the door is locked.")  # Always runs
-🔑 Analogy: Leaving home? Even if you drop your keys, you ensure the door is locked!
-
-✅ else – Runs If No Error Occurs
+@END 
+@START
+Exception Handling: try and except
+try ➝ Runs risky code 
+except ➝ Catches & handles errors 
+\t try:
+\t     num = int(input("Enter a number: "))  # User enters a string → Error!
+\t     print("You entered:", num)
+\t except ValueError:
+\t     print("Invalid input! Please enter a number.")
+Output:
+Enter a number:  #suppose we entered 6
+You entered: 6
+ else – Runs If No Error Occurs
 If no exception occurs, the else block runs.
 try:
     money = 50
