@@ -52,6 +52,9 @@ logoutBtn.addEventListener('click', async () => {
   try {
     await signOut(auth);
     alert('You have been logged out!');
+    localStorage.removeItem('LoggedUserID');
+    localStorage.removeItem('LoggedUserEmail');
+    localStorage.removeItem('LoggedUsername');
     window.location.href = '/index.html';  
   } catch (error) {
     console.error('Error logging out:', error);
