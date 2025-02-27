@@ -1,42 +1,54 @@
 MACHO
-Conditional statements allow a program to execute different blocks of code depending on whether a condition is true or false.
+@START
+Conditional statements allow a program to execute different code blocks depending on whether a condition is true or false.
 Key Points About Conditionals
 - They control the flow of a program by selectively executing code based on conditions.
 - Conditional statements use the `if` keyword followed by a condition.
 - Components:
-  - if statement: Executes a block of code if the condition is true.
-  - else statement: Executes a block of code if the `if` condition is false.
+  - if statement: Executes a code block if the condition is true.
+  - else statement: Executes a code block if the `if` condition is false.
   - elif statement: Allows checking multiple conditions sequentially.
-
+@END
+@START
 If Statement
 Executes a block of code only if the condition is met.
-age = 5
-if age < 10:
-    print("Valid age")
-
+\t age = 5
+\t if age < 18:
+\t     print("INVALID age")
+Output:
+\t INVALID age
+@END
+@START
 If-Else Statement
 Executes the `else` block if the `if` condition is false.
-outfit = "casual"
-if outfit == "perfect":
-    print("To wear tonight")
-else:
-    print("Second option")
-
+\t outfit = input("How does your outfit look? ") 
+\t if outfit == "perfect":
+\t     print("To wear tonight! ")
+\t else:
+\t     print("Second option! ")
+Output:
+\t How does your outfit look? okay  #Example input is notgood
+\t Second option! 
+@END 
+@START
 Elif Statement
 Checks multiple conditions in sequence.
-a = 10
-b = 15
-if a > b:
-    print("A is greater")
-elif a < b:
-    print("A is less")
-elif a == b:
-    print("A and B are equal")
-else:
-    print("Invalid")
-
+\t a = 10
+\t b = 15
+\t if a > b:
+\t     print("A is greater")
+\t elif a < b:
+\t     print("A is less")
+\t elif a == b:
+\t     print("A and B are equal")
+\t else:
+\t     print("Invalid")
+Output:
+\t A is less
+@END 
+@START
 Important Aspects of Conditionals
 - Comparison operators: `==`, `!=`, `<`, `>`, `<=`, `>=` compare values.
 - Logical operators: `and`, `or`, `not` combine multiple conditions.
 - Indentation: Python requires proper indentation to define blocks of code.
-
+@END
