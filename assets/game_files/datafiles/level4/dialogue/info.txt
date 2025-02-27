@@ -43,8 +43,3 @@ Reduces Errors – Instead of making mistakes copying code, loops handle repetit
 Works with Data – Easily process lists, files, user input, and more.
 Automation – From checking emails to running a program continuously, loops are everywhere!
 @END
-🚀 In Short:
--What? A way to repeat code.
--How? Using for or while loops.
--Why? To save time, reduce errors, and automate tasks!
-Loops make coding faster, smarter, and more efficient! 🔥
