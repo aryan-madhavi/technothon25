@@ -56,9 +56,16 @@ async function syncLocalWithFirebase() {
     }
 }
 
-// Sync every 5 minutes (300,000 ms)
-setInterval(syncLocalWithFirebase, 3000000);
+function syncWithDelay() {
+    syncLocalWithFirebase().then(() => {
+        console.log("Next sync scheduled in 2 minutes...");
+        setTimeout(syncWithDelay, 120000); // Run again after 2 mins
+    }).catch(error => {
+        console.error("Sync failed, retrying in 2 minutes...", error);
+        setTimeout(syncWithDelay, 120000);
+    });
+}
 
-// Run sync once when script loads
-syncLocalWithFirebase();
+// Start the continuous sync
+syncWithDelay();
 // export { syncLocalWithFirebase };
