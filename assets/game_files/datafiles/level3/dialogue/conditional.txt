@@ -12,40 +12,35 @@ Key Points About Conditionals
 @START
 If Statement
 Executes a block of code only if the condition is met.
-\t age = 5
-\t if age < 18:
-\t     print("INVALID age")
-Output:
-\t INVALID age
+Syntax: 
+\t if condition:
+\t     # Code to execute if the condition is True
 @END
 @START
 If-Else Statement
 Executes the `else` block if the `if` condition is false.
-\t outfit = input("How does your outfit look? ") 
-\t if outfit == "perfect":
-\t     print("To wear tonight! ")
+Syntax:
+\t if condition:
+\t     # Code to execute if the condition is True
 \t else:
-\t     print("Second option! ")
-Output:
-\t How does your outfit look? okay  #Example input is notgood
-\t Second option! 
+\t     # Code to execute if the condition is False
 @END 
 @START
 Elif Statement
 Checks multiple conditions in sequence.
-\t a = 10
-\t b = 15
-\t if a > b:
-\t     print("A is greater")
-\t elif a < b:
-\t     print("A is less")
-\t elif a == b:
-\t     print("A and B are equal")
+Syntax: 
+\t if condition1:
+\t     # Code to execute if condition1 is True
+\t elif condition2:
+\t     # Code to execute if condition2 is True
+\t elif condition3:
+\t     # Code to execute if condition3 is True
 \t else:
-\t     print("Invalid")
-Output:
-\t A is less
+\t     # Code to execute if none of the conditions are True
 @END 
+@START
+Operators like ==, !=, <, >, <=, and >= compare values, while `and`, `or`, and `not` combine conditions. Indentation is essential for structuring conditionals in Python.
+@END
 @START
 Important Aspects of Conditionals
 - Comparison operators: `==`, `!=`, `<`, `>`, `<=`, `>=` compare values.
