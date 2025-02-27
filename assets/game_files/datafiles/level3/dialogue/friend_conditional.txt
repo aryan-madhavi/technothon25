@@ -1,21 +1,34 @@
 ZEUS
+@START
 In Python, conditionals execute different code blocks based on whether a condition is true or false. For example, checking if an age is below 10:
-if age < 10:
-    print("Valid age")
+\t age = 5
+\t if age < 10:
+\t     print("Valid age")
 If `age` is 5, it prints "Valid age." Indentation is crucial.
-
+@END
+@START
 If-else statements handle alternative cases:
-if outfit == "perfect":
-    print("To wear tonight")
-else:
-    print("Second option")
+\t outfit = perfect
+\t if outfit == "perfect":
+\t     print("To wear tonight")
+\t else:
+\t     print("Second option")
+If `oufit` is perfect, it prints "To wear tonight" Indentation is crucial.
+@END
+@START
 The elif statement checks multiple conditions:
-if a > b:
-    print("A is greater")
-elif a < b:
-    print("A is less")
-elif a == b:
-    print("A and B are equal")
-else:
-    print("Invalid")
+\t a = 18
+\t b = 5
+\t if a > b:
+\t    print("A is greater")
+\t elif a < b:
+\t     print("A is less")
+\t elif a == b:
+\t     print("A and B are equal")
+\t else:
+\t     print("Invalid")
+Since `a > b`, it prints `A is greater`.Indentation is crucial.
+@END
+@START
 Operators like ==, !=, <, >, <=, and >= compare values, while `and`, `or`, and `not` combine conditions. Indentation is essential for structuring conditionals in Python.
+@END
