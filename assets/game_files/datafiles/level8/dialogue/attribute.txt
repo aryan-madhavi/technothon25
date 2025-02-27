@@ -1,48 +1,51 @@
-🎯 Attributes in Python – The DNA of Objects! 🚀
-🔍 What are Attributes?
+ Attributes in Python – The DNA of Objects! 
+@START
+What are Attributes?
 Attributes are like the characteristics of an object. Just like a car has a color, a model, and a speed, objects in Python have attributes that define their properties.
-
 In simple terms:
-✅ Attributes = Variables that belong to an object
-✅ Methods = Functions that belong to an object
-
+-> Attributes = Variables that belong to an object
+-> Methods = Functions that belong to an object
+@END 
+@START
 ⚙ Types of Attributes
-1️ Instance Attributes – Unique to each object
+1️. Instance Attributes – Unique to each object
 Each object has its own separate copy of these attributes.
-class Car:
-    def __init__(self, color, model):
-        self.color = color  # Instance Attribute
-        self.model = model  # Instance Attribute
-🚗 Different cars can have different colors and models!
-
-2️ Class Attributes – Shared by all objects
+\t class Car:
+\t     def __init__(self, color, model):
+\t         self.color = color  # Instance Attribute
+\t         self.model = model  # Instance Attribute
+Different cars can have different colors and models!
+@END 
+@START
+2️. Class Attributes – Shared by all objects
 Class attributes belong to the class itself, not individual objects.
-class Car:
-    wheels = 4  # Class Attribute (Same for all cars)
-🌍 All cars have 4 wheels by default!
-
-3️ Private Attributes – Hidden from outside access
+\t class Car:
+\t     wheels = 4  # Class Attribute (Same for all cars)
+All cars have 4 wheels by default!
+@END 
+@START
+3️. Private Attributes – Hidden from outside access
 Use double underscores (__) to make an attribute private.
-class BankAccount:
-    def __init__(self, balance):
-        self.__balance = balance  # Private Attribute
-
-account = BankAccount(1000)
-print(account.__balance)  # ❌ This will give an error!
-🔒 Private attributes can't be accessed directly from outside!
-
-🛠 Modifying Attributes
+\t class BankAccount:
+\t     def __init__(self, balance):
+\t         self.__balance = balance  # Private Attribute
+\t         account = BankAccount(1000)
+\t         print(account.__balance)  #  This will give an error!
+Private attributes can't be accessed directly from outside!
+@END 
+@START
+Modifying Attributes
 You can update attributes like this:
-my_car = Car("Red", "Sedan")
-my_car.color = "Blue"  # Changing the attribute value
-🎨 Your red car just turned blue!
-
-🎯 Key Takeaways:
-🔹 Instance attributes are unique for each object.
-🔹 Class attributes are shared by all objects.
-🔹 Private attributes restrict direct access.
-🔹 You can modify attributes anytime!
-
-💡 Think of attributes as the unique ID card of an object! 📇
-
-🚀 Now go and give your objects some personality! 🔥
+\t my_car = Car("Red", "Sedan")
+\t my_car.color = "Blue"  # Changing the attribute value
+Your red car just turned blue!
+@END 
+@START
+Key Takeaways:
+-> Instance attributes are unique for each object.
+-> Class attributes are shared by all objects.
+-> Private attributes restrict direct access.
+-> You can modify attributes anytime!
+-> Think of attributes as the unique ID card of an object! 
+-> Now go and give your objects some personality! 
+@END
