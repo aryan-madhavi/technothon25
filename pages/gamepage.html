@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="../css/gamepage.css">
   <link rel="icon" href="../assets/imgs/logo.png">
   <script type="module" src="../js/syncsave.js"></script>
+  <script type="module" src="../js/stats.js"></script>
   <script type="module" src="../js/indexbuttoncontentload.js"></script>
   <title>Carbonari Home Page</title>
 </head>
@@ -54,9 +55,26 @@
 		<iframe src="../assets/game" width="800" height="600px" scrolling="no">
 			Your browser does not support iframes.
 		</iframe>
-		<div class="progress-container">
-			<div class="progress-bar" id="progressBar">0%</div>
+		<div class="stats">
+			<h3 id="PlayerName" >HELLO,  </h3>
+			<!-- <p >Guest</p> -->
+			<div class="progress-container">
+				<div class="progress-bar" id="progressBar">0%</div>
+			</div>
+			<p id="PlayedTime">Played Time: 00:00</p>
+			<div class="allbadges">
+				<div class="badge" id="badge1">BAdge1</div>
+				<div class="badge" id="badge2">BAdge2</div>
+				<div class="badge" id="badge3">BAdge3</div>
+				<div class="badge" id="badge4">BAdge4</div>
+				<div class="badge" id="badge5">BAdge5</div>
+				<div class="badge" id="badge6">BAdge6</div>
+				<div class="badge" id="badge7">BAdge7</div>
+				<div class="badge" id="badge8">BAdge8</div>
+			</div>
+			<p id="BotDefeated">Bot Defeated: 0</p>
 		</div>
+		
 	</div>
 	
     <!-- AI CHATBOT -->

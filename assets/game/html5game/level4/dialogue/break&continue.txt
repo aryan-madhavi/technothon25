@@ -1,39 +1,37 @@
-🔥 Break & Continue in Python – The Game Changers of Loops! 🚀
+Break & Continue in Python – The Game Changers of Loops!
+@START
 Loops are powerful, but sometimes you need more control over them. That’s where break and continue come in! Let’s check them out.
-
-🛑 break – Exit a Loop Early
+@END
+@START
+break – Exit a Loop Early
 Think of watching a movie. If you lose interest halfway, you just leave instead of watching till the end. That’s what break does – it stops the loop immediately!
-
 Example: Stop at 3
-for i in range(1, 6):
-    if i == 3:
-        break  # Stops when i is 3
-    print(i)
+\t for i in range(1, 6):
+\t     if i == 3:
+\t         break  
+\t     print(i)
 Output:
-1  
-2  
-🚀 What happened? The loop stopped completely when i became 3!
-
-⏭ continue – Skip & Move On
+\t 1  
+\t 2  
+What happened? The loop stopped completely when i became 3!
+@END
+@START
+continue – Skip & Move On
 Imagine skipping a song in a playlist but still listening to the next one. That’s what continue does – it skips the current iteration and moves to the next one.
-
 Example: Skip 3, Print Others
-for i in range(1, 6):
-    if i == 3:
-        continue  # Skips when i is 3
-    print(i)
+\t for i in range(1, 6):
+\t     if i == 3:
+\t         continue  # Skips when i is 3
+\t     print(i)
 Output:
-1  
-2  
-4  
-5  
-
-🚀 What happened? When i was 3, Python skipped that iteration and moved on!
-🎯 When to Use?
-✅ Use break when you want to stop the loop completely once a condition is met.
-✅ Use continue when you want to skip something but keep looping.
-
-💡 Quick Recap:
-🔹 break → Stops the loop immediately.
-🔹 continue → Skips the current iteration but keeps looping.
-These two simple tricks give you total control over loops! 🚀🔥
+\t 1  
+\t 2  
+\t 4  
+\t 5  
+What happened? When i was 3, Python skipped that iteration and moved on!
+@END
+@START
+When to Use?
+1. Use break when you want to stop the loop completely once a condition is met.
+2. Use continue when you want to skip something but keep looping.
+@END

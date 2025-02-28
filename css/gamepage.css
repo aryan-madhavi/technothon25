@@ -19,29 +19,82 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 50px;
     /* align-items: flex-start; */
 }
-.progress-container{
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align all content to the left */
+    color: #000000;
+    font-size: 40px;
+    background-color: white;
+    padding: 50px; /* Adjust padding */
+    margin-top: 100px;
+    border-radius: 10px;
+    width: 100%; /* Make it stretch to full width */
+    max-width: 400px; /* Adjust width to prevent it from being too large */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.stats p {
+    font-size: 30px;
+    margin: 5px 0;
+}
+
+#PlayerName {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+.progress-container {
     width: 100%;
     background-color: #ddd;
     border-radius: 10px;
     overflow: hidden;
     height: 30px;
-    margin: 20px 0;
+    margin: 10px 0;
 }
+
 .progress-bar {
     width: 0%;
+    padding-left: 20px;
     height: 100%;
-    background-color: #4caf50;
-    text-align: center;
+    background-color: #4F518C;
+    text-align: left; /* Align progress text to the left */
     line-height: 30px;
-    color: white;
-    font-weight: bold;
+    color: #000000;
+    /* font-weight: bold; */
     transition: width 0.3s ease-in-out;
 }
-.progress h2{
-    font-size: 55px;
+
+.allbadges {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 10px;
+    width: 100%;
+    text-align: left; /* Align badges to the left */
 }
+
+.badge {
+    background-color: #4F518C;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.3s;
+    /* width: fit-content; */
+}
+
+.badge:hover {
+    transform: scale(1.05);
+    background-color: #6a75c9;
+}
+
 iframe {
     margin-top: 100px;
     /* width: 100%; */

@@ -1,28 +1,59 @@
-🔥 Types of Functions in Python 🚀
+Types of Functions in Python 
+@START
 Functions in Python can be classified into different types based on how they work and where they come from! Let's break it down!
-
-1️⃣ Built-in Functions (Already There!)
+1️. Built-in Functions (Already There!)
 These are pre-defined functions that come with Python. You can use them without writing any extra code!
-
-✅ Examples:
-print() – Displays output.
-len() – Finds the length of a string or list.
-max() – Finds the largest number in a list.
-print(len("Python"))  # Output: 6
-print(max(5, 10, 3))  # Output: 10
-
-2️⃣ User-Defined Functions (DIY Functions) 🛠
+Examples:
+\t print() – Displays output.
+\t len() – Finds the length of a string or list.
+\t max() – Finds the largest number in a list.
+\t print(len("Python"))  
+\t print(max(5, 10, 3))  
+Output: 
+\t 6
+\t 10
+@END
+@START
+2️. User-Defined Functions (DIY Functions) 
 These are functions created by programmers to perform specific tasks. You define them using def and call them when needed.
-
-✅ Example:
-def greet(name):
-    print(f"Hello, {name}! 😊")
-greet("Alice")  # Output: Hello, Alice! 😊
-
-3️⃣ Lambda Functions (Tiny but Powerful!) ⚡
+Example:
+\t def greet(name):
+\t     print(f"Hello, {name}! ")
+\t     greet("Alice")  # Output: Hello, Alice! 
+@END
+@START
+3️. Lambda Functions (Tiny but Powerful!)
 These are one-liner functions that don’t need a name! They are mostly used for short, quick calculations.
-
-✅ Example:
-square = lambda x: x * x
-print(square(4))  # Output: 16
-(🔥 Shortcut Alert! Instead of writing a full function, just use lambda!)
+Example:
+\t square = lambda x: x * x
+\t print(square(4))  
+Output: 
+\t 16
+(Shortcut Alert! Instead of writing a full function, just use lambda!)
+@END
+@START
+Look at an example which includes all types of funtions in one code: 
+\t # Built-in Function Example
+\t fruits = ["apple", "banana", "cherry"]
+\t print("Total fruits:", len(fruits))  # len() is a built-in function
+# User-Defined Function Example
+\t def greet(name):
+\t     """Returns a greeting message"""
+\t     return f"Hello, {name}! "
+\t user_name = input("Enter your name: ")  # Built-in input() function
+\t print(greet(user_name))
+\t # Lambda Function Example
+\t square = lambda x: x * x  # Lambda function to find square
+\t num = int(input("Enter a number: "))  # Taking input for lambda function
+\t print(f"Square of {num} is:", square(num))
+\t # Another Lambda Example (Adding Two Numbers)
+\t add = lambda a, b: a + b
+\t print(f"Sum of 3 and 5 is:", add(3, 5))
+Output:
+\t Total fruits: 3
+\t Enter your name: Aariona
+\t Hello, Aariona! 
+\t Enter a number: 4
+\t Square of 4 is: 16
+\t Sum of 3 and 5 is: 8
+@END

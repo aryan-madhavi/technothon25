@@ -1,29 +1,34 @@
-📌 Dictionaries in Python – Quick Guide! 🚀
-A dictionary is like your phone’s contact list 📞—it stores data in key-value pairs inside {} for quick lookups!
-
-🔹 Why Use Dictionaries?
-✅ Unordered – No fixed position
-✅ Mutable – Can add, remove, modify
-✅ Fast Lookups – Access data quickly
-
-🎯 Creating a Dictionary
-student = {
-    "name": "Alex",
-    "age": 21,
-    "course": "Computer Engineering"
-}
-🔹 Accessing & Modifying Data
-print(student["name"])  # Alex  
-print(student.get("age"))  # 21  
-
-student["grade"] = "A"  # Adding a new key-value pair
-🔹 Looping Through a Dictionary
-for key, value in student.items():
-    print(key, ":", value)
-    
-🎯 When to Use?
-✔ Need fast lookups 🔍
-✔ Data requires labels 🏷
-✔ Order doesn’t matter ✅
-
-🚀 Dictionaries keep data structured & accessible! 🔥
+Dictionaries in Python – Quick Guide! 
+@START
+A dictionary is like your phone’s contact list —it stores data in key-value pairs inside {} for quick lookups!
+Why Use Dictionaries?
+1. Unordered – No fixed position
+2. Mutable – Can add, remove, modify
+3. Fast Lookups – Access data quickly
+@END
+@START
+\t Creating a Dictionary
+\t student = {
+\t     "name": "Alex",
+\t     "age": 21,
+\t     "course": "Computer Engineering"
+\t }
+Output:
+{'name': 'Alex', 'age': 21, 'course': 'Computer Engineering'}
+@END
+@START
+Accessing & Modifying Data
+\t print(student["name"])    
+\t print(student.get("age"))     
+Output:
+\t Alex
+\t 21
+student["grade"] = "A"  
+Output:
+{'name': 'Alex', 'age': 21, 'course': 'Computer Engineering', 'grade': 'A'}
+@END
+@START
+Looping Through a Dictionary
+\t for key, value in student.items():
+\t     print(key, ":", value)
+@END

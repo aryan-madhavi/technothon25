@@ -1,46 +1,52 @@
-🚀 Methods in Python – The Superpowers of Objects!
-🔍 What are Methods?
+Methods in Python – The Superpowers of Objects!
+@START
+What are Methods?
 Methods are functions that belong to a class and define what an object can do. Just like a car can drive or honk, objects in Python perform actions using methods!
-
-✅ Methods = Functions inside a class
-✅ Used to interact with object attributes
-
+ 1. Methods = Functions inside a class
+ 2. Used to interact with object attributes
+@END
+@START
 ⚙ Types of Methods
 1️ Instance Methods – The Most Common Ones
 These work with instance attributes and require self to access object data.
-class Car:
-    def __init__(self, color):  
-        self.color = color  # Instance Attribute  
-
-    def describe(self):  # Instance Method  
-        print(f"This car is {self.color}.")  
-
-my_car = Car("Red")
-my_car.describe()  # Output: This car is Red.
-🛠 Works with specific objects!
-
+\t class Car:
+\t     def __init__(self, color):  
+\t         self.color = color  # Instance Attribute  
+\t    def describe(self):  # Instance Method  
+\t        print(f"This car is {self.color}.")  
+\t my_car = Car("Red")
+\t my_car.describe()   
+Output: 
+\t This car is Red.
+-> Works with specific objects!
+@END
+@START
 2️ Class Methods – Work at the Class Level
 These use @classmethod and cls to modify class attributes (shared by all objects).
-class Car:
-    wheels = 4  # Class Attribute  
-    @classmethod
-    def change_wheels(cls, new_wheels):
-        cls.wheels = new_wheels  # Changing class attribute
-Car.change_wheels(6)  # Now all cars have 6 wheels!
-🌍 Affects the whole class, not just one object!
-
+\t class Car:
+\t     wheels = 4  # Class Attribute  
+\t     @classmethod
+\t     def change_wheels(cls, new_wheels):
+\t         cls.wheels = new_wheels  # Changing class attribute
+\t Car.change_wheels(6)  # Now all cars have 6 wheels!
+-> Affects the whole class, not just one object!
+@END
+@START
 3️ Static Methods – Independent Helpers
 They don’t need self or cls and are just utility functions inside a class.
-class MathUtils:
-    @staticmethod
-    def add(a, b):
-        return a + b  
-print(MathUtils.add(3, 5))  # Output: 8
-🛠 No need for an object, just a helper function!
-
-🔥 Quick Recap:
-🔹 Instance Methods → Work with object attributes (self)
-🔹 Class Methods → Modify class attributes (cls)
-🔹 Static Methods → Independent, don’t use self or cls
-
-🚀 Methods make objects truly powerful! Use them to make your code clean & reusable! 💡
+\t class MathUtils:
+\t     @staticmethod
+\t     def add(a, b):
+\t         return a + b  
+\t print(MathUtils.add(3, 5))   
+Output: 
+\t 8
+-> No need for an object, just a helper function!
+@END
+@START
+Quick Recap:
+1. Instance Methods → Work with object attributes (self)
+2. Class Methods → Modify class attributes (cls)
+3. Static Methods → Independent, don’t use self or cls
+Methods make objects truly powerful! Use them to make your code clean & reusable! 
+@END

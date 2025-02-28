@@ -44,7 +44,12 @@ Signup.addEventListener('click', (event) => {
   const save = {
       completed: [],
       current_level : 0
-    }
+  };
+  const stats = {
+    botdefeated : 0
+  };
+  const TimePlayed = 0;
+
   if (password !== confirmPassword) {
     Showmsg("Passwords do not match.", "signupmsg");
     return; // Prevent further action if passwords don't match
@@ -66,7 +71,7 @@ Signup.addEventListener('click', (event) => {
   createUserWithEmailAndPassword(auth,  email, password)
     .then((userCredential) => {
       const user = userCredential.user;
-      const userdata = { username, email, password, save};
+      const userdata = { username, email, password, save, stats, TimePlayed};
 
       // Set the displayName for the new user
       return updateProfile(user, {
@@ -81,6 +86,9 @@ Signup.addEventListener('click', (event) => {
     .then(() => {
       // Show success message and redirect to login page
       alert("Account created successfully!");
+      localStorage.removeItem('LoggedUserID');
+      localStorage.removeItem('LoggedUserEmail');
+      localStorage.removeItem('LoggedUsername');
       window.location.href = "../pages/login.html";
     })
     .catch((error) => {

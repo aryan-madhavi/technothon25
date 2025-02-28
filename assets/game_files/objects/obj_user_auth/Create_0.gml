@@ -1,2 +1,7 @@
-user_id = "";
-http_get("https://aryan-madhavi.github.io/technothon25/pages/profile.html")
+uid = get_uid();
+
+event_user(2);
+
+cam = view_camera[0];
+width =  camera_get_view_width(cam);
+height =  camera_get_view_height(cam);

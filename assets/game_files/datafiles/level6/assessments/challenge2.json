@@ -14,16 +14,25 @@
       "question" : "The sort() method changes the __________ list.",
       "options" : ["Original", "Copied", "Temporary", "None"],
       "answer": "Original"
+    },{
+      "question" : "Which method is used to add an element to the end of a list?",
+      "options" : ["insert()", "append()", "add()", "extend()"],
+      "answer" : "append()"
     },
     {
-      "question" : "A list cannot store duplicate values.",
-      "options" : ["True", "False"],
-      "answer": "False"
+      "question" : "What does my_list.pop(2) do?",
+      "options" : ["Removes the first element", "Removes the third element", "Removes the last element", "Returns an error"],
+      "answer" : "Removes the third element"
     },
     {
       "question" : "The insert() method allows adding elements at a __________ index.",
       "options" : ["Last", "Random", "Fixed", "Specified"],
       "answer": "Specified"
+    },
+    {
+      "question" : "The remove() method is used to remove an element by __________.",
+      "options" : ["Index", "Value", "Position", "Slice"],
+      "answer" : "Value"
     }
   ]
 }

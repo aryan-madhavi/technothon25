@@ -1,24 +1,15 @@
 {
   "assessment" : [
-    {
-      "question" : "Which method is used to add an element to the end of a list?",
-      "options" : ["insert()", "append()", "add()", "extend()"],
-      "answer" : "append()"
-    },
-    {
-      "question" : "What does my_list.pop(2) do?",
-      "options" : ["Removes the first element", "Removes the third element", "Removes the last element", "Returns an error"],
-      "answer" : "Removes the third element"
-    },
+    
     {
       "question" : "Lists in Python are __________, meaning their elements can be changed.",
       "options" : ["Immutable", "Mutable", "Static", "Fixed"],
       "answer" : "Mutable"
     },
     {
-      "question" : "The remove() method is used to remove an element by __________.",
-      "options" : ["Index", "Value", "Position", "Slice"],
-      "answer" : "Value"
+      "question" : "A list cannot store duplicate values.",
+      "options" : ["True", "False"],
+      "answer": "False"
     },
     {
       "question" : "Lists can contain different data types.",

@@ -1,27 +1,38 @@
 NEXA
+@START
 Conditional statements are like life decisions—"If this happens, do that; otherwise, do something else."
-
+@END
+@START
 if Statement
 "If it's raining, take an umbrella!"—Simple logic, right? Python works the same way.
 weather = "rainy"
-if weather == "rainy":
-    print("Take an umbrella! ☔")
-
+\t if weather == "rainy":
+\t     print("Take an umbrella! ")
+Output:
+\t Take an umbrella!
+@END
+@START
 if-else Statement
 "If the coffee is hot, drink it. Otherwise, wait."
-coffee_temp = 90
-if coffee_temp > 80:
-    print("Drink carefully! 🔥")
-else:
-    print("Wait a bit. 🧊")
-
+\t coffee_temp = 90
+\t if coffee_temp > 80:
+\t     print("Drink carefully! ")
+\t else:
+\t     print("Wait a bit. ")
+Output:
+\t Drink carefully!
+@END
+@START
 elif (else if) Statement
 Sometimes, there are multiple choices.
 "If you get an A, celebrate! If you get a B, feel good. Otherwise, try harder next time."
 grade = "B"
-if grade == "A":
-    print("Yay! You nailed it! 🎉")
-elif grade == "B":
-    print("Good job! 👍")
-else:
-    print("Keep going! 💪")
+\t if grade == "A":
+\t     print("Yay! You nailed it! ")
+\t elif grade == "B":
+\t     print("Good job!")
+\t else:
+\t     print("Keep going!")
+Output:
+\t Good job!
+@END

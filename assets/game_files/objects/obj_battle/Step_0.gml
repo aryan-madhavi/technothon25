@@ -15,6 +15,7 @@ if action {
 
 enemy_arr = get_enemy_array();
 
+
 if enemy == noone and not player_won {
 	if array_contains(texturegroup_get_sprites("texture_enemy"),enemy_spr) {
 	enemy_path = path_add();
@@ -56,10 +57,10 @@ if enemy == noone and not player_won {
 		//enemy.height = 160;
 	}
 	
-	if not array_contains(enemy_arr,file_name) {
+	if not array_contains(enemy_arr,file_name) and file_name != "continue.json" {
 		player_won = true
 	}
-		
+	
 }
 
 if id == global.current_battler_id {
@@ -80,8 +81,12 @@ if player_won == true {
 	}
 	image_index = -1;
 	action = false;
-	if array_contains(enemy_arr,file_name)
+	if array_contains(enemy_arr,file_name) {
+		user_save(get_level_no(),file_name);
+		show_debug_message(global.user_current_level);
+		show_debug_message(global.user_completed);
 		array_delete(enemy_arr,array_get_index(enemy_arr,file_name),1);
+	}
 }
 
 if id != global.current_battler_id
@@ -97,7 +102,7 @@ else {
 	obj_sound_manager.room_start();
 }
 
-if keyboard_check_pressed(vk_enter) {
+if action and keyboard_check_pressed(vk_enter) {
 	if keyboard_string != "" {
 		ans = array_get_index(assessment[page][OPTIONS],assessment[page][ANSWER]) + 1;
 		if string(string_upper(string_trim(keyboard_string))) == string(ans) {
