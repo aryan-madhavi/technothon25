@@ -42,7 +42,7 @@ function resetSaveFile() {
 
 function getSaveFile() {
 
-  return JSON.parse(localStorage.getItem('UserSaveFile')).save;
+  return JSON.parse(localStorage.getItem('UserSaveFile'));
   
 }
 
