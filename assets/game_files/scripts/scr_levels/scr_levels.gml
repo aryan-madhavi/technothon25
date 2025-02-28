@@ -77,4 +77,15 @@ levels = [
 			path : "dialogue\\",
 		}
 	},
+	{
+		rm : rm_level_7,
+		home : "level7\\",
+		enemies : {
+			path : "assessments\\",
+			files : ["challenge1.json", "challenge2.json", "challenge3.json"],	
+		},
+		allies : {
+			path : "dialogue\\",
+		}
+	},
 ];

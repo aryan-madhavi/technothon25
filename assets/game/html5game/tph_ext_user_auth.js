@@ -9,14 +9,12 @@ function updateSaveFile(level_no,allChallenges) {
 
   let completedArray = allChallenges.split(" ");
 
-  var data = {
-    save: {
-      current_level : parseInt(level_no),
-      completed: completedArray
-    }
+  var saveData = {
+    current_level : parseInt(level_no),
+    completed: completedArray
   }
 
-  var dataString = JSON.stringify(data);
+  var dataString = JSON.stringify(saveData);
 
   localStorage.setItem('UserSaveFile',dataString);
   
