@@ -45,6 +45,9 @@ Signup.addEventListener('click', (event) => {
       completed: [],
       current_level : 0
     }
+  const stats = {
+    botdefeated : 0
+  };
   if (password !== confirmPassword) {
     Showmsg("Passwords do not match.", "signupmsg");
     return; // Prevent further action if passwords don't match
@@ -66,7 +69,7 @@ Signup.addEventListener('click', (event) => {
   createUserWithEmailAndPassword(auth,  email, password)
     .then((userCredential) => {
       const user = userCredential.user;
-      const userdata = { username, email, password, save};
+      const userdata = { username, email, password, save, stats};
 
       // Set the displayName for the new user
       return updateProfile(user, {

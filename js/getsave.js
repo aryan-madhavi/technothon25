@@ -1,7 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
-import { getFirestore, doc, updateDoc, getDoc } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
-
-import { getsave } from "../js/getsave.js";
+import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
 
 // Firebase Configuration
 const firebaseConfig = {
@@ -18,7 +16,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 // const temp = document.getElementById("temp");
 // Function to sync local storage data with Firebase
-async function syncLocalWithFirebase() {
+async function getsave() {
     console.log(" Syncing local storage with Firebase...");
 
     // Retrieve user data from local storage
@@ -29,11 +27,11 @@ async function syncLocalWithFirebase() {
     //   }
     const LoggedInUser = JSON.parse(localStorage.getItem("UserSaveFile"));
     const LoogedInUserId = localStorage.getItem("LoggedUserID");
-    const stats = {
-        botdefeated : localStorage.getItem("botdefeated")
-    };    
+    // const stats = {
+    //     botdefeated : localStorage.getItem("botdefeated")
+    // };    
 
-    console.log(LoogedInUserId)
+    // console.log(LoogedInUserId)
 
     if (!LoggedInUser || !LoogedInUserId) {
         console.warn("No valid user data found in local storage.");
@@ -47,12 +45,14 @@ async function syncLocalWithFirebase() {
         // Check if document exists in Firestore
         const docSnap = await getDoc(userRef);
         if (docSnap.exists()) {
-            console.log("User document exists, updating data...");
+            console.log("User document exists, Local Storage data...");
+            console.log(docSnap.data()['save']);
+            localStorage.setItem('UserSaveFile', JSON.stringify(docSnap.data()['save']));
             // console.log(temp.value)
-            await updateDoc(userRef, {save : LoggedInUser, botdefeated : stats.botdefeated});
+            // await updateDoc(userRef, {save : LoggedInUser, botdefeated : stats.botdefeated});
             // localStorage.setItem("UserSaveFile", LoggedInUser);
             // await updateDoc(userRef,  { username: temp.value });
-            console.log(" Sync successful!");
+            console.log("Local Sync successful!");
         } else {
             console.warn("User document does not exist in Firestore, skipping update.");
         }
@@ -61,17 +61,4 @@ async function syncLocalWithFirebase() {
     }
 }
 
-function syncWithDelay() {
-    syncLocalWithFirebase().then(() => {
-        console.log("Next sync scheduled in 5 sec...");
-        setTimeout(syncWithDelay, 5000); // Run again after 5 sec 
-    }).catch(error => {
-        console.error("Sync failed, retrying in 2 minutes...", error);
-        setTimeout(syncWithDelay, 5000);
-    });
-}
-
-getsave();
-// Start the continuous sync
-syncWithDelay();
-// export { syncLocalWithFirebase };
+export { getsave };

@@ -62,6 +62,7 @@ signin.addEventListener('click', async (event) => {
     localStorage.setItem('LoggedUserEmail', user.email);
     localStorage.setItem('LoggedUsername', user.displayName || 'Guest');
     localStorage.setItem('UserSaveFile', JSON.stringify(docSnap.data()['save']));
+    localStorage.setItem('Stats', JSON.stringify(docSnap.data()['stats']));
 
     // Show success message
     Showmsg('Login Successful', 'signupmsg');
