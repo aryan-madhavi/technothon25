@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(to right, #CDCDCD, #657F7D);
+    background: linear-gradient(to right, #90A8C3, #4F518C);
     color: #657F7D;
     font-family: "Jersey 15", sans-serif;
     box-sizing: border-box;
@@ -7,7 +7,9 @@ body{
 
 /* Python Interpreter Container */
 .pythoninterpreter {
-    background-color: rgba(205, 205, 205, 0.9); /* Increased opacity for better visibility */
+    /* background-color: rgba(205, 205, 205, 0.9); Increased opacity for better visibility */
+    background-color: antiquewhite;
+    opacity: 0.6;
     color: black;
     margin: 50px auto;
     max-width: 80%;

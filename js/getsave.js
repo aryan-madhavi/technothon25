@@ -26,29 +26,31 @@ async function getsave() {
     //     current_level : 5
     //   }
     const LoggedInUser = JSON.parse(localStorage.getItem("UserSaveFile"));
-    const LoogedInUserId = localStorage.getItem("LoggedUserID");
+    const LoggedInUserId = localStorage.getItem("LoggedUserID");
     // const stats = {
     //     botdefeated : localStorage.getItem("botdefeated")
     // };    
 
     // console.log(LoogedInUserId)
 
-    if (!LoggedInUser || !LoogedInUserId) {
+    if (!LoggedInUser || !LoggedInUserId) {
         console.warn("No valid user data found in local storage.");
         return;
     }
 
     try {
         // Reference to Firestore document
-        const userRef = doc(db, "user", LoogedInUserId);
+        const userRef = doc(db, "user", LoggedInUserId);
 
         // Check if document exists in Firestore
         const docSnap = await getDoc(userRef);
         if (docSnap.exists()) {
             console.log("User document exists, Local Storage data...");
-            console.log(docSnap.data());
+            // console.log(docSnap.data());
             localStorage.setItem('UserSaveFile', JSON.stringify(docSnap.data()['save']));
             localStorage.setItem('Stats', JSON.stringify(docSnap.data()['stats']));
+            localStorage.setItem('TimePlayed', docSnap.data()['TimePlayed']);
+            
             // console.log(temp.value)
             // await updateDoc(userRef, {save : LoggedInUser, botdefeated : stats.botdefeated});
             // localStorage.setItem("UserSaveFile", LoggedInUser);

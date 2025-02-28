@@ -63,6 +63,7 @@ signin.addEventListener('click', async (event) => {
     localStorage.setItem('LoggedUsername', user.displayName || 'Guest');
     localStorage.setItem('UserSaveFile', JSON.stringify(docSnap.data()['save']));
     localStorage.setItem('Stats', JSON.stringify(docSnap.data()['stats']));
+    localStorage.setItem('TimePlayed', parseInt(docSnap.data()['TimePlayed']));
 
     // Show success message
     Showmsg('Login Successful', 'signupmsg');
@@ -86,10 +87,10 @@ signin.addEventListener('click', async (event) => {
 // Authentication state listener
 onAuthStateChanged(auth, (user) => {
   if (user) {
-    localStorage.setItem('LoggedUserID', user.uid);
-    localStorage.setItem('LoggedUserEmail', user.email);
-    localStorage.setItem('LoggedUsername', user.displayName || 'Guest');
-    console.log("User is logged in:", user.uid);
+    // localStorage.setItem('LoggedUserID', user.uid);
+    // localStorage.setItem('LoggedUserEmail', user.email);
+    // localStorage.setItem('LoggedUsername', user.displayName || 'Guest');
+    // console.log("User is logged in:", user.uid);
   } else {
     localStorage.removeItem('LoggedUserID');
     localStorage.removeItem('LoggedUserEmail');
