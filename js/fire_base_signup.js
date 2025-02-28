@@ -44,7 +44,7 @@ Signup.addEventListener('click', (event) => {
   const save = {
       completed: [],
       current_level : 0
-    }
+  };
   const stats = {
     botdefeated : 0
   };

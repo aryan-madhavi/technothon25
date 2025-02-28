@@ -46,8 +46,9 @@ async function getsave() {
         const docSnap = await getDoc(userRef);
         if (docSnap.exists()) {
             console.log("User document exists, Local Storage data...");
-            console.log(docSnap.data()['save']);
+            console.log(docSnap.data());
             localStorage.setItem('UserSaveFile', JSON.stringify(docSnap.data()['save']));
+            localStorage.setItem('Stats', JSON.stringify(docSnap.data()['stats']));
             // console.log(temp.value)
             // await updateDoc(userRef, {save : LoggedInUser, botdefeated : stats.botdefeated});
             // localStorage.setItem("UserSaveFile", LoggedInUser);

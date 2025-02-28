@@ -95,6 +95,8 @@ onAuthStateChanged(auth, (user) => {
     localStorage.removeItem('LoggedUserEmail');
     localStorage.removeItem('LoggedUsername');
     localStorage.removeItem('UserSaveFile');
+    localStorage.removeItem('Stats');
+    // localStorage.removeItem('botdefeated');
     console.log("No user is logged in");
   }
 });

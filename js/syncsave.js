@@ -29,9 +29,7 @@ async function syncLocalWithFirebase() {
     //   }
     const LoggedInUser = JSON.parse(localStorage.getItem("UserSaveFile"));
     const LoogedInUserId = localStorage.getItem("LoggedUserID");
-    const stats = {
-        botdefeated : localStorage.getItem("botdefeated")
-    };    
+    const local_stats = JSON.parse(localStorage.getItem("Stats"));    
 
     console.log(LoogedInUserId)
 
@@ -49,7 +47,8 @@ async function syncLocalWithFirebase() {
         if (docSnap.exists()) {
             console.log("User document exists, updating data...");
             // console.log(temp.value)
-            await updateDoc(userRef, {save : LoggedInUser, botdefeated : stats.botdefeated});
+            await updateDoc(userRef, {save : LoggedInUser});
+            await updateDoc(userRef, {stats : local_stats});
             // localStorage.setItem("UserSaveFile", LoggedInUser);
             // await updateDoc(userRef,  { username: temp.value });
             console.log(" Sync successful!");
