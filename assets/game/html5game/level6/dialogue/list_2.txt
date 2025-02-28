@@ -1,37 +1,78 @@
-📌 List Methods – Superpowers for Lists! 🦸‍♂️
+List Methods – Superpowers for Lists! 
+@START
 Lists come with built-in methods that help you add, remove, and manipulate items.
-
-🔹 Adding Elements
+a. Adding Elements
 1️ .append(x) – Adds an item at the end
-fruits.append("orange")
-
+\t fruits.append("orange")
+\t print(fruits)
+Output:
+\t ['apple', 'banana', 'grapes', 'orange']
+@END
+@START
 2️ .insert(i, x) – Inserts item x at index i
-fruits.insert(1, "kiwi")
-🔹 Removing Elements
-
+\t fruits.insert(1, "kiwi")
+\t print(fruits)
+Output:
+['apple', 'kiwi', 'banana', 'grapes', 'orange']
+@END
+@START
+b. Removing Elements
 3️ .remove(x) – Removes the first occurrence of x
-fruits.remove("banana")
-
+\t fruits.remove("banana")
+\t print(fruits)
+Output:
+\t ['apple', 'kiwi', 'grapes', 'orange']
+@END
+@START
 4️ .pop(i) – Removes & returns the item at index i
-fruits.pop(2)
-
-🔹 Sorting & Reversing
+\t print(fruits.pop(2))
+Output:
+\t grapes
+@END
+@START
+c. Sorting & Reversing
 5️ .sort() – Sorts the list (ascending by default)
-numbers.sort()
-
+\t numbers = [5, 2, 9, 1, 5, 6]
+\t numbers.sort()  
+\t print("Sorted List:", numbers)  
+Output: 
+\t Sorted List: [1, 2, 5, 5, 6, 9]
+@END
+@START
 6️ .reverse() – Reverses the order of items
-numbers.reverse()
-🔹 Finding & Counting
-
+\t names = ["Alice", "Bob", "Charlie"]
+\t names.reverse()
+\t print("Reversed List:", names) 
+Output:
+\t Reversed List: ['Charlie', 'Bob', 'Alice']
+@END
+@START
+d. Finding & Counting
 7️ .count(x) – Counts occurrences of x
-fruits.count("apple")
-
+\t numbers = [1, 2, 3, 4, 2, 2, 5]
+\t print(numbers.count(2)) 
+\t print(numbers.count(5)) 
+\t print(numbers.count(10))
+Output:
+\t 3
+\t 1
+\t 0
+@END
+@START
 8 .index(x) – Returns the index of x
-fruits.index("mango")
-
-🎯 Why Use List Methods?
-✅ Efficient – No need to manually modify lists.
-✅ Faster – Built-in methods work quicker than loops.
-✅ Cleaner Code – Makes programs easier to read & write.
-
-💡 Master these methods & become a Python pro! 🚀🔥
+\t fruits = ["apple", "banana", "cherry", "banana", "mango"]
+\t print(fruits.index("banana"))  #
+\t print(fruits.index("cherry"))  
+\t # Finding "banana" after index 2
+\t print(fruits.index("banana", 2)) 
+Output:
+\t 1
+\t 2
+\t 3
+@END
+@START
+Why Use List Methods?
+1. Efficient – No need to manually modify lists.
+2. Faster – Built-in methods work quicker than loops.
+3. Cleaner Code – Makes programs easier to read & write.
+@END

@@ -1,5 +1,6 @@
-//event_inherited();
-
+if global.pause
+	exit;
+	
 depth = -bbox_bottom;
 
 if area == noone {

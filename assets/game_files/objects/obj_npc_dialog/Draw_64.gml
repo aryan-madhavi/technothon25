@@ -1,7 +1,10 @@
+if global.pause
+	exit;
+
 draw_set_color(c_white);
 draw_set_font(fnt_consolas);
 var _str_width = string_width(text[page]);
-var _str_height = string_height(text[page]);
+var _str_height = string_height(" ");
 
 
 var _xbuf = 20, _ybuf = 20;
@@ -13,7 +16,8 @@ _height = camera_get_view_height(_cam) / 4;
 var _x1 = _xbuf;
 var _y1 = _ybuf;
 var _x2 = _x1 + _width - _xbuf*2;
-var _y2 = _y1 + _height - _ybuf*2  + (ceil(_str_width/(_x2-_x1)) * _str_height) - _str_height*2;
+_height = (string_count(ansi_char(10),text[page]) + ceil(_str_width/(_x2-_x1))) * _str_height;
+var _y2 = _y1 + _height + _ybuf*2 //+ (ceil(_str_width/(_x2-_x1)) * _str_height) - _str_height*2;
 
 
 var _c = c_black;
@@ -35,7 +39,7 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 if char_count < string_length(text[page])
 	char_count += .5;
-text_part = string_copy(text[page],1,char_count);
+text_part = string_copy(text[page],1,char_count); 
 draw_text_ext(_x1+op_border,_y1+op_border,text_part,-1,_x2 - _x1 - op_border*2);
 event_user(0);
 

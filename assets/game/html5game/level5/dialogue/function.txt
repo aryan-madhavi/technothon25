@@ -1,41 +1,41 @@
-🍽 Functions in Python – The Recipe for Organized Code! 🚀
+Functions in Python – The Recipe for Organized Code! 
+@START
 A function is like a recipe – it tells Python exactly what steps to follow to complete a task! Instead of repeating the same steps over and over, you just call the function whenever you need it.
-
-🥪 Think of a Function Like Making a Sandwich!
-1️⃣ Gather Ingredients – You prepare bread, veggies, and sauce.
-2️⃣ Follow Steps – You layer everything in order.
-3️⃣ Enjoy & Repeat! – Now, whenever you want a sandwich, you don’t need to think about the steps again!
-
+Think of a Function Like Making a Sandwich!
+1️. Gather Ingredients – You prepare bread, veggies, and sauce.
+2️. Follow Steps – You layer everything in order.
+3️. Enjoy & Repeat! – Now, whenever you want a sandwich, you don’t need to think about the steps again!
 Just like this, in Python, functions let you reuse code easily!
-
-🛠 Defining a Function
+@END
+@START
+Defining a Function - 
 To create (define) a function, we use the def keyword.
-def make_sandwich(bread, filling, sauce):
-    print(f"Taking two slices of {bread}.")
-    print(f"Adding {filling} to the sandwich.")
-    print(f"Spreading some {sauce}.")
-    print("Your sandwich is ready! 🍽")
-🎯 Calling a Function
+\t def make_sandwich(bread, filling, sauce):
+\t     print(f"Taking two slices of {bread}.")
+\t     print(f"Adding {filling} to the sandwich.")
+\t     print(f"Spreading some {sauce}.")
+\t     print("Your sandwich is ready! ")
+@END
+@START
+Calling a Function
 Once the function is defined, we can call it by using its name!
 make_sandwich("whole wheat bread", "cheese and tomato", "mayonnaise")
-
 Output:
-Taking two slices of whole wheat bread.
-Adding cheese and tomato to the sandwich.
-Spreading some mayonnaise.
-Your sandwich is ready! 🍽
-🔹 Why Use Functions?
-✅ Avoid Repeating Code – Write once, use anytime!
-✅ Make Code More Readable – Easier to understand and debug.
-✅ Organized & Efficient – Breaks large tasks into small, manageable parts.
-
-📌 Types of Functions in Python
-🔹 Built-in Functions – Predefined, like print(), len(), max().
-🔹 User-defined Functions – Created using def, like our make_sandwich().
-🔹 Lambda (Anonymous) Functions – Small one-liners, like lambda x: x * 2.
-🔹 We'll About about this in depth by our next Bot.
-
-💡 Quick Recap:
-✔ Define a function with def function_name(parameters):
-✔ Call it by using function_name(arguments).
-✔ Functions make coding faster, cleaner, and more efficient! 🚀🔥
+\t Taking two slices of whole wheat bread.
+\t Adding cheese and tomato to the sandwich.
+\t Spreading some mayonnaise.
+\t Your sandwich is ready! 
+@END
+@START
+Why Use Functions?
+1. Avoid Repeating Code – Write once, use anytime!
+2. Make Code More Readable – Easier to understand and debug.
+3. Organized & Efficient – Breaks large tasks into small, manageable parts.
+@END
+@START
+Types of Functions in Python
+1. Built-in Functions – Predefined, like print(), len(), max().
+2. User-defined Functions – Created using def, like our make_sandwich().
+3. Lambda (Anonymous) Functions – Small one-liners, like lambda x: x * 2.
+We'll About about this in depth by our next Bot.
+@END

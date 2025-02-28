@@ -1,29 +1,57 @@
-📌 Dictionary Methods – Superpowers for Dictionaries! 🦸‍♂️
+Dictionary Methods – Superpowers for Dictionaries! 
+@START
 Dictionaries come with built-in methods that make working with them super easy!
-
-🔹 Adding & Updating Data
+a. Adding & Updating Data
 1️ .update(new_dict) – Adds or updates multiple key-value pairs
-student.update({"age": 23, "city": "New York"})
-
-🔹 Removing Items
+\t student.update({"age": 23, "city": "New York"})
+\t print(student)
+Output:
+\t {'name': 'Alex', 'age': 23, 'course': 'Computer Engineering', 'grade': 'A', 'city': 'New York'}
+@END 
+@START
+b. Removing Items
 2️ .pop(key) – Removes an item by key
-student.pop("grade")
+\t student.pop("grade")
+\t print(student)
+Output:
+\t {'name': 'Alex', 'age': 23, 'course': 'Computer Engineering', 'city': 'New York'}
+@END 
+@START
 3️ .clear() – Clears all dictionary contents
-student.clear()
-
-🔹 Retrieving Data
+\t student.clear()
+\t print(student)
+Output:
+\t {}
+@END 
+@START
+c. Retrieving Data
 4️ .get(key) – Fetches value, avoids errors
-print(student.get("name"))
+\t print(student.get("name"))
+Output:
+\t Alex
+@END 
+@START
 5️ .keys() – Returns all keys
-print(student.keys())
+\t print(student.keys())
+Output:
+\t dict_keys(['name', 'age', 'course', 'city'])
+@END 
+@START
 6️ .values() – Returns all values
-print(student.values())
+\t print(student.values())
+Output:
+\t dict_values(['Alex', 23, 'Computer Engineering', 'New York'])
+@END 
+@START
 7️ .items() – Returns key-value pairs
 print(student.items())
-
-🎯 Why Use Dictionary Methods?
-✅ Faster Lookups – Get values instantly
-✅ Cleaner Code – No need for complex loops
-✅ Efficient – Directly modify or remove elements
-
-💡 Dictionaries are one of Python’s best features – Master them and level up your coding! 🚀🔥
+Output:
+dict_items([('name', 'Alex'), ('age', 23), ('course', 'Computer Engineering'), ('city', 'New York')])
+@END 
+@START
+Why Use Dictionary Methods?
+1. Faster Lookups – Get values instantly
+2. Cleaner Code – No need for complex loops
+3. Efficient – Directly modify or remove elements
+ Dictionaries are one of Python’s best features – Master them and level up your coding! 
+@END

@@ -13,7 +13,9 @@ if path_position <= 0 {
 }
 
 if path_get_point_x(enemy_path,0) != path_get_point_x(enemy_path,1)
-	image_xscale *= path_position == 0.5 or path_position == 1 ? -1 : 1;		
+	if (path_position == 0.5 or path_position == 1)
+		image_xscale *= -1;
+	//image_xscale *= (path_position == 0.5 or path_position == 1) ? -1 : 1;		
 
 if defeated {
 	path_speed = 0;

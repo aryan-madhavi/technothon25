@@ -1,31 +1,45 @@
-📌 Tuple Methods in Python 🔥
-
-🔹 Finding Elements in a Tuple
+Tuple Methods in Python
+@START
+a. Finding Elements in a Tuple
 You can check for an item using the in keyword and find its index using .index().
-print("banana" in fruits)  # Output: True
-print(fruits.index("cherry"))  # Output: 2
-
-🔹 Counting Occurrences
+\t print("banana" in fruits)   
+\t print(fruits.index("cherry"))  
+Output: 
+\t True
+\t 2
+@END 
+@START
+b. Counting Occurrences
 Use .count() to see how many times an element appears.
-numbers = (1, 2, 2, 3, 4, 2, 5)
-print(numbers.count(2))  # Output: 3
-
-🔹 Tuple Operations
-🔹 Concatenation & Repeating
+\t numbers = (1, 2, 2, 3, 4, 2, 5)
+\t print(numbers.count(2))   
+Output: 
+\t 3
+@END 
+@START
+c. Tuple Operations
+Concatenation & Repeating
 A = (1, 2, 3)
 B = (4, 5, 6)
-print(A + B)  # Output: (1, 2, 3, 4, 5, 6)
-print(A * 2)  # Output: (1, 2, 3, 1, 2, 3)
-
-🔹 Converting a List to a Tuple
-my_list = [1, 2, 3]
-my_tuple = tuple(my_list)
-print(my_tuple)  # Output: (1, 2, 3)
-
-📌 Key Takeaways
-✅ Tuples are immutable, ordered collections.
-✅ Faster than lists for lookup operations.
-✅ Used when data should not change.
-✅ Supports indexing, slicing, and basic operations.
-
-🚀 Tuples are great for storing fixed, unchangeable data efficiently! 🔥
+print(A + B)   
+print(A * 2)  
+Output: 
+\t (1, 2, 3, 4, 5, 6)
+\t (1, 2, 3, 1, 2, 3)
+@END 
+@START
+d. Converting a List to a Tuple
+\t  my_list = [1, 2, 3]
+\t my_tuple = tuple(my_list)
+\t print(my_tuple)   
+Output: 
+\t (1, 2, 3)
+@END 
+@START
+Key Takeaways
+1. Tuples are immutable, ordered collections.
+2. Faster than lists for lookup operations.
+3. Used when data should not change.
+4. Supports indexing, slicing, and basic operations.
+Tuples are great for storing fixed, unchangeable data efficiently! 
+@END 

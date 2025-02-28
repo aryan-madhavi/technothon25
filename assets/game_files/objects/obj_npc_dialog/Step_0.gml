@@ -1,4 +1,4 @@
-if creator.area.inside != true	{
+if creator.area.inside != true {
 	event_user(1);
 	exit;
 }
