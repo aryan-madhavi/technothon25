@@ -1,6 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
 import { getFirestore, doc, updateDoc, getDoc } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
 
+import {startprogress} from "./progress.js";
 // Firebase Configuration
 const firebaseConfig = {
     apiKey: "AIzaSyBncclJvMPg2JWZ6Xx_og8KWvGCki970V8",
@@ -58,6 +59,7 @@ async function syncLocalWithFirebase() {
 
 function syncWithDelay() {
     syncLocalWithFirebase().then(() => {
+        startprogress();
         console.log("Next sync scheduled in 2 minutes...");
         setTimeout(syncWithDelay, 120000); // Run again after 2 mins
     }).catch(error => {

@@ -15,8 +15,32 @@ body{
     padding: 20px;
     box-sizing: border-box;
 }
-.game{
-    align-items: flex-start;
+.gameNprogress{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* align-items: flex-start; */
+}
+.progress-container{
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 30px;
+    margin: 20px 0;
+}
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #4caf50;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    font-weight: bold;
+    transition: width 0.3s ease-in-out;
+}
+.progress h2{
+    font-size: 55px;
 }
 iframe {
     margin-top: 100px;
