@@ -1,15 +1,16 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
 import { getAuth, onAuthStateChanged, setPersistence, browserLocalPersistence } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
 
-// Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBncclJvMPg2JWZ6Xx_og8KWvGCki970V8",
-  authDomain: "carbonari-1d14b.firebaseapp.com",
-  projectId: "carbonari-1d14b",
-  storageBucket: "carbonari-1d14b.firebasestorage.app",
-  messagingSenderId: "988846234895",
-  appId: "1:988846234895:web:5ad714634aabcd1bdb327a"
-};
+    apiKey: "AIzaSyCuGCAAFiiMDrWeerT0eY-ZzcbpeemBa8M",
+    authDomain: "carbonari-b1a91.firebaseapp.com",
+    projectId: "carbonari-b1a91",
+    storageBucket: "carbonari-b1a91.firebasestorage.app",
+    messagingSenderId: "487055169038",
+    appId: "1:487055169038:web:4114c67d398b5765d0ce5f",
+    measurementId: "G-N3H2V77CN3"
+  };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

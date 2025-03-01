@@ -1,4 +1,4 @@
- Classes & Objects in Python – The Blueprint of Life! 
+Classes & Objects in Python – The Blueprint of Life! 
 @START
 What’s a Class?
 A class is like a blueprint or template used to create multiple objects. Think of it as a recipe —it defines what ingredients (attributes) and steps (methods) are needed, but you can use it to create different dishes (objects)!
