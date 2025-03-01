@@ -56,7 +56,6 @@
     {"name":"inst_3736A720","path":"rooms/rm_level_1/rm_level_1.yy",},
     {"name":"inst_6BE5B83B","path":"rooms/rm_level_1/rm_level_1.yy",},
     {"name":"inst_1D6B6E48","path":"rooms/rm_level_1/rm_level_1.yy",},
-    {"name":"inst_2CEEE441","path":"rooms/rm_level_1/rm_level_1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -102,7 +101,6 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_battle","path":"objects/obj_battle/obj_battle.yy",},"propertyId":{"name":"w","path":"objects/obj_battle/obj_battle.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"120",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":240.0,"y":480.0,},
         {"$GMRInstance":"v1","%Name":"inst_1D6B6E48","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1D6B6E48","objectId":{"name":"obj_aariona","path":"objects/obj_aariona/obj_aariona.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":942.0,"y":1001.0,},
-        {"$GMRInstance":"v1","%Name":"inst_2CEEE441","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2CEEE441","objectId":{"name":"obj_aariona","path":"objects/obj_aariona/obj_aariona.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":920.0,"y":1000.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Decor","depth":200,"effectEnabled":true,"effectType":null,"gridX":40,"gridY":40,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_167BF387","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_167BF387","objectId":{"name":"obj_doors","path":"objects/obj_doors/obj_doors.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":302.0,"y":196.0,},
