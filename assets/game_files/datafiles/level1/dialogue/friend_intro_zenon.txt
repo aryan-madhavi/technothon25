@@ -1,0 +1,27 @@
+ZENON
+@START
+I am ZENON, Let me introduce you to the Python Language
+This will help you to defeat your enemies
+...Let's get started...
+@END
+@START
+Python is a high-level, interpreted, object-oriented programming language
+known for its simplicity and readability
+@END
+@START
+Developed by Guido van Rossum in the late 1980s,
+making it a popular choice for beginners and experienced developers alike
+it is often used for web development,
+data analysis, machine learning, and automation tasks,
+with a key feature being its reliance on whitespace indentation
+to define code blocks,
+rather than curly brackets like many other languages
+@END
+@START
+The name 'Python' is a reference to the British comedy group
+'Monty Python', and to any Snake type. 
+@END
+@START
+.... I have taught you all that i could
+Now, proceed and meet NEXIS
+@END

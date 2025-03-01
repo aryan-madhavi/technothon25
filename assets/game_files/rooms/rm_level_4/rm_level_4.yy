@@ -25,7 +25,6 @@
     {"name":"inst_3E6F410C","path":"rooms/rm_level_4/rm_level_4.yy",},
     {"name":"inst_1348B99E","path":"rooms/rm_level_4/rm_level_4.yy",},
     {"name":"inst_43F1E815","path":"rooms/rm_level_4/rm_level_4.yy",},
-    {"name":"inst_EB7AC24","path":"rooms/rm_level_4/rm_level_4.yy",},
     {"name":"inst_2EE4252","path":"rooms/rm_level_4/rm_level_4.yy",},
     {"name":"inst_6316779C","path":"rooms/rm_level_4/rm_level_4.yy",},
     {"name":"inst_498C4CED","path":"rooms/rm_level_4/rm_level_4.yy",},
@@ -62,6 +61,7 @@
     {"name":"inst_B67A3F5","path":"rooms/rm_level_4/rm_level_4.yy",},
     {"name":"inst_195B6450","path":"rooms/rm_level_4/rm_level_4.yy",},
     {"name":"inst_30424FF1","path":"rooms/rm_level_4/rm_level_4.yy",},
+    {"name":"inst_2E98D1D","path":"rooms/rm_level_4/rm_level_4.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -112,7 +112,6 @@
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1920.0,"y":606.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Decor","depth":200,"effectEnabled":true,"effectType":null,"gridX":40,"gridY":40,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v1","%Name":"inst_EB7AC24","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_EB7AC24","objectId":{"name":"obj_vault_door","path":"objects/obj_vault_door/obj_vault_door.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1540.0,"y":1196.0,},
         {"$GMRInstance":"v1","%Name":"inst_3E6F410C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3E6F410C","objectId":{"name":"obj_bench8","path":"objects/obj_bench8/obj_bench8.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":-0.22117344,"scaleX":1.3333334,"scaleY":1.0,"x":1403.9331,"y":761.0888,},
         {"$GMRInstance":"v1","%Name":"inst_1348B99E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1348B99E","objectId":{"name":"obj_bench8","path":"objects/obj_bench8/obj_bench8.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1681.0,"y":761.4438,},
         {"$GMRInstance":"v1","%Name":"inst_43F1E815","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":-2,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_43F1E815","objectId":{"name":"obj_plants","path":"objects/obj_plants/obj_plants.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":2.0,"x":1551.0,"y":764.4438,},
@@ -143,6 +142,7 @@
         {"$GMRInstance":"v1","%Name":"inst_6133B8AD","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":-2,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6133B8AD","objectId":{"name":"obj_photo_1","path":"objects/obj_photo_1/obj_photo_1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1974.0,"y":420.0,},
         {"$GMRInstance":"v1","%Name":"inst_195B6450","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":-4,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_195B6450","objectId":{"name":"obj_plants","path":"objects/obj_plants/obj_plants.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.5,"scaleY":1.5,"x":1061.0,"y":1286.0,},
         {"$GMRInstance":"v1","%Name":"inst_30424FF1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":-2,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_30424FF1","objectId":{"name":"obj_plants","path":"objects/obj_plants/obj_plants.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.5,"scaleY":1.5,"x":2016.0,"y":1286.0,},
+        {"$GMRInstance":"v1","%Name":"inst_2E98D1D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2E98D1D","objectId":{"name":"obj_doors","path":"objects/obj_doors/obj_doors.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1540.0,"y":1195.0,},
       ],"layers":[],"name":"Decor","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Wall","depth":300,"effectEnabled":true,"effectType":null,"gridX":40,"gridY":40,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_2099E3D4","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2099E3D4","objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":25.0,"scaleY":7.0,"x":1040.0,"y":920.0,},

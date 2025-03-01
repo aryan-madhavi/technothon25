@@ -16,9 +16,10 @@ _height = camera_get_view_height(_cam) / 4;
 var _x1 = _xbuf;
 var _y1 = _ybuf;
 var _x2 = _x1 + _width - _xbuf*2;
-_height = (string_count(ansi_char(10),text[page]) + ceil(_str_width/(_x2-_x1))) * _str_height;
+_height = (string_count(ansi_char(10),text[page]) + ceil(string_width( string_replace(text[page], ansi_char(10), ansi_char(8)) )/(_x2-_x1)) + 2) * _str_height;
 var _y2 = _y1 + _height + _ybuf*2 //+ (ceil(_str_width/(_x2-_x1)) * _str_height) - _str_height*2;
 
+//show_debug_message(_height);
 
 var _c = c_black;
 draw_rectangle_color(
