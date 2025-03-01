@@ -1,8 +1,5 @@
-NEXIS
 @START
-This is NEXIS speaking
-They are far more advanced than us
-But we will try to help you get what you need
+They are far more advanced than us But we will try to help you get what you need
 You need to shut them down for the good of mankind
 @END
 @START
