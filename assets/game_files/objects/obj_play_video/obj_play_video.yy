@@ -33,7 +33,7 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"video_file","filters":[],"listItems":[],"multiselect":false,"name":"video_file","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"python-intro.mp4","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"video_file","filters":[],"listItems":[],"multiselect":false,"name":"video_file","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"continue.mp4","varType":2,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

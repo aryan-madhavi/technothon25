@@ -15,8 +15,13 @@ if (play) {
             video = undefined; // Reset the video variable
 
         } else {
-
-            video = video_open($"video\\{video_file}");
+			
+			if file_exists($"level{get_level_no()}\\videos\\{video_file}") {
+				video = video_open($"level{get_level_no()}\\videos\\{video_file}");
+			}
+			else {
+				video = video_open($"common\\continue.mp4");
+			}
 
             video_enable_loop(false);
 
