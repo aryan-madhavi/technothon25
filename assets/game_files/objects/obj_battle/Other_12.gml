@@ -57,19 +57,41 @@ for (var _i = 0; _i < array_length(assessment[page][OPTIONS]); ++_i) {
 }
 
 // Answer
+
 draw_set_font(fnt_nova);
 draw_set_valign(fa_top);
 draw_set_halign(fa_right);
+
 if alarm[0] or keyboard_string != ""
 	draw_text(_x2 + _xbuf, _y2, " |");
 else
 	draw_text(_x2 + _xbuf, _y2, " -");
+
 draw_text(_x2,_y2,keyboard_string);
 
 draw_set_font(fnt_doto);
 draw_set_valign(fa_bottom);
 draw_set_halign(fa_right);
 draw_text(_x2,_y2,"Type your option number and hit ENTER");
+
+draw_rectangle_color(
+	_x2 + _xbuf + 2, _y2 - 30,
+	_x2 - string_width("Type your option number and hit ENTER") - 20, _y2 + 45,
+	c_green, c_green, c_green, c_green,
+	true
+);
+draw_rectangle_color(
+	_x2 + _xbuf + 3, _y2 - 31,
+	_x2 - string_width("Type your option number and hit ENTER") - 21, _y2 + 46,
+	c_green, c_green, c_green, c_green,
+	true
+);
+draw_rectangle_color(
+	_x2 + _xbuf + 4, _y2 - 32,
+	_x2 - string_width("Type your option number and hit ENTER") - 22, _y2 + 47,
+	c_green, c_green, c_green, c_green,
+	true
+);
 
 #endregion
 

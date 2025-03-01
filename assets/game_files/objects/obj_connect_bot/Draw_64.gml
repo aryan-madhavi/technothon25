@@ -23,12 +23,23 @@ var _y2 = _view_height - _ybuf;
 var _c = c_yellow;
 draw_roundrect_color(_x1,_y1,_x2,_y2,_c,_c,true);
 
+
+
 draw_set_font(fnt_square_block);
 draw_set_valign(fa_top);
 draw_set_halign(fa_left);
 draw_text_ext(_x1+_op_border,_y1+_op_border,keyboard_string,-1,_view_width-_xbuf*2.5-_op_border);
+if alarm[0] and not keyboard_check_pressed(vk_anykey) {
+	
+	var _h = floor( string_width(keyboard_string)/(_view_width-_xbuf*2.5-_op_border) ) + 1;
+	//var _v = string_width(keyboard_string) * _h
+	//show_debug_message(_v);
+	draw_line_width(_x1+16+string_width(keyboard_string),(_y1+_op_border)*_h,_x1+16+string_width(keyboard_string),(_y1+_op_border)*_h+string_height(" "),2);
+	
+}
 
 if display_string != "" {
+	
 	_x1 = _xbuf;
 	_y1 = _ybuf;
 	_x2 = _view_width - _xbuf;

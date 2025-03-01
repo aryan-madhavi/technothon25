@@ -38,5 +38,7 @@ function scr_sendgpt(_question){
 	show_debug_message(_data);
 
 	ds_map_destroy(_map);
-
+	
+	keyboard_string = "";
+	
 }

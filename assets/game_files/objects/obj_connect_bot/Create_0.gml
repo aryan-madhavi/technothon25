@@ -1,5 +1,8 @@
 keyboard_string = "";
 
+alarm[0] = 1;
+//prompt_string = "";
+
 _question = "";
 text_part = "";
 display_string = "";
