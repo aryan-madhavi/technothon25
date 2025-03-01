@@ -88,7 +88,8 @@ function syncWithDelay() {
 }
 
 function timerWithDelay() {
-    
+    syncLocalWithFirebase();
+
     timecounter += 3;
     console.log("Time Counter : ", timecounter);
 
