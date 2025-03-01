@@ -1,27 +1,27 @@
 {  
   "assessment" : [
     {
-      "questions" : "What is a class in Python?",
+      "question" : "What is a class in Python?",
       "options" : ["A function that returns an object", "A blueprint for creating objects", "A built-in Python module", "A method inside a function"],
       "answer" : "A blueprint for creating objects"
     },
     {
-      "questions" : "What keyword is used to create a class?",
+      "question" : "What keyword is used to create a class?",
       "options" : ["object", "define", "class", "type"],
       "answer" : "class"
     },
     {
-      "questions" : "An object is an instance of a __________.",
+      "question" : "An object is an instance of a __________.",
       "options" : ["method", "function", "class", "variable"],
       "answer" : "class"
     },
     {
-      "questions" : "The '__init__' method in a class is called the __________.",
+      "question" : "The '__init__' method in a class is called the __________.",
       "options" : ["initializer", "constructor", "destructor", "operator"],
       "answer" : "constructor"
     },
     {
-      "questions" : "A class must always have a constructor method.",
+      "question" : "A class must always have a constructor method.",
       "options" : ["True", "False"],
       "answer" : "False"
     }

@@ -14,6 +14,7 @@ function get_level_no() {
 		case rm_level_5:	_level = 5;	break;
 		case rm_level_6:	_level = 6;	break;
 		case rm_level_7:	_level = 7;	break;
+		case rm_level_8:	_level = 8;	break;
 	}
 	
 	return int64(_level);

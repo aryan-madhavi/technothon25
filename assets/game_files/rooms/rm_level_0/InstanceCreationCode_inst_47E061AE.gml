@@ -1,4 +1,4 @@
-target_rm = rm_game;
-target_x = 358;
-target_y = 263;
-target_face = DOWN;
+target_rm = rm_level_8;
+target_x = 820;
+target_y = 1840;
+target_face = UP;
