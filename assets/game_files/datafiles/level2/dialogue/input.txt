@@ -1,4 +1,3 @@
-IRONIX
 @START
 In Python, the `input()` function is used to get data from a user. It allows the program to pause and wait for user input, storing the entered value as a string.
 Key Points:

@@ -1,0 +1,33 @@
+@START
+They are far more advanced than us But we will try to help you get what you need
+You need to shut them down for the good of mankind
+@END
+@START
+Here are some convincing key points about Python and its need
+1. Python is a language that can be used for a wide range of applications, 
+from simple scripting to complex data analysis and machine learning 
+i.e from cooking Maggie to cooking something difficult.
+@END
+@START
+2. Code execution is no complex just simple line 
+after line without any extra-ordinary compilation steps 
+which is a benefit for testing quick and development.
+@END
+@START
+3. Also it supports Object – Oriented concepts such as classes and objects which are quiet easy.
+@END
+@START
+4. Python is a chill guy 
+and hence do not need to explicitly declare variables with data-types, 
+which makes it more concise.
+@END
+@START
+5. Readability of python with clean syntax along with clear keywords 
+and significant whitespaces for code indentation,
+which makes it easy to read and fun to understand.
+@END
+@START
+6. Python has a motherly nature 
+and hence has a vast collection of pre-built modules 
+and libraries for several tasks.
+@END

@@ -53,8 +53,7 @@ async function syncLocalWithFirebase() {
         const docSnap = await getDoc(userRef);
         if (docSnap.exists()) {
             console.log("User document exists, updating data...");
-            timecounter += 3;
-            console.log("Time Counter : ", timecounter)
+            
             await updateDoc(userRef, {save : LoggedInUser});
             await updateDoc(userRef, {TimePlayed : timecounter});
             await updateDoc(userRef, {stats : local_stats});
@@ -65,8 +64,6 @@ async function syncLocalWithFirebase() {
 
             startprogress(totalbotdefeat,  lenofcurrentcompletedlevel);
 
-            localStorage.setItem('TimePlayed', timecounter)
-            updateTimeElement(timecounter);
             // console.log("Length o Current Level: ", lenofcurrentcompletedlevel);
             updateBadge(currentlvl);
             // localStorage.setItem("UserSaveFile", LoggedInUser);
@@ -81,13 +78,26 @@ async function syncLocalWithFirebase() {
 }
 
 function syncWithDelay() {
+    if (localStorage.getItem('SavingFile') == "true")
     syncLocalWithFirebase().then(() => {
         console.log("Next sync scheduled in 3 sec...");
-        setTimeout(syncWithDelay, 3000); // Run again after 5 sec 
     }).catch(error => {
         console.error("Sync failed, retrying in 3 sec...", error);
-        setTimeout(syncWithDelay, 3000);
     });
+    localStorage.setItem('SavingFile',"false");
+    setTimeout(syncWithDelay, 3000); // Run again after 5 sec 
+}
+
+function timerWithDelay() {
+    syncLocalWithFirebase();
+
+    timecounter += 3;
+    console.log("Time Counter : ", timecounter);
+
+    localStorage.setItem('TimePlayed', timecounter)
+    updateTimeElement(timecounter);
+    
+    setTimeout(timerWithDelay, 3000); // Run again after 5 sec 
 }
 
 function updateTimeElement(time) {
@@ -102,8 +112,13 @@ function updateTimeElement(time) {
     doctimeplayed.innerText = `TimePlayed : ${timeString}`;
 }
 
+// Get SAVE file
 getsave();
-// console.log("SynsSave Running")
+
+// Update total time played timer
+timerWithDelay();
+
 // Start the continuous sync
 syncWithDelay();
+
 // export { syncLocalWithFirebase };

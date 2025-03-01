@@ -1,4 +1,3 @@
-BOLTZER
 @START
 A DATATYPE is a classification of data that specifies the kind of value a variable can hold.
 @END

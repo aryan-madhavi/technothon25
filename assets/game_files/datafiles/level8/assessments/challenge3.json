@@ -16,11 +16,6 @@
       "answer" : "parent"
     },
     {
-      "question" : "What is polymorphism in Python?",
-      "options" : ["One function working differently for different inputs", "Creating multiple objects of the same class", "Using the self keyword", "None of the above"],
-      "answer" : "One function working differently for different inputs"
-    },
-    {
       "question" : "Python supports multiple inheritance.",
       "options" : ["True", "False"],
       "answer" : "True"

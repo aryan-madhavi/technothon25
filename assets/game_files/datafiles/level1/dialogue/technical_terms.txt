@@ -1,0 +1,37 @@
+@START
+Let me Explain You Some Technical Terms
+This will help you to Understand the Python Language Better
+@END
+@START
+Declare:
+To declare something means to specify or introduce an entity,
+such as a variable, without necessarily assigning it a value.
+Variables are declared simply by assigning a value to them.
+There is no need to specify the type explicitly because Python is dynamically typed.
+
+Define:
+To define something involves creating it with specific functionality,
+such as defining a function, class, or variable.
+Variables are defined when you assign a value to them.
+Functions are defined using the def keyword.
+@END
+@START
+Call:
+Calling refers to executing a function or method that has been defined earlier.
+You call a function by using its name followed by parentheses ().
+If the function takes arguments, you include them inside the parentheses.
+
+Indentation:
+Indentation is the space (or tab)
+at the beginning of a line of code that determines the structure and grouping of code.
+Indentation is mandatory and replaces braces {} 
+found in Python and in other languages like C++ or Java.
+It defines blocks of code, such as loops, functions, or conditionals
+@END
+@START
+Condition:
+A condition is a statement that evaluates to True or False 
+and determines whether specific blocks of code will execute..
+These are Some Of the Terms if you find some diffiulty our freind Riruru (chatbot) can help you
+Ask Her Anything she will answer it
+@END

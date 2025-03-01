@@ -1,0 +1,45 @@
+@START
+Basic Syntax of Python:
+This includes print() function and comments (single and multiline comments).
+Every programmer first code is to display "Hello World" into the print() function.
+- print("Hello World") #comment
+@END
+@START
+Print Function:
+In Python, “print” refers to an in-built (will be covered in other levels)function print(), Which is used to display data or output(standard) on the screen , in which the provided information is automatically converted to a string before being printed.
+@END
+@START
+Points to remember about Print() Function:
+-	print("My name is Chen") , this will print “My name is chen” to the console.
+-	Python allows to print multiple values in a single line by separating them with comma’s( , ) within print() function, which will automatically add spaces in between.
+-	Data type passed to print() can be converted to a string before printing.
+@END
+@START
+For example:
+Name = “Hoodle_bee” # datatype: string, variable 
+Print(“Hellooww , my name is ”,name) 
+Output : Hellooww , my name is Hoodle_bee
+@END
+@START
+Comments:
+In Python, a comment is a piece of text added within your code that explains the logic or purpose of a specific line or section of code. Comments are completely ignored by the Python interpreter when running the program. And hence it does not get printed on the Output Screen.
+
+Python interpreter ignores them just as you ignore your preparations for exam whole year.
+
+Syntax: 
+A single line comment starts with a '#' (hash) symbol followed by the comment text.
+	Example:  #This is MEEE
+
+Multi-line Comments:
+ While not a dedicated syntax, you can use triple double quotes or triple single quotes(""" or ''') to create multi-line comments by not assigning them to a variable.
+	Example:
+    This shows Double quotation
+         “”” This is MEee
+		NOT YOUUUU
+		“””
+    This shows Single quotation
+        '''this 
+        is multiline
+        comment 
+        '''
+@END

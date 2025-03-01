@@ -1,4 +1,3 @@
-HAXEL
 @START
 A variable in Python is a named storage for data values, acting like a kitchen cabinet that holds ingredients. Python creates a variable as soon as a value is assigned to it, without requiring a declaration step.
 @END
