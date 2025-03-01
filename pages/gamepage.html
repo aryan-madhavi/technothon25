@@ -12,6 +12,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Jersey+10&family=Jersey+15&display=swap"
     rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
   <!-- Google fonts end -->
   <link rel="stylesheet" href="../css/navbar.css">
   <link rel="stylesheet" href="../css/gamepage.css">
@@ -52,26 +53,63 @@
 <div class="flex-container">
 	<!-- GAME -->
 	<div class="gameNprogress">
-		<iframe src="../assets/game" width="800" height="600px" scrolling="no">
-			Your browser does not support iframes.
-		</iframe>
+		<!-- <div class="iframe-container"> -->
+			<iframe src="../assets/game/" width="800px" height="600px" scrolling="no">
+				Your browser does not support iframes.
+			</iframe>
+		<!-- </div> -->
 		<div class="stats">
 			<h3 id="PlayerName" >HELLO,  </h3>
 			<!-- <p >Guest</p> -->
+			
 			<div class="progress-container">
-				<div class="progress-bar" id="progressBar">0%</div>
+				<div class="progress-bar" id="progressBar"></div>
 			</div>
-			<p id="PlayedTime">Played Time: 00:00</p>
-			<div class="allbadges">
-				<div class="badge" id="badge1">BAdge1</div>
-				<div class="badge" id="badge2">BAdge2</div>
-				<div class="badge" id="badge3">BAdge3</div>
-				<div class="badge" id="badge4">BAdge4</div>
-				<div class="badge" id="badge5">BAdge5</div>
-				<div class="badge" id="badge6">BAdge6</div>
-				<div class="badge" id="badge7">BAdge7</div>
-				<div class="badge" id="badge8">BAdge8</div>
+			<p id="PlayedTime">Played Time: 00 Hours 00 Minutes</p>
+			<div class="allbadges" >
+				<p>Passes Collected:</p>
+				<br>
+				<div class="badge" id="badge1">
+					<img src="../assets/imgs/Badges/1.png" alt="Eroror">
+					<!-- <br> -->
+					<p>Level 1</p>
+				</div>
+				<div class="badge" id="badge2">
+					<img src="../assets/imgs/Badges/2.png" alt="Eroror">
+					<!-- <br> -->
+					<p>Level 2</p>
+				</div>
+				<div class="badge" id="badge3">
+					<img src="../assets/imgs/Badges/3.png" alt="Eroror">
+					<!-- <br> -->
+					<p>Level 3</p>
+				</div>
+				<div class="badge" id="badge4">
+					<img src="../assets/imgs/Badges/4.png" alt="Eroror">
+					<br>
+					<p>Level 4</p>
+				</div>
+				<div class="badge" id="badge5"><img src="../assets/imgs/Badges/5.png" alt="Eroror">
+					<br>
+					<p>Level 5</p>
+				</div>
+				<div class="badge" id="badge6">
+					<img src="../assets/imgs/Badges/6.png" alt="Eroror">
+					<br>
+					<p>Level 6</p>
+				</div>
+				<div class="badge" id="badge7">
+					<img src="../assets/imgs/Badges/7.png" alt="Eroror">
+					<br>
+					<p>Level 7</p>
+				</div>
+				<div class="badge" id="badge8">
+					<img src="../assets/imgs/Badges/8.png" alt="Eroror">
+					<br>
+					<p>Level 8</p>
+				</div>
 			</div>
+			<br>
 			<p id="BotDefeated">Bot Defeated: 0</p>
 		</div>
 		

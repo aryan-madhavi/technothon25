@@ -5,7 +5,7 @@
     align-items: center;
     padding: 10px;
     background-color: #4F518C;
-    position: absolute;
+    position: static;
     top: 0;
     left: 0;
     width: 98.8%;
@@ -14,6 +14,7 @@
     /* margin-bottom: 50px; */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     font-family: "Jersey 10", sans-serif;
+    border-radius: 16px;
 }
 .header h1{
     color: white;

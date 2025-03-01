@@ -57,14 +57,16 @@ async function syncLocalWithFirebase() {
             await updateDoc(userRef, {TimePlayed : timecounter});
             await updateDoc(userRef, {stats : local_stats});
 
-            startprogress();
-            localStorage.setItem('TimePlayed', timecounter)
-            updateTimeElement(timecounter);
             let currentlvl = docSnap.data()['save'].current_level
             let lenofcurrentcompletedlevel = docSnap.data()['save']['completed'].length;
+            let totalbotdefeat = updatebotdefeated(currentlvl, lenofcurrentcompletedlevel);
+
+            startprogress(totalbotdefeat,  lenofcurrentcompletedlevel);
+
+            localStorage.setItem('TimePlayed', timecounter)
+            updateTimeElement(timecounter);
             // console.log("Length o Current Level: ", lenofcurrentcompletedlevel);
             updateBadge(currentlvl);
-            updatebotdefeated(currentlvl, lenofcurrentcompletedlevel);
             // localStorage.setItem("UserSaveFile", LoggedInUser);
             // await updateDoc(userRef,  { username: temp.value });
             console.log(" Sync successful!");
@@ -93,7 +95,7 @@ function updateTimeElement(time) {
     let minutes = Math.floor((given_seconds - (hours * 3600)) / 60);
     let seconds = given_seconds - (hours * 3600) - (minutes * 60);
 
-    let timeString = hours.toString().padStart(2, '0') + ':' + minutes.toString().padStart(2, '0');
+    let timeString = hours.toString().padStart(2, '0') + ' Hours ' + minutes.toString().padStart(2, '0')  + ' Minutes ' ;
         
     doctimeplayed.innerText = `TimePlayed : ${timeString}`;
 }

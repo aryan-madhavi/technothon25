@@ -18,7 +18,7 @@ const auth = getAuth(app);  // Make sure to pass the app instance
 // Get HTML elements
 const loginBtn = document.getElementById("loginBtn");
 const signupBtn = document.getElementById("signupBtn");
-const logoutBtn = document.getElementById("logoutBtn");
+const logoutBtn = document.getElementById("logoutBtnIndex");
 const home = document.getElementById("home");
 const game = document.getElementById("game");
 const aboutus = document.getElementById("aboutus");

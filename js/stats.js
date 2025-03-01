@@ -60,14 +60,16 @@ function updatebotdefeated (currentlvl, lenofcurrentcompletedlevel) {
     noofbotdefeat +=lenofcurrentcompletedlevel;
     // console.log("Bot Defeat : ", noofbotdefeat);
     docbotdefeated.innerText = `Bot Defeated : ${noofbotdefeat}`
-
+    
+    return noofbotdefeat;
 }
 
-function updateBadge (currentlvl) {
+function updateBadge (currentlvl ) {
 
     badgearray.forEach(function (item, index) {
-        if(index < currentlvl- 1){
-            item.style.display = "block";
+        if(index < currentlvl){
+            item.style.display = "flex";
+            item.style.alignItems = "center";
         } else{
             item.style.display = "none";
         }

@@ -7,7 +7,7 @@
     },
     {
       "question" : "Which of these is a valid tuple?",
-      "options" : ["(1, 2, 3) ", "{1, 2, 3}", "[1, 2, 3]", "tuple[1, 2, 3]"],
+      "options" : ["(1, 2, 3)", "{1, 2, 3}", "[1, 2, 3]", "tuple[1, 2, 3]"],
       "answer" : "(1, 2, 3)"
     },
     {

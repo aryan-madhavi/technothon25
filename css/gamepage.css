@@ -1,39 +1,47 @@
-body{
-    background: linear-gradient(to right, #90A8C3, #4F518C);
+/* General styles */
+body {
+    background-color: #90A8C3;
     color: #fff;
     font-family: 'Jersey 10', sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+/* Flex container */
 .flex-container {
-    /* display: flex; */
-    justify-content: space-evenly;
-    /* align-items: center; */
+    display: flex;
     flex-wrap: wrap;
-    height: auto;
-    min-height: 600px;
-    margin: 20px;
+    justify-content: center;
     gap: 20px;
     padding: 20px;
     box-sizing: border-box;
+    /* margin-top: 100px; */
 }
-.gameNprogress{
+
+/* Game progress container */
+.gameNprogress {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 50px;
-    /* align-items: flex-start; */
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
 }
+
+/* Stats section */
 .stats {
+    font-family: 'Jersey 15', sans-serif;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align all content to the left */
-    color: #000000;
-    font-size: 40px;
+    align-items: flex-start;
     background-color: white;
-    padding: 50px; /* Adjust padding */
-    margin-top: 100px;
+    color: #000;
+    font-size: 2rem;
+    padding: 40px;
+    margin-top: 50px;
     border-radius: 10px;
-    width: 100%; /* Make it stretch to full width */
-    max-width: 400px; /* Adjust width to prevent it from being too large */
+    width: 100%;
+    max-width: 400px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
@@ -42,12 +50,7 @@ body{
     margin: 5px 0;
 }
 
-#PlayerName {
-    margin-bottom: 0;
-    margin-top: 0;
-}
-
-
+/* Progress Bar */
 .progress-container {
     width: 100%;
     background-color: #ddd;
@@ -59,35 +62,45 @@ body{
 
 .progress-bar {
     width: 0%;
-    padding-left: 20px;
     height: 100%;
     background-color: #4F518C;
-    text-align: left; /* Align progress text to the left */
+    text-align: center;
     line-height: 30px;
-    color: #000000;
-    /* font-weight: bold; */
+    color: aliceblue;
     transition: width 0.3s ease-in-out;
 }
 
+/* Badges */
 .allbadges {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
     gap: 10px;
     width: 100%;
-    text-align: left; /* Align badges to the left */
+    text-align: left;
 }
 
 .badge {
     background-color: #4F518C;
     color: white;
-    text-align: center;
-    padding: 10px 20px;
-    font-size: 18px;
-    font-weight: bold;
+    padding: 10px;
+    font-size: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s, background-color 0.3s;
-    /* width: fit-content; */
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.badge img {
+    border-radius: 50%;
+    width: 35px;
+}
+
+.badge p {
+    font-size: 20px;
+    font-family: "Doto";
 }
 
 .badge:hover {
@@ -95,39 +108,38 @@ body{
     background-color: #6a75c9;
 }
 
+/* Responsive iframe for game */
 iframe {
-    margin-top: 100px;
-    /* width: 100%; */
-    max-width: 800px; 
-    /* height: 600px;  */
+    display: block;
+    width: 800; /* Responsive width */
+    height: 600; /* Maintain aspect ratio */
+    max-width: 800px;
+    max-height: 80vh;
     border: 3px solid #4F518C;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: auto;
 }
-.wasd {
-    padding: 0px 10px 0px 10px;
-/*     width: 10%;
-    height: 10%; */
-    display: inline-block;
-}
+
+/* Info section */
 .Info_level {
     background-color: rgba(255, 255, 255, 1);
     padding: 20px;
-    padding-left: 100px;
-    margin: 30px 200px;
+    margin: 30px 10%;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: left;
 }
 
 .Info_level h3 {
-    color: #000000;
-    font-size: 40px;
+    color: #000;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
 .Info_level p {
-    color: #000000;
-    font-size: 30px;
+    color: #000;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
@@ -138,9 +150,9 @@ iframe {
 }
 
 .Info_level ul li {
-    font-size: 27px;
+    font-size: 1.3rem;
     margin-bottom: 5px;
-    color: #000000;
+    color: #000;
 }
 
 .Info_level ul li::before {
@@ -149,18 +161,55 @@ iframe {
     color: #FFD700;
 }
 
-.Info_level h3, .Info_level p {
-    text-align: left;
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .gameNprogress {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats {
+        width: 80%;
+        font-size: 1.5rem;
+    }
+
+    .stats p {
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .stats {
+        font-size: 1.2rem;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .badge p {
+        font-size: 0.9rem;
+    }
+
     .Info_level {
+        margin: 20px 5%;
         padding: 15px;
     }
+
     .Info_level h3 {
         font-size: 1.6rem;
     }
+
     .Info_level p, .Info_level ul li {
         font-size: 1rem;
+    }
+
+    iframe {
+        width: 95vw;
+        height: 60vh;
     }
 }

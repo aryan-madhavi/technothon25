@@ -1,12 +1,12 @@
 body{
-    background: linear-gradient(to right, #90A8C3, #4F518C);
+    background-color: #90A8C3;
     font-family: 'Jersey 15', sans-serif;
 }
 .flex-container{
     background-color: antiquewhite;
     opacity: 0.6;
     margin: 20px;
-    margin-top: 150px;
+    /* margin-top: 150px; */
     border-radius: 50px;
     padding: 20px;
     display: flex;
