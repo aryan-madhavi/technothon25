@@ -10,6 +10,7 @@ import {
 import { getFirestore, doc , getDoc} from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyCuGCAAFiiMDrWeerT0eY-ZzcbpeemBa8M",
   authDomain: "carbonari-b1a91.firebaseapp.com",

@@ -2,6 +2,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebas
 import { getAuth, onAuthStateChanged, signOut, setPersistence, browserLocalPersistence } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-auth.js";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyCuGCAAFiiMDrWeerT0eY-ZzcbpeemBa8M",
   authDomain: "carbonari-b1a91.firebaseapp.com",
@@ -20,7 +21,8 @@ const auth = getAuth();
 const usernameElement = document.getElementById('username');
 const emailElement = document.getElementById('email');
 const logoutBtn = document.getElementById('logoutBtn');
-const lenofcurrentcompletedlevel = document.getElementById('lenofcurrentcompletedlevel');
+const logoutBtnIndex = document.getElementById("logoutBtnIndex");
+// const lenofcurrentcompletedlevel = document.getElementById('lenofcurrentcompletedlevel');
 
 // Set persistence to local to ensure session stays active even after a page reload
 setPersistence(auth, browserLocalPersistence)
@@ -65,18 +67,4 @@ logoutBtn.addEventListener('click', async () => {
   }
 });
 
-logoutBtnIndex.addEventListener('click', async () => {
-  try {
-    await signOut(auth);
-    alert('You have been logged out!');
-    localStorage.removeItem('LoggedUserID');
-    localStorage.removeItem('LoggedUserEmail');
-    localStorage.removeItem('LoggedUsername');
-    localStorage.removeItem('UserSaveFile');
-    window.location.href = 'index.html';  
-  } catch (error) {
-    console.error('Error logging out:', error);
-    alert('There was an error logging you out. Please try again.');
-  }
-});
 
