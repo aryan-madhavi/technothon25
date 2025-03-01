@@ -53,7 +53,7 @@ async function getQuestionsFromOpenAI(numQuestions = 5) {
    
     
   
-    const jsonString = JSON.stringify(data, null, 2);
+    const jsonString = JSON.stringify(data.choices[0].message.content, null, 2);
   
     // Open file save dialog
     const handle = await window.showSaveFilePicker({
