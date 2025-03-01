@@ -16,6 +16,7 @@ function updateSaveFile(level_no,allChallenges) {
 
   var dataString = JSON.stringify(saveData);
 
+  localStorage.setItem('SavingFile',"true");
   localStorage.setItem('UserSaveFile',dataString);
   
   //localStorage.setItem('current_level',level_no);
