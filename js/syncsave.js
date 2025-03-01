@@ -5,6 +5,7 @@ import { getsave } from "./getsave.js";
 import {startprogress} from "./progress.js";
 import { updateBadge, updatebotdefeated} from "./stats.js";
 
+// Firebase Configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
     apiKey: "AIzaSyCuGCAAFiiMDrWeerT0eY-ZzcbpeemBa8M",
