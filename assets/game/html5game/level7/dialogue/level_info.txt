@@ -1,0 +1,6 @@
+LEVEL 7
+@START
+1. Set, their Applications & Methods?
+2. Tuples, their Applications & Methods?
+3. What are Difference Between List, Dictionaries, Tuple & Set.
+@END

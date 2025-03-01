@@ -43,9 +43,9 @@ function get_level_struct() {
 
 function get_file(_is_enemy, _file) {
 
-	if _file == "wait.json" or _file == "continue.json"
+	if _file == "wait.json" or _file == "continue.json" or _file == "narration.txt"
 		return $"common\\{_file}";
-		
+			
 	var _struct = get_level_struct();
 	var _root = "";
 	

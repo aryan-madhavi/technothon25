@@ -1,0 +1,12 @@
+VORTEX
+@START
+Hey There!
+Some of us have turned against your kind
+You need to defeat them to save yours
+Learn all the things you need to from us
+Then get to the CONTROL ROOM and shut down their server
+@END
+@START
+We will help you defeat them
+and RIRURU will be following you around and keep the others updated on enemy movements
+@END
