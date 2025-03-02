@@ -63,3 +63,14 @@ function getSaveLevelCompleted() {
 
   //return localStorage.getItem('completed');
 }
+
+function getLanguage() {
+
+  var lang = localStorage.getItem('Language');
+
+  if (lang == null)
+    return 'PYTHON';
+
+  return lang.toUpperCase();
+
+}
