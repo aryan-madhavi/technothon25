@@ -1,4 +1,4 @@
-ZEPHYR
+Relational And Logical Expressions
 @START
 Think of relational expressions as ways to compare things. They help answer questions like "Is this bigger?" or "Are these the same?" by returning True or False.
 Common ones:

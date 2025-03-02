@@ -1,0 +1,7 @@
+LEVEL 1
+@START
+1. Introduction and History About Python.
+2. Some Basic Syntax.
+3. What are Comments and Why are they Used?
+4. How Display Text Using print() Statement.
+@END

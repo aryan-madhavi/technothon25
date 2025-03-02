@@ -1,4 +1,4 @@
-MACHO
+Conditional Statement Syntax 
 @START
 Conditional statements allow a program to execute different code blocks depending on whether a condition is true or false.
 Key Points About Conditionals

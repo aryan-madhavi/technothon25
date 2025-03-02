@@ -1,0 +1,7 @@
+LEVEL 2
+@START
+1. Python Variables.
+2. Operatore Used In Python.
+3. Different Datat Types Used.
+4. How to Get Input from the User.
+@END

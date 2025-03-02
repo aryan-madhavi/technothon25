@@ -19,7 +19,7 @@ const auth = getAuth(app);  // Make sure to pass the app instance
 // Get HTML elements
 const loginBtn = document.getElementById("loginBtn");
 const signupBtn = document.getElementById("signupBtn");
-const logoutBtn = document.getElementById("logoutBtnIndex");
+// const logoutBtn = document.getElementById("logoutBtnIndex");
 const home = document.getElementById("home");
 const game = document.getElementById("game");
 const aboutus = document.getElementById("aboutus");
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     signupBtn.style.display = "block";
                     getstarted.style.display = "block";
                     interpreter.style.display = "none";
-                    logoutBtn.style.display = "none";
+                    // logoutBtn.style.display = "none";
                     home.style.display = "block";
                     game.style.display = "none";
                     aboutus.style.display = "none";

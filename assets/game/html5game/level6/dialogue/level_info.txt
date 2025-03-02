@@ -1,0 +1,5 @@
+LEVEL 6
+@START
+1. List, their Applications & Methods?
+2. Dictionaries, their Applications & Methods?
+@END

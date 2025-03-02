@@ -1,4 +1,4 @@
-FLUXOR
+Operators in Python
 @START
 Operators in Python are special symbols or keywords used to perform operations on variables and values. They help manipulate data, compare values, and perform logical operations. Python supports various types of operators.
 @END
