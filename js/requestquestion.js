@@ -1,3 +1,5 @@
+
+
 async function getQuestionsFromOpenAI(numQuestions = 5) {
   console.log("Running");
   // const topic = document.getElementById("topic").value;
